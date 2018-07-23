@@ -1,5 +1,5 @@
 # Compiled class file
-/bin/
+bin/
 *.class
 
 # Log file
@@ -13,10 +13,10 @@ __pycache__
 *~
 
 # lib directory
-/lib/
+lib/
 
 # resources directory
-/resources/
+resources/
 
 # Package Files #
 *.jar
@@ -36,5 +36,5 @@ __pycache__
 
 # git
 .gitconfig
-/nbproject/private/
-/build/
+nbproject/private/
+build/
