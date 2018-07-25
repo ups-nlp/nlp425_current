@@ -1,6 +1,7 @@
 # nlp425
 CS425: Conversational Agent
 
+Making some changes
 
 Dependencies:
 1. mallet (http://mallet.cs.umass.edu/)
