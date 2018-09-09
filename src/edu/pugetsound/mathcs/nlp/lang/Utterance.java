@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import edu.pugetsound.mathcs.nlp.brain.DialogueActTag;
-import edu.pugetsound.mathcs.nlp.features.MyTree;
+import edu.pugetsound.mathcs.nlp.architecture_nlp.brain.DialogueActTag;
+import edu.pugetsound.mathcs.nlp.architecture_nlp.features.MyTree;
 import edu.pugetsound.mathcs.nlp.kb.MyPredicate;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.trees.Tree;
