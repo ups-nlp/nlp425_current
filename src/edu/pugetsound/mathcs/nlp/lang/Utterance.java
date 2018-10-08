@@ -120,7 +120,7 @@ public class Utterance {
 		str += "Tokens: " 	+ tokens + "\n";
 		str += "Punct: " 	+ punct + "\n";
 		str += "Parse: " 	+ constituencyParse + "\n";
-		str += "Parse: " 	+ dependencyParse + "\n";
+		str += "Parse: " 	+ "\n" + dependencyParse + "\n";
 		str += "Subj: " 	+ subjects + "\n";
 		str += "Dobj: " 	+ directObjects + "\n";
 		str += "Root Dep: " + rootDependency + "\n";
@@ -128,7 +128,7 @@ public class Utterance {
 		str += "Passive:" 	+ isPassive  + "\n";
 		str += "FOL: "      + firstOrderRep + "\n";
 		str += "DATag: "    + daTag + "\n";	
-		str += "Anaphras: " + resolutions + "\n";
+		str += "Anaphoras: " + resolutions + "\n";
 		
 		return str;
 	}	

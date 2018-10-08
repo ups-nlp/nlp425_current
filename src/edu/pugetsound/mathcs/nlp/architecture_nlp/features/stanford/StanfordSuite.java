@@ -2,6 +2,7 @@ package edu.pugetsound.mathcs.nlp.architecture_nlp.features.stanford;
 
 import java.util.List;
 import java.util.Properties;
+import java.util.Scanner;
 import java.util.Set;
 
 import edu.pugetsound.mathcs.nlp.architecture_nlp.features.MyTree;
@@ -42,10 +43,10 @@ public class StanfordSuite implements NLPSuite {
 		props.put("ner.applyNumericClassifiers", false);
 		pipeline = new StanfordCoreNLP(props);
 	}
-	
+
 	@Override
 	public void analyze(String input, Utterance utterance) {
-		
+
 		// Annotate document with all tools registered with the pipeline
 		start = System.currentTimeMillis();
 		Annotation document = new Annotation(input);
@@ -54,7 +55,7 @@ public class StanfordSuite implements NLPSuite {
 		if(Logger.debug()) {
 			System.out.println("\tAnnotating document: " + (stop-start) + " milliseconds");
 		}
-		
+
 		start = System.currentTimeMillis();		
 		List<CoreMap> sentences = document.get(SentencesAnnotation.class);
 		if(sentences.size() == 0){
@@ -66,7 +67,7 @@ public class StanfordSuite implements NLPSuite {
 			System.out.println("\tCore Map: " + (stop-start) + " milliseconds");
 		}
 
-		
+
 		// Compute basic syntactic features
 		start = System.currentTimeMillis();		
 		storeTokens(utterance, sentence);
@@ -74,7 +75,7 @@ public class StanfordSuite implements NLPSuite {
 		if(Logger.debug()) {
 			System.out.println("\tStore Tokens: " + (stop-start) + " milliseconds");
 		}
-		
+
 		// Compute parse tree features
 		start = System.currentTimeMillis();
 		storeParseTrees(utterance, sentence);
@@ -84,7 +85,7 @@ public class StanfordSuite implements NLPSuite {
 		}
 
 	}
-	
+
 	/**
 	 * Tokenizes the input. Tokens are delimited by space
 	 * @param h Utterance to store tokens
@@ -112,7 +113,7 @@ public class StanfordSuite implements NLPSuite {
 		// Get the constituency parse tree and its root
 		h.constituencyParse = new StanfordTree(sentence.get(TreeAnnotation.class));
 		h.rootConstituency = h.constituencyParse.getChild(0).value();
-		
+
 		/*
 		 * Get the dependency parse tree and its root
 		 * The following URL lists the different types of dependency parsers available:
@@ -122,10 +123,10 @@ public class StanfordSuite implements NLPSuite {
 		h.dependencyParse = tree.toString();
 		h.rootDependency = tree.getFirstRoot().word();
 		extractGrammaticalRelations(tree, tree.getFirstRoot(), h);
-		
+
 	}
 
-	
+
 	/**
 	 * A recursive method that traverses the dependency parse tree searching
 	 * for certain grammatical relations
@@ -169,6 +170,21 @@ public class StanfordSuite implements NLPSuite {
 		}
 	}
 
-
+	public static void main(String[] args) {
+		// Initialize NLP Pipeline		
+		StanfordSuite analyzer = new StanfordSuite();
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println();
+		System.out.println("Type text:");
+		
+		while(true){			
+			String line = input.nextLine();
+			Utterance utt = new Utterance(line);
+			analyzer.analyze(line, utt);
+			System.out.println(utt);			
+			System.out.println("\n\n\nType text:");
+		}		
+	}
 
 }

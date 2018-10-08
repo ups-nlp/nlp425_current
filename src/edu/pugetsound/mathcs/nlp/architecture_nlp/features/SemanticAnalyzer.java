@@ -85,7 +85,8 @@ public class SemanticAnalyzer {
 		}
 		else if(utt.rootConstituency.equals("S")){
 			utt.firstOrderRep = processStatement();			
-		}	
+		}
+		System.out.println(utt.firstOrderRep);
 	}
 
 
@@ -151,7 +152,7 @@ public class SemanticAnalyzer {
 		return depthFirstSearch(current.constituencyParse.getChild(0));
 	}
 
-	
+
 	/**
 	 * Performs a depth-first traversal of the parse tree. For each syntactic rule, it applies
 	 * a corresponding semantic rule to incrementally build the first-order logical representation
@@ -174,7 +175,7 @@ public class SemanticAnalyzer {
 		 *   A --> B1 	B2 	... BN
 		 */
 
-		
+
 		/*
 		 * NP --> Det NN
 		 * 
@@ -182,8 +183,10 @@ public class SemanticAnalyzer {
 		 * TODO: Right now, I'm ignoring the quantifier. By default, all variables are existentially
 		 * quantified. How do we want to deal with the universal quantifier? 
 		 */
-		if(pattern1(node)){			
-			System.out.println("NP --> Det NN entering");
+		if(pattern1(node)){
+			if(Logger.debug()) {
+				System.out.println("NP --> Det NN entering");
+			}
 			ArrayList<MyPredicate> child1 = depthFirstSearch(node.getChild(1)); // IsA(X, noun)
 			if(Logger.debug()) {
 				System.out.println("NP --> Det NN returns back " + child1);
@@ -284,11 +287,11 @@ public class SemanticAnalyzer {
 			}
 			MyPredicate child1 = depthFirstSearch(node.getChild(1)).get(0); // Property
 			assert(child1.getArity() == 0);	
-			
+
 			MyPredicate binaryPred = kb.makeBinaryPredicate(KBController.PROPERTY, kb.makeVariable(), child1.getName());
 			ArrayList<MyPredicate> list = new ArrayList<MyPredicate>();
 			list.add(binaryPred);
-			
+
 			if(Logger.debug()) {
 				System.out.println("Inside pattern 5: " + list);
 			}
@@ -367,10 +370,8 @@ public class SemanticAnalyzer {
 		else if(analyzer.isPossessivePronoun(nodeLabel)){
 			list.add(possessivePronoun(node));
 		}		
-		else if(analyzer.isNoun(nodeLabel)){
-			System.out.println("before");
-			list.add(noun(node));
-			System.out.println("after");
+		else if(analyzer.isNoun(nodeLabel)){			
+			list.add(noun(node));			
 		}
 		else if(analyzer.isPreposition(nodeLabel)){
 			list.add(preposition(node));
@@ -390,14 +391,14 @@ public class SemanticAnalyzer {
 		return list;			
 	}
 
-	
+
 	// Adjective -- e.g., "blue", "sorry", "gentle"
 	private MyPredicate adjective(MyTree node) {
 		assert hasSingleLeafChild(node);
 		String property = label(node.getChild(0));
 		return kb.makeConstant(property, null); 
 	}
-		
+
 	// Determinant -- e.g., "a", "the", "some", "every", "none"
 	private MyPredicate determinant(MyTree node){
 		assert hasSingleLeafChild(node);
