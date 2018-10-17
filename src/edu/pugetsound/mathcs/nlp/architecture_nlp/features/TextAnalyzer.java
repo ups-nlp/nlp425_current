@@ -162,11 +162,9 @@ public class TextAnalyzer {
 		if(Logger.debug()) {
 			System.out.println("\tDialogue Classifier: " + (stop-start) + " milliseconds");
 		}
-
 		
 		// Run the NLP Analyzer
 		nlpAnalyzer.analyze(input, h);
-	
 		
 		start = System.currentTimeMillis();
 		anaphoraAnalyzer.analyze(h, conversation);
