@@ -212,6 +212,7 @@ public class TextAnalyzer {
 
 
 
+	
 	/**
 	 * Sets the ending punctuation mark
 	 * @param h The utterance
