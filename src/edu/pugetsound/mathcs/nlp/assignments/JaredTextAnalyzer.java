@@ -39,6 +39,7 @@ public class JaredTextAnalyzer {
 				 for (Utterance u : convo.getConversation()) {
 					 System.out.println(u);
 				 }
+				 scan.close();
 			 }
 			 else {
 				 Utterance u = analyzer.analyze(line,new Conversation());
