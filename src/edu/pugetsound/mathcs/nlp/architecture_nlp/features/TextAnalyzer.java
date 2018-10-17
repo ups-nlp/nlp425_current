@@ -163,6 +163,7 @@ public class TextAnalyzer {
 			System.out.println("\tDialogue Classifier: " + (stop-start) + " milliseconds");
 		}
 		
+		
 		// Run the NLP Analyzer
 		nlpAnalyzer.analyze(input, h);
 		
