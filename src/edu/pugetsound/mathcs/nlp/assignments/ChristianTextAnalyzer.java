@@ -3,10 +3,7 @@
  */
 package edu.pugetsound.mathcs.nlp.assignments;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
-
 import edu.pugetsound.mathcs.nlp.lang.Conversation;
 import edu.pugetsound.mathcs.nlp.lang.Utterance;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.features.stanford.StanfordSuite;
