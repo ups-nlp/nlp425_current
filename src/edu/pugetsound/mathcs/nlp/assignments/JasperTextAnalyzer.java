@@ -2,7 +2,7 @@ package edu.pugetsound.mathcs.nlp.assignments;
 
 import java.util.Scanner;
 
-import edu.pugetsound.mathcs.nlp.architecture_nlp.features.TextAnalyzer;
+import edu.pugetsound.mathcs.nlp.architecture_nlp.features.stanford.StanfordSuite;
 import edu.pugetsound.mathcs.nlp.lang.Conversation;
 import edu.pugetsound.mathcs.nlp.lang.Utterance;
 
@@ -18,7 +18,7 @@ public class JasperTextAnalyzer {
 	 */
 	public static void main(String[] args) {
 		Conversation conv = new Conversation();
-		TextAnalyzer analyzer = new TextAnalyzer(null);
+		StanfordSuite suite = new StanfordSuite();
 		
 		Scanner in = new Scanner(System.in);
 		String input = "";
@@ -34,7 +34,8 @@ public class JasperTextAnalyzer {
 			if(input.toLowerCase().equals("q")) break;
 			
 //			Analyze, add to conversation
-			Utterance utt = analyzer.analyze(input, conv);
+			Utterance utt = new Utterance(input);
+			suite.analyze(input, utt);
 			conv.addUtterance(utt);
 		}
 		
