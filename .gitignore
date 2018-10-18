@@ -38,3 +38,4 @@ resources/
 .gitconfig
 nbproject/private/
 build/
+/.gradle/
