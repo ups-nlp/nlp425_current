@@ -1,4 +1,4 @@
-package edu.pugetsound.mathcs.nlp.kb.basic;
+/**package edu.pugetsound.mathcs.nlp.kb.basic;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,3 +17,4 @@ class BasicPredicateTest {
 	}
 
 }
+**/
