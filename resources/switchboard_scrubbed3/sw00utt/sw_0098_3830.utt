@@ -1,0 +1,145 @@
+fp	A.1 utt1	Hello?
+fp	B.2 utt1	Hello.
+fp	A.3 utt1	How you doing?
+fp	B.4 utt1	Fine.
+sd	A.5 utt1	I'm Lee with,
+sd	A.5 utt2	I'm over here in Plano, Texas.
+b	B.6 utt1	Okay.
+qy	B.6 utt2	Let me ask you something, can I run a minute and shut my radio off?
+na	A.7 utt1	sure.
+bk	B.8 utt1	Okay.
+b	A.9 utt1	Oh.
+b	B.10 utt1	Okay.
+qw	A.11 utt1	Where are you calling from
+qw	A.11 utt2	or where are you at?
+sd	B.12 utt1	Arlington.
+sd^r	B.14 utt1	Arlington, Texas.
+b^m	A.15 utt1	Arlington.
+aa	B.16 utt1	Yes.
+sv	A.17 utt1	Well, there's a lot of stuff going on in Arlington these days.
+aa	B.18 utt1	Yes,
+sv	B.18 utt2	not all good stuff.
+qy	A.19 utt1	Are you involved in any of that?
+nn	B.20 utt1	No.
+b^m	A.21 utt1	No.
+nn^r	B.22 utt1	No,
+sd^e	B.22 utt2	I'm not personally.
+qw	A.23 utt1	Well, what benefits do,
+qy	A.23 utt2	now, do you work?
+sd	B.24 utt1	I'm going to school right now.
+bh	A.25 utt1	you are?
+co	B.26 utt1	I can tell you about my last job or whatever you want to talk about that or my husband's or what I think.
+aa	A.27 utt1	Okay.
+b	A.29 utt1	Yeah.
+sd	B.30 utt1	I've got a lot of,
+sd	A.31 utt1	Because I work for myself
+b	B.32 utt1	Uh huh.
+sv	A.33 utt1	and so, there's a lot that I guess I do miss, a lot of benefits from working for a big corporation.
+sd	A.33 utt2	I miss, insurance and the steady paychecks that come.
+b	B.34 utt1	Yes.
+b	B.36 utt1	Right.
+b	B.38 utt1	Yes.
+b	B.40 utt1	Yes,
+sd	B.40 utt2	I've been in my own business, Mary Kay, in fact,
+sd	B.40 utt3	I'm selling in out now to go to school full time
+sd	B.40 utt4	and I enjoyed the freedom of having that, you know,
+bh	A.41 utt1	is that right?
+sd	B.42 utt2	go to work when I wanted to or not
+b	A.43 utt1	Uh huh.
+sd	B.44 utt1	but, you know, the benefits weren't there.
+b	A.45 utt1	Yeah.
+sd	A.47 utt1	I own part of a roofing company.
+bh	B.48 utt1	do you?
+sd	A.49 utt1	in the Dallas, Fort Worth area.
+b	B.50 utt1	Uh huh.
+sd	A.51 utt1	And, you know, unfortunately we were part of a bigger company
+b^r	B.52 utt1	Uh huh.
+sd	A.53 utt1	and you know, we, we had all the benefits there
+sd	A.53 utt2	and I do miss that. You know,
+b	B.54 utt1	Yeah.
+sd	A.55 utt2	but, on the other hand, I, I enjoy having the time that I have with my family and being able to, you know, work when I want
+b	B.56 utt1	Right.
+b	B.58 utt1	Yeah,
+b	B.58 utt2	uh huh.
+sd	B.60 utt1	I think today the thing that I, would appreciate the most,
+sd	B.60 utt2	because my husband gets, his medical through his company,
+sd	B.62 utt2	but we have to pay for mine
+b	A.63 utt1	Uh huh.
+sd	B.64 utt2	and I'm the only one that's being insured
+sd	B.64 utt3	and and we pay the same amount that someone over there that has four children has, I mean,
+bh	A.65 utt1	is that right?
+sv	B.66 utt2	so it's kind of,
+b	A.67 utt1	Yeah.
+sv	B.68 utt3	and the way medical expenses are I think that's probably one of the biggest benefits you need to have.
+b	A.71 utt1	Yeah.
+aa	A.75 utt1	Yeah,
+o	A.75 utt2	I'll tell you what,
+sd	A.75 utt3	that is the single most benefit that I enjoyed, and I do miss
+b	B.76 utt1	Right.
+sd	A.77 utt2	because I looked into picking up some, medical insurance just for my family, you know,
+sv	A.77 utt3	and it is unbelievable how much you have to pay for it.
+aa	B.78 utt1	It's out of sight.
+aa	B.80 utt1	Right,
+aa	B.80 utt2	it's out of sight.
+b	A.81 utt1	And, yeah,
+sd	B.82 utt1	Even at a group rate, I couldn't believe how much is our,
+aa	A.83 utt1	yeah
+aa	A.85 utt1	even at a group rate.
+sv	A.85 utt2	it's unbelievable
+sd	A.85 utt3	and, the amount that you have to pay you know, for kids
+sd	A.85 utt4	and if you want to add dental to it, I mean, that's that eats even more.
+b	B.86 utt1	Right,
+^2	B.86 utt2	it goes up.
+b	B.88 utt1	Right.
+b	A.89 utt1	So, yeah,
+sd	A.89 utt2	I guess the other benefits that I, that I miss, I guess is, you know, some of the bonuses and stuff that that goes on with just being involved with a big company, you know
+b	B.90 utt1	Uh huh.
+sv	A.91 utt2	and course, these days, you can't count on that because
+b	B.92 utt1	Right.
+sd	A.93 utt1	you know, I feel bad for the people that are involved in that, G M deal there in in Arlington
+b^r	B.94 utt1	Right.
+sv	A.95 utt2	and I'm sure it will be, you know, quite a few people are affected by that
+aa	B.96 utt1	Right,
+sv	B.96 utt2	it's going to hurt the city,
+sd	B.96 utt3	although, I will personally tell you, I used to work at a bank,
+sd	B.96 utt4	and I would see the G M people come in when they would shut down to retool.
+b	A.97 utt1	Uh huh.
+sd	B.98 utt1	They were paid that whole time
+qy^d	B.98 utt2	and I don't know, if you're aware of this r ,
+bh	A.99 utt1	really?
+ny	B.100 utt1	Yes,
+sd^e	B.100 utt2	they come in there,
+sd	B.100 utt3	just, they go off fishing and stuff and come in every Friday, and go to the safety deposit box,
+sd	B.100 utt4	and I'm sitting there making a hundred dollars a week, you know
+bh	A.101 utt1	Is that right?
+sv	B.102 utt2	I really believe they have done this to themselves, in a way, because of the unions being so stocked.
+b^m	A.103 utt1	The union,
+aa	A.103 utt2	yeah.
+sd	B.104 utt1	And right now, anybody's that's laid off from G M will have a full year's paycheck.
+sd	B.104 utt2	I just read this in the paper the other day.
+bh	A.105 utt1	Is that right?
+sv	B.106 utt1	Plus probably an additional six months through the worker's stuff that they have at, through the company
+sd	B.106 utt2	so you know, I'm sorry it's happening because it's going to hurt,
+b	A.107 utt1	Yeah.
+sd	B.108 utt2	but I don't feel as sorry for them,
+sd	B.110 utt1	If my husband were laid off tomorrow, we'd get one more check
+sd	B.112 utt2	and that would be it.
+b	A.113 utt1	Yeah,
+sv	A.113 utt2	really the ones it's going to hurt is actually the businesses around in that area.
+aa	B.114 utt1	Yes.
+aa	B.116 utt1	yeah,
+sd	B.116 utt2	that's already hurting.
+sv	A.117 utt1	You know, that's the ones that that that's going to hurt because they depend on that,
+sv	B.120 utt1	But I think there's a case, where benefits have gotten,
+sd	B.122 utt2	they voted them in
+sd	B.122 utt3	and they got so good, I mean, like two dollars for a prescription no deductible on the medical, all these things, you know
+b	A.123 utt1	yeah.
+b^r	A.125 utt1	Yeah.
+sv	B.126 utt1	and it made the prices of cars go up
+b	A.127 utt1	Uh huh.
+sd	B.128 utt2	we, I believe in unions,
+sv	B.128 utt3	but they went too far.
+sd	A.129 utt1	Well, I'll tell you, I I've had my fill of unions .
+sd	B.130 utt1	I mean, I can't make eighteen dollars an hour.
+sd	B.132 utt1	mean, I know someone out here that makes eighteen dollars an hour.
+b	A.133 utt1	yeah.

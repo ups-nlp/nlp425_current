@@ -1,0 +1,127 @@
+sd	A.1 utt1	I'm Nevin from Sunnyvale, California.
+fp	B.2 utt1	Hi,
+sd	B.2 utt2	this is Jim Bliss from Minneapolis, Minnesota.
+fp	B.2 utt3	How you doing?
+fp	A.3 utt1	Pretty good.
+fp	B.4 utt1	Good.
+sd^t	B.4 utt2	I guess the topic is trial by jury and how we should change that or how we would change it.
+aa	A.5 utt1	Yep.
+sd	B.6 utt2	I'm ready whenever you are.
+bk	A.7 utt1	Okay .
+qw	B.8 utt1	So, what are your thoughts on the subject there?
+sv	A.9 utt1	Well I definitely think, like decisions have to be unanimous.
+aa	B.10 utt1	Yeah.
+aa^r	B.10 utt2	Yeah,
+sv	B.10 utt3	I think that's probably a good thing.
+sv	A.11 utt1	It's probably the safest thing.
+aa	B.12 utt1	Yeah.
+sv	B.12 utt2	I mean, it's to easy to get a quorum
+aa	A.13 utt1	Yep .
+sv	B.14 utt1	and simple majority won't do.
+aa	A.15 utt1	No.
+sv	A.15 utt2	And even like, you know, two thirds majority, I mean, it's ,
+aa	B.16 utt1	Yeah,
+aa	B.16 utt3	yeah,
+sv	B.16 utt4	quorums are to easy to get.
+aa	A.17 utt1	Yep.
+sv	B.18 utt1	And there's always that chance that one or two people could be playing devil's advocate for a good reason, you know.
+h	B.22 utt2	but, I don't know.
+sd	B.22 utt3	I couldn't believe they suggested that judges should be doing the sentencing.
+aa	A.23 utt1	Yeah.
+sv	A.23 utt2	Like Gives them a little too much power .
+aa	B.24 utt1	Yeah .
+sd	B.24 utt3	I know of a couple of people at least who would be arguing with that. Or arguing against that pretty vehemently.
+sd	A.25 utt1	Plus, you know, you may be, you know, doing, you know, a guilty verdict
+sd	A.25 utt2	but you know, it may be for technical reasons .
+b	B.26 utt1	Yeah.
+sv	B.26 utt2	About the only good thing I would say about that is that it would, hurry the process up a bit
+b	A.27 utt1	Yeah.
+sd	B.28 utt1	but I mean even now I know we've got plenty of cases out there where people have been wrongly convicted and things like that
+aa	A.29 utt1	I know .
+sv	B.30 utt2	I mean, jeez if the judge was doing it himself, without any checks and balances whose to say.
+b	A.31 utt1	Yeah.
+sv	A.33 utt2	there would be much more of that .
+aa	B.34 utt1	Yeah
+aa	B.34 utt2	no doubt.
+qy	B.34 utt3	Are you involved in the legal system at all?
+nn	A.35 utt1	No.
+sd	A.35 utt2	But I . I tend to follow it just to know what's going on.
+bk	B.36 utt1	Okay.
+b	B.38 utt1	Yeah,
+b^r	B.38 utt2	yeah.
+sd	B.38 utt3	I've got some friends that are lawyers
+b	A.39 utt1	Yeah,
+sd	A.39 utt2	I do too
+sd	B.40 utt1	One of them just got his law degree.
+sd	B.40 utt2	But, to tell you the truth, I'm not real familiar with, the system of jurisprudence the way it is right now.
+aa	A.41 utt1	No.
+sd	B.42 utt1	I really haven't studied it in depth.
+aa	A.43 utt1	Yeah.
+sd	A.43 utt2	I know a little more about civil cases than criminal cases. Which is,
+b	B.44 utt1	Yeah.
+sv	A.45 utt2	it's more in how you present it versus, you know, who's right.
+aa	B.46 utt1	I'm sure of it.
+sv	B.46 utt2	Because a lot of those things, it's in, it's largely a matter of viewpoint. And who can argue their case better.
+b	A.47 utt1	Yep.
+sv	B.50 utt1	it's kind of weird.
+h	B.50 utt2	I don't know,
+sd	B.50 utt3	I always think about watching the PEOPLE'S COURT or something. And how weird those cases get.
+sd@	A.55 utt1	When I was, a couple of years ago, involved in some pretrial stuff and / * slash error?? one utt with a.57
+b	B.56 utt1	Yeah.
+sd(^q)	A.57 utt1	like, you know, you say okay, we can't bring up this point because then they're going to, you know,
+sd	A.57 utt2	the opposition will say this, this and this and ,
+b	B.58 utt1	Uh huh.
+sd	B.58 utt2	And it's like, boy, the stuff that they can twist around is,
+b	A.59 utt1	Yep .
+sv	B.60 utt2	it's pretty amazing.
+sv	A.61 utt1	And it's like the truth isn't really important anymore.
+aa	B.62 utt1	Yeah,
+aa	B.62 utt2	it's not.
+sd	B.62 utt3	And then you get people who bring in cases just because they want to bring them up just because.
+b	A.63 utt1	Yep.
+sd	B.64 utt1	Like this friend of mine's pretty obnoxious
+sd	B.64 utt2	and he really gets into suing people.
+sd	B.66 utt1	And so he'll sue just about anybody just for the chance to get into court, and argue his case you know,
+b	A.71 utt1	Yeah
+sv	A.71 utt3	people don't want to take responsibility.
+b	B.72 utt1	Yeah.
+sv	B.74 utt1	and most of the time they're looking to place blame. and stuff.
+b	A.75 utt1	Yep .
+sd	B.76 utt2	See, you're from California,
+qy	B.76 utt3	is that right?
+ny	A.77 utt1	yeah.
+sd^e	A.77 utt2	Well originally from Chicago
+bk	B.78 utt1	okay.
+sd	B.78 utt2	I was just thinking
+qw^d	B.78 utt3	I wonder how the civil system or the court system must differ between there and say where I am in Minneapolis.
+sd	B.80 utt1	From what I understand, it's all pretty the same except when you get to Louisiana.
+sd	B.82 utt1	And Louisiana is completely different cause it was based on the,
+^h	B.82 utt2	what is it,
+sd	B.82 utt3	it's based on common law
+sd	B.82 utt4	and the rest of the country is not or something like that.
+b	A.85 utt1	Yeah.
+sv	B.86 utt1	Pretty strange.
+sd	B.86 utt2	But, fortunately I never have had to go in even for jury duty.
+aa	A.87 utt1	Yeah,
+aa	A.87 utt2	I haven't either other than,
+sd	B.88 utt2	But, that friend of mine's telling me that I might have to go in as a witness.
+sd	B.88 utt3	He may subpoena me.
+sd	B.90 utt1	So we'll see what happens.
+sd	A.91 utt2	I'm not really sure how we could change the legal system to make it better. .
+aa	B.92 utt1	Yeah.
+sv	B.92 utt3	there are too many big problems, you know.
+sd	B.92 utt4	there's such a backlog of court cases right now. You know, to try to get them all in a good time
+aa	A.93 utt1	I know.
+sv	B.94 utt2	and we already have too many lawyers as it is.
+b	A.95 utt1	Yeah.
+sd	A.95 utt2	And if it's criminal cases you can't put them in jail because there's no room left.
+aa	B.96 utt1	Yeah.
+aa^r	B.96 utt2	Yeah,
+aa	B.96 utt3	that's true.
+sd	B.96 utt4	And, in fact, they're even letting some go.
+b	A.97 utt1	Yeah.
+sd	B.98 utt1	I, I'm originally from Florida
+sd	B.98 utt2	and it's like it seems like every year they let out more and more just cause they don't have room for them, you know.
+sv	B.100 utt2	that's not a good solution either.
+aa	A.101 utt1	Not at all.
+sd	B.102 utt1	I'm not real sure what the,

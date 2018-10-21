@@ -1,0 +1,191 @@
+qw	A.1 utt1	Kate, where do you like to eat out?
+sd	B.2 utt1	Well, we really like the Mexican food, you know, here in Texas
+b	A.3 utt1	Yes.
+sd	B.4 utt1	so we try and go around to different Mexican restaurants trying them out,
+sd	B.4 utt2	and so, Tia's is probably our favorite, restaurant there,
+sd	B.4 utt3	and I think they have one of the best services that we really like it.
+bh	A.5 utt1	Do you?
+qy	A.5 utt2	Have you tried Mother Mesquites?
+nn	B.6 utt1	No.
+qw	B.6 utt2	Where's that at?
+sd	A.7 utt1	That's at Skillman and L B J
+b	B.8 utt1	Uh huh.
+sd	A.9 utt1	there is,
+sd	A.9 utt2	it's where Skillman, curves into Forest Lane
+b	B.10 utt1	Uh huh.
+sd	A.11 utt1	and it's real good Mexican food.
+sd	A.11 utt2	Another real good one is, Rafael's down on McKinney Avenue.
+b	B.12 utt1	Oh.
+sd	A.13 utt1	They're both very good.
+bh	B.14 utt1	Really?
+ny	A.15 utt1	Uh huh.
+sd	B.16 utt3	we haven't explored, you know, too many places.
+sd	B.16 utt4	you know, lot of the big name brand, I guess, chains
+b^m	A.17 utt1	Chains,
+b	A.17 utt2	uh huh.
+b	B.18 utt1	yeah,
+sd	B.18 utt2	but, we've tried places, you know, down, by the Collin Creek Mall,
+sd	B.18 utt3	the, you know, Alvarez,
+sd	B.18 utt4	and, we tried, what was across the street, El Paso's El Chico's or something,
+^2	A.19 utt1	El Chico's or El Fenix one,
+aa	B.20 utt2	yeah,
+aap	B.20 utt3	something something like that,
+b	A.21 utt2	uh huh
+b	B.22 utt2	uh huh,
+b^r	B.22 utt3	uh huh.
+b	A.23 utt1	Uh huh,
+b^r	A.23 utt2	uh huh.
+sd	A.23 utt3	Well, I like Tia's better than I do El Chico's or El Fenix.
+b	B.24 utt1	Yeah,
+b^r	B.24 utt2	yeah.
+sd	A.25 utt1	much better.
+sd	A.25 utt2	Mother Mesquite's is one of our favorites
+sd	A.25 utt3	but then fajitas are one of my,
+sd	A.25 utt4	I like it better than just about anything
+aa	B.26 utt1	yes.
+sv	A.27 utt1	and they make very good fajitas there in their own, homemade flour tortillas that are just absolutely wonderful.
+aa	B.28 utt1	Yes.
+b	B.30 utt1	Oh.
+sv	A.31 utt1	Especially with butter and honey on them .
+b	B.32 utt1	Uh huh,
+b^r	B.32 utt2	uh huh.
+aa	B.32 utt3	I know,
+o	B.32 utt4	I tell you what.
+sv	B.32 utt5	they just, they're excellent food.
+sd	B.32 utt6	I wish I could make them here at home.
+aa	A.33 utt1	Yes,
+aa	A.33 utt2	yes,
+sd	A.33 utt3	so do I.
+sd	B.34 utt1	Just can't make those flour tortillas.
+qo	A.35 utt1	Well, what else do you like?
+sd	B.36 utt1	Well, I love seafood
+b	A.37 utt1	Uh huh.
+sd	B.38 utt1	and I notice they have like you know, The Louisiana Purchase,
+sd	B.38 utt2	Razzoo's has opened up down, you know, close to six thirty five.
+b	A.39 utt1	Yes,
+sd	A.39 utt2	now I haven't eaten there.
+qy	A.39 utt3	Have you eaten there?
+ny	B.40 utt1	Yes.
+sd^e	B.40 utt2	I have eaten there.
+sd*	B.40 utt3	Now the only problem, / * note the setup for a negative comment
+sd	B.40 utt4	I love the food.
+sd	B.40 utt5	It's a lot of cajun food and good seafood,
+b	A.41 utt1	Uh huh.
+sd	B.42 utt2	but, the service has always been so strange, every time I've been in there.
+sd	B.42 utt3	Mostly it's been at lunch time
+b	A.43 utt1	Uh huh.
+sd	B.44 utt1	but I hear at night though they have, you know, the outdoor, bar,
+sd	B.44 utt2	and, that's it's really, you know, kind of lively.
+b	A.45 utt1	Uh huh.
+sv	B.46 utt1	So, it's really good. All their blackened grill stuff.
+sd	A.47 utt1	we like, for the spicy, we like Atchafalaya's out on Belt Line, in Addison
+b	B.48 utt1	Uh huh.
+sd	A.49 utt1	and it's a good restaurant.
+ba	B.50 utt1	well that sounds great.
+sd	A.51 utt1	for one of the best fish restaurants in town is either Vincent's there in Plano or, I believe it's a Rusty Scupper over on, Dallas Parkway in Addison, which is absolutely wonderful.
+b	B.52 utt1	Uh huh.
+b	B.54 utt1	Uh huh.
+b@	B.56 utt1	* slash error Uh huh.
+sd	A.59 utt1	The service is great.
+sd	A.59 utt2	They have every kind of fish that you could imagine you'd want
+b	B.60 utt1	Uh huh.
+sd	A.61 utt1	and the atmosphere is wonderful too.
+sv	A.61 utt2	If you want a really special night out and fish food that's a good place to go.
+b	B.62 utt1	Uh huh.
+sd	B.64 utt1	well, I have children and work,
+sd	B.64 utt2	and so we can eat a lot of fast food .
+ba^m@	A.65 utt1	Fast food, well, I can understand that. / * two utts
+sd	A.65 utt2	I can remember when our children were small.
+b	B.66 utt1	Uh huh.
+sd	A.67 utt1	We lived in the Chicago area at the time,
+sd	A.67 utt2	and we had a lot of McDonalds when they were first coming out.
+b	B.68 utt1	Yeah
+ba	B.70 utt1	I know.
+sd	A.71 utt1	I can't look a McDonalds in the face now.
+aa	B.72 utt1	I know,
+sd	B.72 utt2	I'm so sick of McDonalds,
+sd	B.74 utt1	and we used to eat there all the time.
+sd	B.74 utt2	And, so now we, we branch out at this Wendy's or some other fast food joint.
+sv	A.75 utt1	Well, Taco Bueno's good .
+sv	B.76 utt1	and cheap too.
+b^m	A.77 utt1	And cheap,
+b^m^r	A.77 utt2	and cheap.
+b	B.78 utt1	Yeah,
+sd	B.78 utt2	but the kids, they've got those expensive tastes
+sd	B.78 utt3	so, they like Tia's
+sd	B.78 utt4	so they can sit down and all that good kind of stuff.
+b	A.79 utt1	Yes,
+b^r	A.79 utt2	yes
+b^r	A.81 utt1	yes.
+ba	A.81 utt2	Sounds like my grandchildren.
+b	B.82 utt1	Yeah,
+ba	B.82 utt2	I know.
+sd	B.82 utt3	they, they're just spoiled rotten,
+sd	B.84 utt2	we love to eat out,
+sv	B.84 utt3	of course, it's just so much easier and simpler
+aa	A.85 utt1	yes.
+b	B.86 utt1	yeah.
+sd	B.86 utt2	So we usually eat out generally two or three times a week.
+sd	A.87 utt1	Well, it's just my husband and I,
+sd	A.87 utt2	and it's either T V dinners at home or we go out to eat.
+b	B.88 utt1	Yeah,
+b^r	B.88 utt2	yeah.
+sd	A.89 utt1	And I would much rather go out to eat than T V dinners .
+aa	B.90 utt1	me too,
+aa^r	B.90 utt2	me too.
+sd	B.90 utt3	So, I, I know that you know, I just work
+sd	B.90 utt4	and I'm just tired when I get home
+sd	B.90 utt5	and I just don't feel like cooking.
+aa	A.91 utt1	no,
+aa^r	A.91 utt2	no.
+sd	B.92 utt1	And, you know, on the weekends there's always things to do,
+sd	B.92 utt2	so we like to go out to lunch on Saturdays especially.
+sd	A.93 utt1	I like breakfast out.
+b	B.94 utt1	Uh huh,
+b^r	B.94 utt2	uh huh.
+sd	A.95 utt1	I like the IHOP there in Plano.
+b	B.96 utt1	Yeah,
+sd	B.96 utt2	now we've been there twice and both times the food just didn't quite settle with me
+b	A.97 utt1	Oh.
+sd	B.98 utt1	and I don't know what it was.
+sv	A.99 utt1	now that's surprising because normally they're real good.
+b	B.100 utt1	Uh huh,
+b^r	B.100 utt2	uh huh.
+aa	B.102 utt1	Yes,
+sd	B.102 utt2	and I love.
+sd	A.103 utt1	I like because they're, even if they're crowded, they're fast service, you know
+b	B.104 utt1	Uh huh.
+sd	A.105 utt1	don't have to wait forever for a table.
+b	B.106 utt1	Uh huh,
+b	B.106 utt2	yeah.
+sd	A.107 utt1	And we also like Owens, country sausa ,
+^2	B.108 utt1	family restaurant.
+aa	A.109 utt2	yeah
+b	B.110 utt1	Uh huh.
+aa	A.111 utt1	yeah.
+sd	A.111 utt2	We think it's good.
+sd	B.112 utt1	Now I haven't been there befo ,
+sd	B.112 utt2	I went to one I think in Ohio or, or somewhere up there,
+sd	B.112 utt3	but I've never been to that one here.
+sd	B.112 utt4	I know it's just down the street.
+b	A.113 utt1	Uh huh.
+sd	A.113 utt2	It's good.
+qy^d	B.114 utt1	So. Now have you been to Applebee's.
+ny	A.115 utt1	Yes,
+ny^r	A.115 utt2	yes.
+b^m	B.116 utt1	Yes.
+sd	A.117 utt1	And we like Applebee's.
+aa	B.118 utt1	Yes,
+sd	B.118 utt2	I really like that too,
+b	A.119 utt1	Yeah,
+sv	A.119 utt2	it's fun.
+sd	A.119 utt3	I like up there in Plano, that, Country Steak House.
+b	B.120 utt1	Oh.
+qy	A.121 utt1	Have you tried it?
+na	B.122 utt1	I've been there twice,
+b	B.122 utt2	uh huh,
+ny	B.122 utt3	yeah,
+sd	A.123 utt1	We like it because it's fairly reasonable
+sd	A.123 utt2	and we go for the salad bar.
+b^m	B.124 utt1	Salad bar,
+b	B.124 utt2	yes.

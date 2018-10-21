@@ -1,0 +1,128 @@
+o	A.1 utt1	Okay,
+o	A.1 utt2	yeah,
+bf	A.1 utt3	Donna, you said you have three children.
+qw	A.1 utt4	What, kinds of activities do you spend with them?
+qy	A.1 utt5	Is it ?
+b	B.2 utt1	Okay,
+sd	B.2 utt2	we have an eleven year old, an eight year old, and a three year old
+sd	B.2 utt3	and, my husband, let's see, he coaches basketball with Brian,
+b	A.3 utt1	Uh huh.
+sd	B.4 utt2	so he spends time doing that with him, planning and, practicing outside.
+b	A.5 utt1	Uh huh.
+sd	B.6 utt1	he's a real sports kind of person,
+sd	B.6 utt2	so he plays tennis with the kids.
+sd	B.6 utt3	We all kind of play tennis as a family,
+sd	B.6 utt4	except the baby plays in the playground.
+b	A.7 utt1	Uh huh.
+sd	B.8 utt2	We take turns with her.
+^h	B.8 utt3	let's see,
+sd	B.8 utt4	we have a computer
+sd	B.8 utt5	and we do a lot of things with the kids on the computer.
+^h	B.8 utt6	let's what else we do.
+sd	B.8 utt7	plus we watch a little T V together.
+sd	B.8 utt8	We really don't watch, I think, as much T V as a lot of people.
+b	A.9 utt1	Uh huh.
+sd	B.10 utt1	We don't have H B O.
+sd	B.10 utt2	We do get the Disney channel for the kids.
+b	A.11 utt1	Uh huh.
+sd	B.12 utt1	my kids have a Nintendo which they play,
+sd	B.12 utt2	and my husband sometimes joins them with that.
+b	A.13 utt1	Uh huh.
+sd	B.14 utt1	my little girl, Jennifer, likes to do crafty things,
+sd	B.14 utt2	and I'll take some time and do that with her.
+sd	B.14 utt3	And, of course, we always read a bedtime story at night,
+sd	B.14 utt4	and even the older kids sometimes sit down and will join in and listen to a story.
+sd	B.14 utt5	I'm, basically the story person because my husband doesn't have,
+b	A.15 utt1	Uh huh.
+sd	B.16 utt2	he gets home from work late or whatever
+sd	B.16 utt3	and once in a while he'll read the story to little one,
+sd	B.16 utt4	but that's basically my job .
+b	A.17 utt1	Yeah.
+b	B.18 utt1	,
+qy	A.19 utt1	So do you find it difficult to find time,
+qrr	A.19 utt2	or is it pretty natural ?
+na	B.20 utt1	It is hard because, you know, at the end of your day you want time for yourself
+b	A.21 utt1	Uh huh.
+b	A.23 utt1	Yeah.
+sd	B.24 utt2	and that's kind of cutting into your time.
+b	A.25 utt1	Yeah.
+sd	B.26 utt1	And with the kids getting older, now on the weekends they get to the bed like at ten which really is late,
+b	A.27 utt1	Uh huh.
+sd	B.28 utt2	but, you know, on school nights, the two older ones get to bed about nine.
+sd	B.28 utt3	They go upstairs at nine,
+sd	B.28 utt4	and, now, this weekend we'll have a baby sitter come
+sd	B.28 utt5	and, my husband and I will go out to dinner and come home probably not too late.
+b	A.29 utt1	Uh huh .
+sd	B.30 utt1	Maybe Brian will still be up, and spend some time with him.
+sd	B.30 utt2	But it's really hard.
+sv	B.30 utt3	You have to be a very unselfish person to spend a lot of time with your kids, I think.
+aa	A.31 utt1	Yeah,
+aa^r	A.31 utt2	yeah.
+qy	A.31 utt3	Do you work during the day?
+nn	B.32 utt1	no,
+sd^e	B.32 utt2	I don't work.
+sd	B.32 utt3	last year, I had a little part time job in a private, high school, tutoring, high school students with learning disabilities.
+b	A.33 utt1	Uh huh.
+sd	B.34 utt1	That was two days a week,
+sd	B.34 utt2	and even just those two days just seemed like it was a lot.
+sd	B.34 utt4	I admire, people that can do it all,
+b	A.35 utt1	Yeah.
+sd	B.36 utt2	but with three kids and laundry and keeping the house the way I want it kept, it is hard.
+b	A.37 utt1	Yeah.
+ba	A.39 utt1	I can imagine.
+b	A.41 utt1	Yeah.
+sd	B.42 utt1	Even just finding the time to do the grocery shopping and everything.
+b	A.43 utt1	Uh huh .
+sd	B.44 utt1	And that's another thing,
+sd	B.44 utt2	I'll take one of the kids with me grocery shopping, usually on the weekend,
+sd	B.44 utt3	and that's kind of like a special time for just myself and my little girl or myself and my son,
+sd	B.44 utt4	and they'll be my helper,
+sd	B.44 utt5	and then they'll get to pick out some of those favorite snacks that they get to pick out
+sd	B.44 utt6	so, I try to do things like that,
+b	A.45 utt1	Yeah.
+b	A.47 utt1	Yeah.
+sd	B.48 utt1	And then, of course, they have a pretty, busy social calendar too .
+b	A.49 utt1	Uh huh.
+sd	B.50 utt1	You fit it in with all that.
+b	A.51 utt1	Yeah.
+qo	A.51 utt2	So what do you feel are the current trends in the way families spend time in general, you know, in America?
+sv	B.52 utt1	I think a lot of people set their kids in front of the T V and H B O and rent movies and, kind of leave them to their own means.
+b	A.53 utt1	Uh huh.
+b	A.55 utt1	Yeah.
+sv	B.56 utt1	I think, you know, it's very easy to fall into that trap,
+sv(^q)	B.56 utt2	and I'm not, totally innocent of that because, there's times when you just stay here, watch a tape.
+b	A.57 utt1	Uh huh.
+b	A.59 utt1	Yeah.
+sv	B.60 utt1	But, I think different parts of the country,
+sv	B.60 utt2	I think in Plano and maybe this area in Texas, there's a lot of community activities that parents could join in with their kids.
+sv	B.60 utt3	People are, real sports conscious and really get involved with their kids, sports activities and,
+b	A.61 utt1	Uh huh .
+ba	A.63 utt1	that's good.
+b	A.65 utt1	Yeah.
+b	A.67 utt1	Yeah,
+sv	A.67 utt2	well, families are facing a challenge,
+sd	A.69 utt1	I'm a newlywed
+sd	A.69 utt2	and we're you know, thinking about having children sometime in the next couple of years
+b	B.70 utt1	Uh huh.
+b	B.72 utt1	Uh huh.
+sv	B.72 utt2	And it's very hard, because when you get used to two salaries, it's very hard to cut back to one.
+b	A.73 utt1	Yeah.
+sd	B.74 utt2	I have a friend that's a nurse
+sd	B.74 utt3	and she can pick her hours
+b	A.75 utt1	Uh huh.
+sv	B.76 utt1	that's a great career.
+sd	B.76 utt2	I wish I would have gone into, nursing .
+b	A.77 utt1	Yeah.
+sd	B.78 utt1	because she has such a flexible schedule,
+sv	B.78 utt2	but it's very hard to, spend time with the children and your husband and do everything at once.
+b	A.79 utt1	Uh huh.
+aa	A.81 utt1	Yeah.
+sv	A.81 utt2	But I do feel like it's important that you make the time for children because ,
+sv	B.82 utt1	Well, I think it's a big, responsibility.
+sv	B.82 utt2	You just don't, have children so that you can continue the lifestyle you had when you were single.
+b	A.83 utt1	Yeah.
+b	A.85 utt1	Yeah.
+sv(^q)	B.86 utt1	When you have children, you have to say, now, this is different
+sv	B.86 utt2	and you do have to give things up.
+sv	B.86 utt3	I personally feel that it is extremely important to be with your own child, for the, at least for the first two years of their lives. I mean, if you, can possibly swing it
+b@	A.87 utt1	Uh huh . Yeah.

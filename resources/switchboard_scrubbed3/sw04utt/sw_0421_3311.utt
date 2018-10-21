@@ -1,0 +1,211 @@
+o	A.1 utt1	All right, well,
+^h	A.1 utt2	let's see,
+qw	B.2 utt1	How old are you Lisa?
+sd	A.3 utt1	I'm twenty.
+bk	B.4 utt1	Okay.
+qw	A.5 utt1	How old are you?
+sd	B.6 utt1	I'm older.
+b^m	A.7 utt1	Older .
+sd	B.8 utt1	Older than you are.
+bk	A.9 utt1	Okay.
+b^m	B.10 utt1	Okay,
+sd^t	B.10 utt2	we are supposed to talk about places we like to go.
+sd	B.10 utt3	So I'm going,
+qw	B.10 utt4	and where are you calling from?
+sd	A.11 utt1	I'm calling from, Provo, Utah,
+sd	A.11 utt2	but I'm from Plano, Texas.
+b^m	B.12 utt1	you are from Plano.
+sd	B.12 utt2	My sister lives in Plano.
+bh	A.13 utt1	really?
+ny	B.14 utt1	Yes,
+sd^e	B.14 utt2	her husband is the new Director of Admissions at, University of Texas at Dallas.
+ba	A.15 utt1	wow.
+b	B.16 utt1	Yeah,
+sd@	A.17 utt1	My dad used to work at U T D also. generally we just go on family vacations to Arizona.
+qw	B.18 utt1	Anyway, so, where's your favorite place to go?
+sd	A.19 utt2	My grandparents live there.
+sd	A.19 utt3	That's generally our usual summer vacation.
+qw	B.20 utt1	Where in Arizona?
+sd	A.21 utt1	Tempe.
+bk	B.22 utt1	Okay,
+sd	B.22 utt2	I've never been to Tempe.
+sd	B.24 utt1	That's where I'd like to go.
+qo	B.24 utt2	What do you like about Tempe?
+sd	A.25 utt1	mainly just being with family is it.
+sd	A.25 utt2	We just hang out
+sd	A.25 utt3	and my grandparents have a pool
+sd	A.25 utt4	so we go swimming
+qy	B.26 utt1	Pretty hot isn't it, in the summer?
+ny	A.27 utt1	Yeah
+sd^e	A.27 utt2	but we keep cool just by going swimming
+sd	A.27 utt3	and it's fun to be with my cousins.
+sd	A.27 utt4	They're up there also, my grandparents and my cousins.
+ba	B.28 utt1	That's good.
+b	B.30 utt1	Uh huh.
+qy	B.32 utt1	Been to Hawaii?
+nn	A.33 utt1	No,
+qy	A.33 utt2	have you?
+ny	B.34 utt1	Yes,
+sd^e	B.34 utt2	in fact, I just got some reservations.
+sd	B.34 utt3	I'm going to go for, almost two weeks this winter.
+ba	A.35 utt1	my goodness.
+b	B.36 utt1	Yes.
+sd	B.36 utt3	well actually I lived there,
+sd	B.36 utt4	so I was there longer,
+sd	B.36 utt5	but two weeks is the longest vacation I'll have ever taken there,
+sd	B.36 utt6	so I'm kind of looking forward to that one.
+ba	A.37 utt1	Wow.
+qy	A.39 utt1	Around Christmas time?
+nn	B.40 utt1	no,
+sd^e	B.40 utt2	in March.
+bk	A.41 utt1	Oh.
+sd	B.42 utt1	We're going to go in March after my children's birthdays and get all that business out of the way.
+ba	A.43 utt1	Wow.
+b	B.44 utt1	Yeah,
+sd	B.44 utt2	so I think, I would like to go to Arizona.
+sd	B.44 utt3	I mean, I was in Phoenix last January
+sd	B.44 utt4	but it was rainy and icky.
+bh	A.45 utt1	really?
+sd	B.46 utt1	It was the coldest it's been there ever in January ,
+sv	B.46 utt2	I think. It's very cold.
+qy	A.47 utt1	So, do you travel a lot
+sd	B.48 utt1	But, I would like to go to Tempe.
+qy^h	B.50 utt1	Do we travel a lot?
+ny	B.50 utt2	some, yeah.
+sd^e	B.50 utt3	Well, I was a travel agent.
+bk	A.51 utt1	Oh.
+sd	B.52 utt1	I mean, I have been up until just a few months ago.
+sd	B.52 utt2	But I'm thinking of going back to work .
+b	B.54 utt1	Yeah.
+qy^g	A.55 utt1	So you know a lot of good vacation spots,
+na	B.56 utt1	I know a lot of good places to go.
+ad	B.56 utt2	But you definitely need to go to Hawaii.
+ad	B.56 utt3	Very definitely.
+qy	A.57 utt1	That's your favorite?
+ny	B.58 utt1	Yes,
+sd^e	B.58 utt2	it is my favorite.
+sd	B.58 utt3	My husband hasn't been to Europe yet
+sd	B.58 utt4	and I'd like to take him there.
+sd	B.58 utt5	but he's traveled all over the United States
+sd	B.58 utt6	and I haven't.
+sd	B.58 utt7	Like, I haven't been down south.
+sd	B.58 utt8	I'd like to go to New Orleans.
+qy	B.58 utt9	Have you been there?
+ng	A.59 utt1	I haven't.
+qw	A.59 utt2	where do you live?
+sd	B.60 utt1	I live in Yakima, Washington.
+ba	A.61 utt1	Wow.
+sd	B.62 utt1	So it's cold and rainy today.
+sd	B.62 utt2	It's yucky.
+sd	B.64 utt1	But we've had some pretty nice weather.
+sd	B.64 utt2	We played tennis outdoors until last week,
+sv	B.64 utt3	so that's a pretty good deal.
+qy	B.66 utt2	So do you go to school in Provo, Utah?
+na	A.67 utt1	I do.
+qy	B.68 utt1	Do you use NuSkin skin care.
+sd	B.68 utt2	They're located in Provo.
+nd	A.69 utt1	I work for NuSkin .
+bh	B.72 utt1	Do you?
+ny	A.73 utt1	Yes.
+sd	B.74 utt1	I'm a NuSkin person.
+bh	A.75 utt1	really?
+ny	B.76 utt1	Yeah,
+sd^e	B.76 utt2	I sell NuSkin, too.
+ba	A.77 utt1	my goodness.
+sd	B.78 utt4	but I'm my best customer.
+ba	A.79 utt1	Great .
+qy	B.80 utt1	Since we're not supposed to talk about this, though, is there anything more intensive for the eye area than the eye cream?
+qy	B.82 utt1	Do you know?
+no	A.83 utt1	I don't,
+sd	A.83 utt2	maybe the rejuvenating cream is the only other thing I would use.
+sd	B.84 utt1	I have that, too.
+sd	B.86 utt1	I'm forty two,
+sd	B.86 utt2	I need something,
+sd	B.86 utt3	I need more.
+qy	A.87 utt1	Than the intensive eye?
+ny	B.88 utt1	Yeah.
+sd	B.90 utt1	I didn't know if there was anything else.
+sd	B.90 utt2	And I use the Celltrex.
+b	A.91 utt1	Uh huh.
+sv	B.92 utt3	NuSkin is wonderful.
+ba	A.93 utt1	Good,
+aa	A.93 utt2	yes.
+sv	B.94 utt1	I think it's a wonderful product.
+qy	B.94 utt2	Do you use it?
+na	A.95 utt1	I do,
+ny	A.95 utt2	yeah,
+sd^e	A.95 utt3	we get free products every month
+ba	B.96 utt1	my gosh.
+ba	B.96 utt2	That's great.
+aa	A.97 utt1	right
+sd	A.97 utt2	now I'm getting about sixty bucks a month, free products
+b	B.98 utt1	Yeah,
+b^m	B.98 utt2	yeah.
+sd	A.99 utt1	I've worked there about a year.
+ba	B.100 utt1	That's good.
+qy	B.100 utt2	Are they good to work for?
+ny	A.101 utt1	Yes,
+sd^e	A.101 utt2	they're wonderful to work for.
+ba	B.102 utt1	That's great.
+b	A.103 utt1	Yep .
+ad^t	B.104 utt1	Anyway, so we're supposed to be talking about places to go
+bf	B.104 utt2	and you have not been to Europe.
+qy	B.104 utt3	Do you go to school?
+qy	A.105 utt1	Uh huh.
+qy	B.106 utt1	Do you ski?
+ny	A.107 utt1	I ski, yes.
+qy^d	B.108 utt2	you probably ski very well in Utah.
+nn	A.109 utt1	No,
+sd^e	A.109 utt2	I don't .
+sd	A.109 utt3	Actually since I grew up in Texas I've only been here about two years and have gone skiing about well, five times each season.
+qw	B.112 utt1	Why did you move to Utah?
+qy	B.112 utt2	you are going to school? At B Y U,
+ny	A.113 utt1	Yeah,
+qy	B.114 utt2	is that where B Y U is?
+ny	A.115 utt1	Uh huh.
+ny	A.115 utt2	Yep.
+bk	B.116 utt1	Okay,
+sd	B.116 utt2	I know some people that went to B Y U.
+ba	B.116 utt3	That's great.
+ba	B.116 utt4	Pretty good.
+sd	A.117 utt1	I do like to ski.
+qy^g	B.118 utt1	pretty down there.
+ny	A.119 utt1	Yeah,
+sd^e	A.119 utt2	I said I do like to ski.
+qw	B.120 utt1	So, where, have you skied?
+sd	A.121 utt1	And it's kind of nice being up here just because it's all like a vacation in itself when you get to go.
+b	B.122 utt1	Sure.
+sd	A.123 utt1	If you like that kind of thing .
+b	B.124 utt1	Sure,
+qr	B.124 utt2	so you're a sophomore. Or junior?
+sd	A.125 utt1	I am actually a junior. Beginning of my junior year.
+b	B.128 utt1	You're a junior.
+ba	B.130 utt1	Good for you.
+qw	B.132 utt1	What are you studying?
+sd	A.133 utt1	Nursing.
+ba	B.134 utt1	Good for you.
+sv	B.134 utt2	You sound like a girl that has it together.
+ad	B.136 utt1	I would just encourage you to do a little traveling, though, before you get married.
+sv	B.136 utt2	Because when you get married, you won't have the money or the time.
+b	A.137 utt1	You think,
+aa	A.139 utt1	I know.
+ad	B.140 utt2	don't be in any hurry.
+aa	A.141 utt1	I'm not.
+ad	B.142 utt1	You really should go to Europe.
+sd	B.142 utt2	I went to Europe for six weeks after I graduated from college
+sd	B.142 utt4	I mean I could have had that or a down payment on a new car
+sd	B.142 utt5	and I took the trip.
+qy	A.143 utt1	And it was great?
+sd	B.144 utt1	I traveled with a group of sixteen other students.
+sd	B.144 utt2	Actually there was two other graduating seniors besides myself,
+sd	B.144 utt3	and we just had a ball.
+sd	B.144 utt4	We stayed at,
+qw	A.145 utt1	How long did you get to stay there?
+sd	B.146 utt1	six weeks.
+bh	A.147 utt1	really?
+ny	B.148 utt1	Yeah.
+sd^e	B.148 utt2	It was wonderful,
+ad	B.148 utt3	so you should think about doing something like that.
+aa	A.149 utt1	Uh huh,
+sd	A.149 utt2	I just had a friend that got back from Europe
+sd	A.149 utt3	and she was there like all winter semester.

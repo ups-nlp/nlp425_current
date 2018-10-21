@@ -1,0 +1,335 @@
+o	A.1 utt1	Okay,
+qw	A.1 utt2	well what movies do you like?
+^h	B.2 utt1	Gosh,
+sd	B.2 utt2	I like just about anything.
+sd	B.2 utt3	I think the last one we saw was, TEENAGE MUTANT NINJA TURTLES PART TWO.
+sd	A.3 utt1	now, I like the turtles.
+sd	A.3 utt2	My little boy's four
+sd	A.3 utt3	and he loves them.
+sd	B.4 utt1	Well, we don't have any kids
+sd	B.4 utt2	but we like them anyway.
+ba	A.5 utt1	that's okay.
+qw	A.5 utt2	How old are you all?
+sd	B.6 utt1	we're late twenties.
+bf	A.7 utt1	and you just don't have any yet,
+bk	A.7 utt2	okay.
+aa	B.8 utt1	No.
+sd	A.9 utt1	Well I've got two.
+ba	B.10 utt1	gosh.
+aa	A.11 utt1	Yeah,
+sd	A.11 utt2	my little girl is three months old
+sd	A.11 utt3	and my little boy just turned four.
+sd	A.11 utt4	I had his birthday party yesterday.
+b	B.12 utt1	Oh.
+sd	A.13 utt1	But he's a turtle fanatic.
+sd	A.13 utt2	He even had turtle cake yesterday .
+sd	A.15 utt1	But I've been wanting to see TURTLE TWO.
+qy	A.15 utt2	Is it as good as they say it is?
+sd	B.16 utt1	It was,
+sd	B.16 utt2	it was actually better than the first one, I thought.
+ba	A.17 utt1	Good.
+qw	B.18 utt1	What's the last movie you saw?
+sd	A.19 utt1	GHOST.
+b	B.20 utt1	Oh
+sd	B.20 utt2	when, when the topic came up, I was asking my husband right quick, what's the last movies we saw.
+sd	B.20 utt3	He said well GHOST and TURTLES.
+sd	B.20 utt4	I really liked it.
+aa	A.21 utt2	yeah,
+sd	A.21 utt3	I love tearjerker movies.
+sv	A.21 utt4	But that wasn't too bad on tearjerker
+sv	A.21 utt5	but, it was good movie,
+ba	B.22 utt1	Not too awful bad.
+sd@	A.23 utt2	though, I can see why it won so many Oscars . / * slash error "though" should go with prev. utt
+b	B.24 utt1	Yeah.
+sv	A.25 utt1	Because that was just so good.
+sd	A.25 utt2	And I like Demi Moore.
+qy	B.26 utt1	Did you see PRETTY WOMAN?
+nn	A.27 utt1	No,
+sd^e	A.27 utt2	but I've been hearing a lot about it.
+sd	A.27 utt3	we don't get to the video store very often
+sd	A.27 utt4	and we don't have cable.
+ba	B.28 utt1	gosh.
+sd	A.29 utt1	Well we don't really want cable,
+sd	A.29 utt2	it's just, you know, glued to the T V all the time anyway.
+b	B.30 utt1	Yeah.
+sd	A.31 utt1	So we get two channels down here.
+sd	A.31 utt2	I'm from Kentucky originally,
+b	B.32 utt1	Uh huh.
+sd	A.33 utt1	and we used to get five channels without cable.
+b	B.34 utt1	Yeah.
+sd	A.35 utt1	You know, forty,
+sd	A.35 utt2	well I don't think you all have the same channels,
+sd	A.35 utt3	but here in Texas we only get two channels,
+qy	A.35 utt5	do you watch soap operas?
+na	B.36 utt1	once in a while, when I'm home.
+bk	A.37 utt1	Okay,
+qy	A.37 utt2	you work then?
+ny	B.38 utt1	Yeah.
+bk	A.39 utt1	Okay,
+sd	A.39 utt2	well we get the channel with YOUNG AND THE RESTLESS on it.
+bk	B.40 utt1	Okay.
+sd	A.41 utt1	And then, I think GENERAL HOSPITAL
+sd	A.41 utt2	and that comes on different channel.
+aa	B.42 utt1	Yeah,
+aa	B.42 utt2	it does.
+sd	A.43 utt1	But that's all we get,
+sd	A.43 utt2	and that's no cartoons for my little boy.
+sd	A.43 utt3	But we've got a V C R and a lot of tapes.
+b	B.44 utt1	Yeah.
+sd	A.45 utt1	And, my husband is a movie fanatic.
+sv	B.46 utt1	I think you would really like PRETTY WOMAN,
+sv	B.46 utt3	it made you feel really good.
+sv	B.46 utt4	It was just a happy movie.
+qw	A.47 utt1	what about TOTAL RECALL,
+qy	A.47 utt2	have you seen that.
+ny	B.48 utt1	Yeah,
+sd^e	B.48 utt2	I saw that one.
+sv	A.49 utt1	That's good.
+sv	B.50 utt1	I was disappointed in it just because of how violent it was.
+aa	A.51 utt1	Yeah,
+sv	A.51 utt2	it was violent.
+sd	A.51 utt3	I try to get away from that.
+sd	A.51 utt4	My little boy, he loves ROBO COP.
+sd	A.51 utt5	And that movie, I'll fast forward it every time they come to the part where there is,
+qy	A.51 utt6	have you seen it?
+ny	B.52 utt1	Yeah.
+sd	A.53 utt1	The part where they're shooting mercy .
+sd	B.54 utt1	I don't like that.
+sv	A.55 utt1	that's horrible,
+sv^r	A.55 utt2	that is horrible
+sv	A.55 utt3	and their, the language on that's filthy.
+sv	B.56 utt1	I don't see why they have to do that,
+sv	B.56 utt2	I mean, I mean everybody knows that the, the language is there so they could just ignore it and, you know, use different words instead, I think.
+b	A.57 utt1	Yeah.
+b	A.59 utt1	Yeah.
+aa	A.61 utt1	Yeah,
+aa^r	A.61 utt2	yeah,
+aa	A.61 utt3	I know.
+sd	B.62 utt1	But I think lately PRETTY WOMAN'S been my favorite.
+sd	B.62 utt2	I went and bought the video.
+sd	B.62 utt3	I've probably seen it about fifteen or twenty times.
+sd	A.63 utt1	my husband bought me, like, I think PRETTY IN PINK for my birthday.
+ad	A.63 utt3	wait a second,
+t3	A.63 utt4	I will in a minute Kyle, .
+fa	A.63 utt5	Sorry.
+bd	B.64 utt1	That's okay.
+sd	A.65 utt1	he bought me PRETTY IN PINK.
+ad	A.65 utt2	Just a second.
+fa	A.65 utt3	Sorry,
+sv	A.65 utt4	now, you're glad you ain't got a four year old.
+bd	B.66 utt1	That's okay .
+sd	B.66 utt2	Now, Now I haven't seen PRETTY IN PINK,
+sd	A.67 utt1	this is the first time he's interrupted my phone calls.
+^2	A.69 utt1	Molly Ringwald.
+aa	A.71 utt1	Yeah.
+sd	A.71 utt2	It was cute,
+sd	A.71 utt4	I like the, SIXTEEN CANDLES, or sixteenth birthday or,
+sv^2	B.72 utt1	I think SIXTEEN CANDLES was the name of it.
+aa	A.73 utt1	Yeah,
+sv	A.73 utt2	that was so good.
+sd	A.73 utt3	Of course I was a teenager when I seen that
+sd	A.73 utt4	and I loved it.
+sd	B.74 utt1	I haven't seen it either.
+sd	A.75 utt1	well if you like love stories, it's sweet.
+sd	B.76 utt1	I do.
+sd	A.77 utt1	it's sweet,
+sd	A.77 utt2	it really is .
+sd	A.77 utt3	And that's a tearjerker
+sd	A.77 utt4	it gets you,
+sd	A.77 utt5	I mean it makes you feel really sorry for her.
+ba	B.78 utt1	gosh.
+sd	A.79 utt1	But it's hilarious too, especially with that, little guy in it.
+sd	A.79 utt2	I don't know, he looks like a little boy next door,
+b	B.80 utt1	Oh.
+sd	A.81 utt1	but he's sixteen.
+sd	A.81 utt2	it's a cute movie.
+sd	A.81 utt3	I can't remember his name.
+sd	A.81 utt4	He kind of looks like DOOGIE HOWSER.
+sd	B.82 utt1	I don't know.
+sd	A.83 utt1	Don't know either.
+sd	A.85 utt1	He's got curly blonde hair,
+sd	A.85 utt2	he just a little freckly, little boy.
+sv	B.86 utt1	Probably know him if I saw him.
+b	A.87 utt1	Yeah,
+sd	A.87 utt2	if I could remember the name, I know you'd know his name, because he's played in a few movies.
+sd	B.88 utt1	I was just thinking another good one I saw not too long ago was, SLEEPING WITH THE ENEMY.
+b	A.89 utt1	Okay,
+sd	A.89 utt2	I've heard about that
+sd	A.89 utt3	but I can't remember it.
+sd	B.90 utt1	that's, that's Julia Roberts' new movie.
+b	A.91 utt1	Okay,
+b	A.91 utt2	yeah,
+sv	A.91 utt3	Julia Roberts is good.
+aa	B.92 utt1	Yeah
+sd	B.92 utt4	you know PRETTY WOMAN was kind of a light comedy and a romance,
+b	A.93 utt1	Uh huh.
+sd	B.94 utt1	and this one was a lot more dramatic.
+qy	A.95 utt1	Wasn't it a murder mystery?
+nd	B.96 utt1	Y , well,
+sd	B.98 utt1	like, it was a, it was a mystery.
+sd	B.98 utt2	She disappeared from her husband who was abusing her.
+bk	A.99 utt1	okay,
+sd	A.99 utt2	yeah, that's the one I wanted to see where she was on a carnival, at a carnival on a Ferris wheel or something.
+b	B.100 utt1	Yeah,
+b^r	B.100 utt2	yeah.
+qr	A.101 utt1	Well did that come on T V
+qr	A.101 utt2	or did it come out in the,
+nn	B.102 utt1	No,
+sd^e	B.102 utt2	it came out in the theater.
+b	A.103 utt1	Oh.
+sd	B.104 utt1	And I think, you know, around here, it's all ready quit playing.
+sd	B.104 utt2	But I don't know if it's still playing any where else.
+sd	B.106 utt1	But it was, it was one of those that kept you on the edge of your seat.
+^2	A.107 utt1	Real good.
+sd	A.109 utt1	I want to see that.
+b	A.109 utt2	Yeah,
+sd	A.109 utt3	I seen the, previews for it on T V down here,
+sd	A.109 utt4	but it's just been down here a couple weeks, I think.
+b	B.110 utt1	okay,
+b	A.111 utt1	Yeah.
+sd	B.112 utt1	because we saw it, probably, four or five months ago.
+sd	A.113 utt1	A month a ,
+sd	A.115 utt1	Well I know it hasn't been that long since I've seen the previews for it,
+sd	A.115 utt3	I wanted to see it.
+sd	A.115 utt4	Her husband was a, dark haired guy with a beard and moustache,
+ar	A.115 utt6	no
+sd	A.115 utt7	he shaved the beard off.
+aa	B.116 utt1	Yeah,
+sd	B.116 utt2	he was a real psycho in the movie.
+b	A.117 utt1	Yeah.
+sv	B.118 utt1	it was scary.
+sd	A.119 utt1	I'd like to see that.
+sd	A.119 utt5	I want to see WAR OF THE ROSES too,
+qy	A.119 utt6	have you seen that?
+ny	B.120 utt1	Oh yeah,
+sd^e	B.120 utt2	boy I didn't like it.
+qy	A.121 utt1	You didn't?
+nn	B.122 utt1	No,
+sd	B.122 utt3	I didn't like the way it ended.
+aa	A.123 utt1	I know,
+sd	A.123 utt2	well the only reason I know why it ended is on ARSENIO HALL one night, Christopher Reeves told, that, you know,
+b	B.124 utt1	Uh huh.
+sd	A.125 utt2	I can't believe they killed them.
+qw	A.127 utt1	or who was it
+qr	A.127 utt2	Christopher Reeve or Mike Douglas.
+sv	B.128 utt1	Might have been Michael Douglas. that starred in it. / * listen
+b	A.129 utt1	Yeah.
+aa	B.130 utt1	Yeah,
+sd	B.130 utt2	it was Michael Douglas.
+qy	A.131 utt1	Christopher Reeve wasn't in it at all?
+nn	B.132 utt1	Huh uh.
+bk	A.133 utt1	Okay.
+sd	A.133 utt2	Well Arsenio Hall is the one that jumped up and said that I can't believe they killed them
+sd	A.133 utt3	and Christopher Reeve, or, Mike Douglas went after his throat, you dummy .
+sd	A.135 utt1	So I know that they die,
+sd	A.135 utt2	but I haven't told my husband.
+sd	A.135 utt3	We've both been wanting to see it.
+sd	B.136 utt1	I, I, it was, it was weird.
+sd	B.136 utt2	It was a different movie from anything I've ever seen.
+sd	A.137 utt1	well we was, teasing, about, you know, splitting our house down the middle .
+b	B.138 utt1	Yeah .
+qy^g	A.139 utt1	They did that didn't they
+qy	A.139 utt2	and they marked off routes that they could go or something .
+ny	B.140 utt1	Yeah,
+sd^e	B.140 utt2	that would be kind of hard for us,
+sd	B.140 utt3	we've only got one bathroom,
+h	B.140 utt4	I don't know h , ,
+sd	A.141 utt1	We've got two bathrooms
+sd	A.141 utt4	my house kind of looks like two trailers put together.
+sd	A.143 utt1	And one bathroom is at the end of one side
+sd	A.143 utt2	and one's in the middle of the other,
+sd	A.143 utt3	so we could do it.
+ba	B.144 utt1	That wouldn't be too bad.
+aa	A.145 utt1	No,
+sd	A.145 utt2	and he could climb out the window .
+sd	A.147 utt3	every room leads to three rooms,
+sd	A.147 utt4	so we can, you know
+^2	B.148 utt1	Get around.
+aa	A.149 utt1	yeah,
+sd	A.149 utt2	you can get around .
+sd	A.149 utt3	You just can't go out the front door honey,
+fa	A.149 utt4	sorry.
+qy	B.150 utt1	Well did you see FATAL ATTRACTION?
+ny	A.151 utt1	Yeah,
+sd^e	A.151 utt2	that's coming back, on too .
+sd	B.152 utt1	I know it's going to be on the, on C B S Tuesday night
+sv	B.152 utt2	and that's kind of in a way, you know, how it kind of bothered you, the way it ended and stuff.
+b	A.153 utt1	Uh huh.
+sd	B.154 utt1	That's kind of how WAR OF THE ROSES was.
+sd	B.156 utt1	parts of WAR OF THE ROSES was funny
+sd	B.156 utt2	but then other times it was like it was just deadly serious,
+sd	B.156 utt3	and it just left you with this kind of uneasy feeling, you know.
+bf	A.157 utt1	Eerie feeling,
+sd	A.157 utt2	or, I want to see it though.
+sd	A.157 utt3	I'd like to see that and, THE NEVER ENDING STORY, came out on Disney this month, I think.
+sd	B.158 utt1	I I've heard about that
+sd	A.159 utt1	I wanted to see that.
+sd	B.160 utt2	but I don't know what it's about.
+br	A.161 utt1	THE NEVER ENDING STORY?
+aa	B.162 utt1	Yeah.
+sd	A.163 utt1	It's a child's movie,
+sd	A.163 utt2	but, it's good,
+sd	A.163 utt3	I enjoyed it.
+sd	B.164 utt1	I love Disney movies.
+aa	A.165 utt1	Yeah,
+aa	A.165 utt2	I do too
+sv	B.166 utt1	I mean, they're some of the best that are made.
+b	A.167 utt2	yeah.
+sd	A.167 utt3	And, well it's about this little boy who,
+sd	A.167 utt4	I think he's up in a attic, or some part of school.
+sd	A.167 utt5	He got locked in the school
+sd	A.167 utt6	and he got scared,
+sd	A.167 utt7	but he starts dreaming
+sd	A.167 utt8	and then, he's saving the land of,
+sd	A.167 utt9	it's been so long since I've seen it.
+sd	A.169 utt1	all's I can really remember is him flying this great big dog, this great big huge sheep dog sort of looking thing,
+ba	B.170 utt1	Oh go ,
+sd	A.171 utt1	it flies through the air.
+sd	A.171 utt2	And he's trying to save the land from some, ooze .
+sd	A.173 utt1	But it's really good,
+sd	A.173 utt2	I mean it sounds ki ,
+sd	A.173 utt3	it had, Fred Savage in it.
+ar	A.173 utt4	No,
+ar^r	A.173 utt5	no,
+ar^r	A.173 utt6	no,
+ar^r	A.173 utt7	no,
+ar^r	A.173 utt8	no.
+qy	A.173 utt9	Did you see that movie with Fred Savage in it, though,
+no	B.174 utt1	I don't think so.
+sd	A.175 utt3	it was THE PRINCESS BRIDE.
+nn	B.176 utt1	Nope,
+sd^e	B.176 utt2	I didn't see that.
+b^m	A.177 utt1	You didn't see that,
+sd	A.177 utt2	that was cute,
+sd	A.177 utt3	that was a good one.
+sd	A.177 utt4	I like, I like slapstick comedy.
+aa	B.178 utt1	So do I
+sd	B.178 utt2	and a lot of times we'll go to rent a movie or something
+sd	B.178 utt3	and you're not sure whether it will be any good or not
+sd	B.178 utt4	so sometimes we stick with the stuff we've heard more about than,
+b	A.179 utt1	Yeah,
+sd	A.179 utt3	a friend of mine told me she got NAKED GUN last night
+sd	A.179 utt4	and she said that was hilarious.
+aa	B.180 utt1	Yeah,
+sd	B.180 utt2	now, we saw that,
+sd	B.180 utt3	and they're coming out with a sequel to it.
+sd	A.181 utt1	Two and a half . / * is this a title??
+sd	B.182 utt1	It was funny.
+b	A.183 utt2	yeah,
+sd	A.183 utt3	I want to see that.
+sd	A.183 utt4	She said she rented it last night
+sd	A.183 utt5	and said it was real good
+sd	B.184 utt1	and WORKING GIRL is really good.
+sd	A.185 utt1	Now, I seen that,
+sv	B.186 utt1	That was good.
+qy	A.187 utt1	was that with that blonde,
+sd	A.187 utt2	she pretended to be the boss or something.
+ny	B.188 utt1	Yeah.
+b	A.189 utt1	Yeah,
+sd	A.189 utt2	I rented that one night by myself.
+sd	A.189 utt3	I was home alone.
+qy	A.189 utt4	Did you see HOME ALONE? .
+ny	B.190 utt1	Yes,
+sd^e	B.190 utt2	I did,
+sd	B.190 utt3	that just reminded me of that.
+qy	B.190 utt4	Did you like it?

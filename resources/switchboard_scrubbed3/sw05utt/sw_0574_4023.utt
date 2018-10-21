@@ -1,0 +1,126 @@
+qo	A.1 utt1	, how do you feel about crime in the city?
+sd	A.1 utt2	You say you're from Atlanta.
+aa	B.2 utt1	Right,
+sd	B.2 utt2	I, I actually I live in the city
+b	A.3 utt1	Uh huh.
+sd	B.4 utt1	and, I guess it is a concern of mine, you know, for my own safety.
+b	A.5 utt1	Uh huh.
+qy	A.5 utt2	I mean, do you find crime in Atlanta really
+sd	A.5 utt3	I live in Atlanta also.
+ba	B.6 utt1	Well that's right.
+sv	B.8 utt2	however I think, the area that I live in the crime level is not as high as it is in other areas of the city.
+b	A.9 utt1	Uh huh.
+sv	B.10 utt1	I think it seems that there's certain areas where, the crime is focused 
+b	A.11 utt1	Uh huh.
+qw	A.13 utt1	Well what do you think can be done about the crime in the city?
+sv	B.14 utt1	Well, I think what's been happening over the last several years it seems they've been beefing up the police patrols, trying to put more guys, more cops, higher visibility,
+sv	B.14 utt2	and, they've had some impact, but not a tremendous amount,
+b	A.15 utt1	Uh huh.
+sv	B.16 utt2	and probably, they need to try to increase community involvement, that sort of thing, I think .
+aap	A.17 utt1	I probably agree with that.
+b	B.18 utt1	Yeah.
+sv	B.20 utt1	You know, particularly in some of the housing projects, you know, that tends to be where a lot of that crime is focused
+b	A.21 utt1	Uh huh.
+sv	B.22 utt1	and they've got to do more than just having cops there.
+sv	B.22 utt2	They've got to kind of change the way people think about it.
+aa	A.23 utt1	Yeah,
+aap	A.23 utt2	that's probably true.
+qy	A.23 utt3	so, well do you think Atlanta's as bad as most other cities?
+na	B.24 utt2	I'd say it's probably in the top ten in terms of crime.
+sd	B.24 utt3	it's nowhere near as bad as New York City for example.
+b	A.25 utt1	Uh huh.
+sv	B.26 utt2	Probably not as bad as Detroit.
+b	A.27 utt1	Uh huh.
+sv	A.27 utt2	I don't think it's as bad as L A either.
+aa	B.28 utt1	No.
+sv	A.29 utt1	I don't think we have as much of the gang problem as a lot of the other cities have.
+aa	B.30 utt1	Yeah,
+aa	B.30 utt2	that seems to be true.
+sd	B.30 utt5	and you can just, as you walk through the street on a given evening, you can see crimes being committed.
+b	A.31 utt1	Uh huh.
+b	A.33 utt1	Uh huh.
+sd	B.34 utt1	It's that obvious.
+b	A.35 utt1	Yeah,
+h	A.35 utt2	I don't know,
+sv	A.35 utt3	I came to the conclusion also that, you know, if you are walking in a downtown area, you know, where there's a lot of crime, a lot of that's going to just keeping your senses about you and trying not to look like a victim, you know.
+aa	B.36 utt1	Yeah,
+aa	B.36 utt2	that's true.
+sv	A.37 utt1	You know, you know, walk with, you know, with just walk in a confidently,
+^2	B.38 utt1	With a big stick
+qr	B.38 utt2	or.
+sv	A.39 utt2	and, you know, don't be looking around like you've never been there before and you have no idea where you are.
+b	B.40 utt1	Right.
+ba	B.42 utt1	Sure.
+aa	B.44 utt1	Right,
+sv	B.44 utt2	don't walk down an alley
+b	A.45 utt1	Yeah.
+sv	B.46 utt1	just try to keep yourself out of a bad situation
+b	A.47 utt1	Uh huh.
+sv	B.48 utt2	there are times when you can't avoid all that
+sv	B.50 utt1	and then you're kind of on your own .
+b	A.51 utt1	Yeah.
+qy	A.51 utt2	have you ever, have you ever been mugged in Atlanta?
+nn	B.52 utt1	no.
+sd^e	B.52 utt2	The only thing I've ever had, was I've had my wallet lifted
+b	A.53 utt1	Uh huh.
+sd	B.54 utt1	but that was in a more of a setting where there was a number of people around,
+sd	B.54 utt3	I was much younger at the time
+b	A.55 utt1	Uh huh.
+sd	B.56 utt1	and kind of a couple of people, they just took it from me without me knowing really and kind of passed it off, so I didn't know who had it.
+b	A.57 utt1	Uh huh.
+b	A.59 utt1	Uh huh.
+sd	B.60 utt1	I've had that happen,
+sd	B.60 utt2	but that's about it.
+b	A.61 utt1	Yeah,
+sd	A.61 utt2	I've been pretty lucky about getting mugged.
+b	B.62 utt1	yeah.
+sd	A.63 utt2	I think I've only actually seen like you know, one actual robbery with a gun
+sd	A.65 utt1	and that's been about the only, you know, you know, potentially violent crime that I've seen in Atlanta.
+ba	B.66 utt1	Really,
+sd	A.67 utt1	And that was just a guy running out of a store that he just robbed.
+b	B.68 utt1	Uh huh.
+sd	B.68 utt2	I've had my car stolen,
+sv	B.68 utt3	so maybe that counts.
+bh	A.69 utt1	really.
+ny	B.70 utt1	Yeah.
+qw	A.71 utt1	where, where was that?
+qy	A.71 utt2	Was that downtown
+qr	A.71 utt3	or,
+nn	B.72 utt1	no,
+sd^e	B.72 utt2	that was up near Cumberland Mall area.
+ba	A.73 utt1	Really.
+sd	B.74 utt1	It's actually Cobb County,
+sd	B.74 utt2	but it is Atlanta
+^2	A.75 utt1	Metropolitan,
+aa	A.75 utt2	yeah.
+sd	B.76 utt1	and, there's a lot of car thefts in that area.
+aa	A.77 utt1	Yeah,
+sd	A.77 utt2	I've known some people that have had their cars stolen.
+sd	A.77 utt3	and, you know, about half the time the A P D seems to recover them, you know in various states of disrepair . Up on blocks.
+b	B.78 utt1	Right.
+b	B.80 utt1	Yeah
+sd	A.81 utt2	My friend had a V W Rabbit,
+sd	A.81 utt3	and when he got it back his, dashboard was sitting in the front seat .
+b	B.82 utt1	Yeah,
+sd	B.82 utt2	it had been wrecked and some superficial type damage,
+sd	B.82 utt3	but they didn't strip it
+b	A.83 utt1	Uh huh.
+sd	B.84 utt1	so I got it back.
+sv	A.85 utt1	Well, you're probably luckier than.
+aa	B.86 utt1	Yeah,
+aa^2	B.86 utt2	than most.
+b	A.87 utt1	Uh huh.
+qy	A.87 utt2	so like does insurance pay for the body damage,
+qr	A.87 utt3	or was that all there was, body.
+na	B.88 utt1	Right.
+sd	B.90 utt1	It was about three grand to put everything together.
+sd	B.90 utt2	They cracked the steering column of course, to steal the car.
+b	B.92 utt1	Yeah,
+sd	B.92 utt2	you crack the steering column
+sd	B.92 utt3	and you pull the,
+sd	B.92 utt4	there's a pin in there that you can pull on these G M cars
+b	A.93 utt1	Uh huh.
+sd	B.94 utt1	and you can start it up, basically pretty easily.
+b	A.95 utt1	Uh huh.
+qw	A.95 utt2	So how do you know this much about, stealing cars?
+sd	B.96 utt1	Well, after I found mine I had this,

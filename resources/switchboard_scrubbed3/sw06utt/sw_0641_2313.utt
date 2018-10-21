@@ -1,0 +1,188 @@
+qw	A.1 utt1	Well, how many credit cards do you have?
+sd	B.2 utt1	I've got about four maybe.
+sd	B.2 utt2	I try to limit them because well one, I don't use them too much.
+sd	B.2 utt3	And I use my Visa just for about everything,
+sd	B.2 utt4	and I pay it all off.
+sd	B.2 utt5	So I try not to,
+sd	B.2 utt6	I just use it for free money for thirty days basically.
+sv	A.3 utt1	Sounds like we have no conflict.
+sd	A.3 utt3	for a while I was carrying one card
+sd	A.3 utt4	and my wife was carrying a different one.
+sd	A.3 utt5	And since the slips all look alike, you commingle them
+sd	A.3 utt6	and then you get the statement
+sd	A.3 utt7	and you try to sort them out,
+sv	A.3 utt8	and it caused more confusion about it.
+sd(^q)	A.3 utt9	I finally said, Gee, this is kind of a waste of time.
+sd	A.3 utt10	And then when A T and T came along and offered a free one, I accepted that,
+sd	A.3 utt11	and we've been using that one.
+sv	A.3 utt12	the interesting thing is the amount of money you can run up on them.
+h	A.3 utt13	I don't know,
+qy	A.3 utt14	do you know any people that run up big bills?
+^h	B.4 utt1	I'm you know, I'm in the age group you get out of college,
+sv	B.4 utt2	and I think a lot of these people have them maxed out.
+qy	A.5 utt1	Well, were you able to get one while you're in college?
+ng	B.6 utt1	I don't think I ever tried.
+sd	A.7 utt1	Just curious, because I have a son that's a senior this year,
+sd	A.7 utt2	and he's heading off, with any kind of luck,
+sd	A.7 utt4	I've had a couple of ads for, for to provide a card for a college student.
+qo	A.7 utt5	what do you think about the idea of providing one for somebody like that?
+nd	B.8 utt1	well,
+sv	B.8 utt4	it's, you know, feasible,
+sd	B.8 utt5	I mean, I know a lot of college kids you know, who had them, but just depends.
+sd	A.9 utt2	since it's in, mo , the parent gets it for them, that really the parent becomes the one that's responsible,
+b	B.10 utt1	Yeah,
+qy^d	B.10 utt2	so basically if you want to take the risk .
+ny	A.11 utt1	Yes,
+bf	A.11 utt2	it's whether the parent wants to take the risk.
+sd	B.12 utt1	It's your risk,
+qh	B.12 utt2	do you trust, your son,
+b	A.13 utt1	Yeah,
+^2	A.13 utt2	to go run up a big bill
+sv	A.13 utt3	and, the thing is, there some advantages, if he got off some place and stranded.
+b	B.14 utt1	Uh huh.
+sd	A.15 utt2	I'm, I'm leaning towards doing it for conven , a convenience,
+b	B.16 utt1	Uh huh.
+sv	B.18 utt1	I'd say, you know, have one with, you know at least a thousand dollar credit limit or something.
+b	A.21 utt1	Yeah,
+bf	A.21 utt2	and the idea that, you know, if he got in trouble, there's some ways of getting out, and that he doesn't have to carry cash.
+sd	A.21 utt4	I like the idea of credit cards that, I don't, I don't carry cash around, and, I don't even carry checks around.
+sd	A.21 utt5	I let my wife take the checkbook,
+sd	A.21 utt6	and she writes the checks,
+sd	A.21 utt7	and I record them.
+sv	A.21 utt8	So it's, it's, but it's interesting that, that can, the amounts of money you can run up on, on credit cards,
+sd	A.21 utt9	and, I had recently had some dealings with a fellow that
+sd	A.21 utt10	he was making, considered a modest salary for an engineer,
+sd	A.21 utt11	and he had run up, more than a years salary in various debts to,
+sd	A.21 utt12	and he wound up declaring bankruptcy
+sv	A.21 utt14	it's hard to believe that you'd run up twenty, thirty thousand dollars of,
+sd	A.21 utt15	well, it was a combination of things he had,
+b	B.22 utt1	Uh huh.
+sd	A.23 utt2	there were several credit cards,
+sd	A.23 utt3	and then there were several other businesses,
+qy^d@	A.23 utt4	but, I guess what's interesting, have you seen the, the, the ads where they're offering to extend payments from, things like the credit union's offering, /* should be more than 1 slash unit
+^2	B.24 utt1	the extended loan payment for your car.
+aa	A.25 utt1	Yes,
+aa	A.25 utt2	yeah.
+ny	B.26 utt1	Yeah.
+sd^e	B.26 utt2	I saw that.
+sv	A.27 utt1	The interesting thing about that is that, that they're encouraging you to incur more debt,
+sd	B.28 utt1	Well, it's, it's business,
+sd	B.28 utt2	and they're making money off that.
+sd	A.29 utt1	And they make more money if you extend your loan.
+b	B.30 utt1	Yeah,
+sd	B.30 utt2	and it's, so it's business,
+qy^d	B.30 utt3	and you notice that they're only going to do it to like cars that are one or two years old.
+ny	A.31 utt1	Yes.
+sd	B.32 utt1	And so they've already shifted the risk.
+sd	B.32 utt2	If they assume that car, then they just have to sell it themselves,
+sd	B.32 utt3	and they'll recover the loan,
+sd*	A.33 utt1	And they know that people own a car that new unless absolutely die of service /* listen; can't be right transcription
+sv	A.33 utt2	they're not going to keep on if the car were older.
+b	B.34 utt1	Uh huh.
+sv	A.35 utt1	The interesting thing about it is that an economy standpoint or in economics,
+sv	A.35 utt2	I thinks it's, I think it's poor, economics to carry all that consumer debt at least from a tax standpoint,
+b	B.36 utt1	Yeah.
+sv	A.37 utt2	so. It's interesting that the American public is encouraged to incur all that debt and then next year none of it will be deductible,
+sd	A.37 utt3	and this year it's ten percent or so.
+b	B.38 utt1	Yeah,
+sv	A.39 utt1	it's interesting that, they encourage us to do things,
+br	B.40 utt1	now what's ten percent, we can deduct,
+sd	A.41 utt1	I think ten percent,
+o	A.41 utt2	yes.
+sd	B.42 utt1	I didn't know that.
+sd	A.43 utt1	of your consumer credit.
+sd	A.43 utt2	if you had a thousand dollars, that means there's another hundred dollar deduction I've given you.
+qy^d	B.44 utt1	I didn't think you could,
+sd	B.44 utt2	any thing on a loan or, I mean a mortgage I know you can,
+ny	A.45 utt1	Yeah,
+sd^e	A.45 utt2	it's on, yeah.
+b	A.47 utt1	Yeah,
+sd	A.47 utt3	there's, there's a place for consumer debt
+ad	A.47 utt4	and then you take ten percent of it,
+sd	B.48 utt1	I've never itemized yet.
+b	A.49 utt1	okay,
+h	B.50 utt1	So maybe that's. Schedule A or,
+sd	A.51 utt1	It's on schedule, Schedule A under,
+sd	A.53 utt2	well, it's the same place you put, interest.
+sv	A.53 utt3	but see that's what makes Texas squirrelly laws that you can't take out a second mortgage, like some states where you can take out the mortgage and declare that,
+sd	A.53 utt4	and so, it's fully deductible.
+sv	A.53 utt5	The laws are a little squirrelly,
+sd	A.53 utt6	but it basically comes down to
+sv	A.53 utt7	it's not in your best interest to borrow money from a tax standpoint.
+b	B.54 utt1	Yeah.
+b	B.56 utt1	Yeah,
+sd	B.56 utt2	I, I really do, I just try to stay out of debt,
+sd	B.56 utt3	and I use my Visa for as much as I can,
+sd	B.56 utt4	and I pay it all off,
+qy^d	A.57 utt1	Sounds like you're very financially responsible.
+ny	B.58 utt1	Uh huh.
+sv	A.59 utt2	there're a lot of people who really run,
+sd	A.59 utt3	my boss drives quite a ways to work,
+sd	A.59 utt4	and he's got just enormous debts,
+qh(^q)	A.59 utt6	but, I mean, what do you say, it's like, Shucks, Boss, I'm sure sorry you've got all that debt.
+sd	A.59 utt7	Well, he's had two kids in college and this kind of thing,
+b	B.60 utt1	Uh huh.
+sv	A.61 utt1	I think that the whole credit card issue, I think they certainly encourage people to run up the debts
+sd	A.61 utt2	but I agree with you
+b	B.62 utt1	Yeah.
+sd	A.63 utt2	Well, I did buy a new house last summer.
+sd	B.64 utt1	Hell, I took a five year note out on my car right when I got out of college,
+sd	B.64 utt2	and, I'll never do that again.
+sd	B.64 utt3	I still got a couple of years on it to go,
+sv	A.65 utt1	it's remarkable how many people as soon as they get out of college buy a new car,
+sv	A.65 utt2	and apparently that's been going on for a really long time.
+sd	A.65 utt3	I didn't do it.
+sd	A.65 utt4	I bought a second hand car when I was, the middle of my senior year.
+sv	B.66 utt1	Well, you think you're starting out well, until you start paying all those bills. apartment rent,
+b	A.67 utt1	Yep.
+^2	A.69 utt1	Miscellaneous things like food and other things,
+b	B.70 utt1	Yeah.
+sd	A.71 utt2	these habits you get into, eating
+sv	A.71 utt3	and, it's, it's amazing what you learn.
+b	B.72 utt1	Yeah,
+qy	A.73 utt1	Well, anything else good to say about credit cards?
+sv	B.76 utt1	you know, they're convenient, you know,
+sv	B.76 utt2	that's probably one big thing about them,
+bf	A.77 utt1	You don't have to carry the cash,
+sd	A.77 utt2	and, and it's, it's certainly accepted the places, you know,
+sd	A.77 utt3	it's hard to cash a check if you're out of state,
+b	B.78 utt1	Yeah,
+sd	B.78 utt2	well, I was used to using my credit card, like at Skaggs Alpha Beta in Dallas, and stuff
+b	A.79 utt1	Yeah.
+sd	B.80 utt1	and now I'm out here in Phoenix.
+sd	A.81 utt1	they don't do tha ,
+sd	B.82 utt2	none of these grocery stores take any credit cards,
+sd	B.82 utt3	so now I have to carry cash when I go to the grocery store, which is new to me, you know,
+sd	B.82 utt4	I got to have sixty bucks on me or something.
+b	A.83 utt1	Yeah.
+sv	B.84 utt1	So, that was interesting, cause I always, you know,
+bf	A.85 utt1	Carry all that cash with you.
+sd	B.86 utt2	you didn't have to worry about carrying that much unless I knew I,
+sd	A.87 utt1	Well, you know they they've started towards a little bit of the debit card,
+qy	A.89 utt2	have you seen the debit cards where they actually debit your account when you,
+ny	B.90 utt1	Yeah,
+sd^e	B.90 utt2	I've heard about them.
+b	A.91 utt1	Yeah,
+sv	A.91 utt2	and I think that's where,
+sd	B.92 utt1	That's mostly locally,
+sd	B.92 utt2	the banks will line up with,
+b	A.93 utt1	Yeah,
+sd	A.93 utt2	I've seen a couple,
+sv	A.93 utt4	so many of the grocery stores don't do that because of the time frame which they get paid, in general,
+sd	A.93 utt7	I've seen checks I mean, cleared my account the next day.
+sd	A.93 utt8	My wife will write a check for groceries
+sd	A.93 utt10	well I guess it's the day after,
+sd	A.93 utt11	technically it's two days,
+sd	A.93 utt12	but the , they took that check and scurried it to the bank
+sd	A.93 utt13	and the bank scurried it back to my account,
+sd	A.93 utt14	and you thought there'd be just a little bit of float,
+sv	A.93 utt15	but apparently that's why the, the, grocery stores are reluctant to do that, because their volume, that is quite high,
+sv	A.93 utt17	the costability of the cash flow is a big issue for them.
+b	B.94 utt1	Yeah.
+fc	A.95 utt1	Anyway.
+fc	A.95 utt2	Well, it's good talking to you.
+fc	B.96 utt1	All righty.
+fc	A.97 utt1	Maybe we'll cross paths again.
+fc	A.97 utt2	Good night.
+fc	B.98 utt1	All righty.
+fc	B.98 utt2	Take it easy.

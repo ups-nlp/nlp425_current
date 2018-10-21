@@ -1,0 +1,131 @@
+qw	A.1 utt1	What are your favorite T V shows?
+sd	B.2 utt1	I guess one of my favorite ones is CHEERS.
+b	A.3 utt1	Yeah.
+sd	B.4 utt1	I always liked that one.
+sv	B.4 utt2	They're always so funny.
+sd	B.4 utt3	And I also like the COSBY SHOW .
+b	A.5 utt1	Yeah.
+b	A.7 utt1	Yeah.
+sd	B.8 utt1	Those are probably my two favorites.
+b	A.9 utt1	Yeah,
+sd	A.9 utt2	I, I rather enjoy the COSBY SHOW.
+sd	A.9 utt3	My wife and I both like COMMISH.
+sd	B.10 utt1	You know, I've watched that one time
+sv	B.10 utt2	and it was really good,
+qy^d	B.10 utt3	but now that's on, what, Saturday night?
+qy^r	B.12 utt1	Is it Saturday night?
+ng	A.13 utt1	It's either Friday night,
+sd	A.13 utt2	it's either tonight or tomorrow night.
+sd	A.13 utt3	around here at least.
+b	B.14 utt1	Uh huh.
+sd	A.15 utt1	I guess it depends on what channel you're getting. You know, what system you're getting it through.
+b	B.18 utt1	Uh huh.
+aa	B.20 utt1	Yeah.
+sd	B.20 utt4	I saw it one time
+sd	B.20 utt5	and I really liked it,
+sd	B.20 utt6	but I just haven't, you know, watched it since.
+sd	A.21 utt1	we always enjoyed it.
+sv	A.21 utt2	it seems to be kind of halfway between, something like ALL IN THE FAMILY and, HILL STREET BLUES.
+b	B.22 utt1	Yeah
+sv	A.23 utt2	it's a good show.
+aa	B.24 utt1	Yeah,
+sd	B.24 utt2	the episode that I watched, I liked him because even though he's a law enforcement officer, you know, sometimes the laws are kind of ridiculous and you need to sometimes break them to get your point across and for a good reason . / * Shouldn't this be a separately labelled slash unit, not a continuation of B.26?
+b	A.27 utt1	Yeah.
+b	A.29 utt1	Yeah.
+sv	B.30 utt1	And he seems to do that sometimes .
+sv	A.31 utt2	he's tender hearted fellow.
+aa	B.32 utt1	Yeah
+aa	A.33 utt1	Yeah.
+sd	A.33 utt2	I think that's what first drew us to him, the, the relationship between he and his wife kind of looks a lot like ours.
+b	B.34 utt1	Uh huh.
+b	B.36 utt1	Yeah,
+sd	B.36 utt2	I thought it was a pretty good show.
+b	A.37 utt1	Yeah,
+b	A.37 utt2	 Yeah,
+sd	B.38 utt1	I always like,
+sd	B.38 utt2	I like to watch like SIXTY MINUTES and TWENTY TWENTY.
+sd	A.39 utt2	I know we watch COMMISH any chance we get.
+b	B.40 utt1	Uh huh.
+sd	A.41 utt1	used to be a big fan of STAR TREK,
+sv	A.41 utt2	but that's kind of, th , th ,
+sv	A.41 utt3	it's gotten more and more to where they are so totally against, anything spiritual.
+b	B.42 utt1	Uh huh.
+sd	B.44 utt1	I've never gotten into the STAR TREK era .
+b	A.45 utt1	Yeah,
+sd	A.45 utt2	I used to be a real big fan of STAR TREK.
+qy^g	B.46 utt1	Used to be a Trekie, huh ?
+ny	A.47 utt1	pretty much, yeah.
+b	B.48 utt1	Uh huh.
+sd	A.49 utt1	I always enjoyed the show anyway .
+b	B.50 utt1	Yeah.
+sd	A.51 utt1	And STAR TREK's in a s , or the, STAR WARS set
+b	B.52 utt1	Uh huh.
+qy^d	A.53 utt1	one of the first STAR WARS movie?
+ny	B.54 utt1	Yeah.
+sd	A.55 utt1	I think I watched it like nineteen times.
+ba	B.56 utt1	my goodness.
+sd	B.56 utt2	You must have some of their lines memorized .
+sd	A.57 utt1	I did at one time .
+sd	A.59 utt1	Anyway, I was a pretty big fan of that sort of thing.
+ba	B.60 utt1	Wow .
+b	B.62 utt1	Yeah.
+sd	A.63 utt1	used to read a lot of science fiction work, too.
+b	B.64 utt1	Uh huh.
+ar	A.65 utt1	But, no,
+sd	A.65 utt3	we don't do a whole lot of T V watching,
+sd	A.65 utt4	but I don't know if you heard them or not, I got a twelve year old, twelve week old baby.
+b^m,sd,o@	B.66 utt1	Twelve week, I was going to say, I hear a baby in the background . / * B.66 and 68 2 slash units?
+b	A.67 utt1	Uh huh.
+aa	A.69 utt1	Yeah,
+sd	A.69 utt3	between that and school it's not ,
+sv	B.70 utt1	I imagine that keeps you busy .
+sd	A.73 utt1	Between him and school, there's not much time left for watching much T V.
+b	B.74 utt1	Yeah.
+sd	B.76 utt1	Well, we're expecting our first in about three months,
+sd	B.76 utt2	so I know we won't be watching as much as we do now .
+b	A.77 utt1	Yeah,
+sd	A.77 utt2	this one here is our first.
+sd	A.77 utt3	And we're both full time students
+ba	B.78 utt1	wow.
+b	A.79 utt1	Yeah.
+sv	B.80 utt1	That must be tough.
+qr	A.81 utt1	What are you hoping for, a boy or a girl?
+sd	B.82 utt1	It doesn't matter, just a healthy baby.
+sv,qy^g@	A.83 utt1	that's, that's the best way, you haven't found out yet or anything, have you? / * Looks like this should be 2 slash units, with their respective labels shown here.
+na	B.84 utt1	Well, we had a sonogram,
+sd	B.84 utt2	but we told him not to tell us,
+sd	B.84 utt3	so it's going to be a surprise .
+b	A.85 utt1	Yeah.
+sv^r	A.87 utt1	That's the best way.
+b	B.88 utt1	Yeah.
+sv	A.89 utt1	I mean, it's like finding out somewhere in July what you're going to get for Christmas.
+sv	A.89 utt2	I mean, you know, It's not as much fun.
+aa	B.90 utt1	Yeah
+b	B.94 utt1	Yeah
+aa	B.96 utt1	I agree .
+sd	B.96 utt2	I'm sure we'll be watching more, children oriented television shows.
+sd	A.97 utt1	I'm about half kid at heart anyway.
+sd	B.98 utt1	I am, too.
+sd	B.100 utt1	I still watch cartoons sometimes, every once in a while , when my sister comes to visit
+sv	A.101 utt1	The new cartoons don't seem to be worth much,
+sv	A.101 utt3	well, a couple of the, ones Disney's doing aren't too bad
+sv	B.102 utt1	Well, you know, it seems like a lot of them are a lot more violent than they used to be.
+aa	A.103 utt1	yeah.
+sd	B.104 utt1	You know, I remember, like, the FLINTSTONES and the JETSONS
+sv	B.104 utt2	and those were just kind of good old cartoons.
+b	A.105 utt1	Yeah.
+sv	A.107 utt1	the, the worst of the violence in the FLINTSTONES was when somebody gave Fred a poke in the snoot.
+b	B.108 utt1	Yeah
+sv	A.109 utt1	But, shoot, I mean, blowing up galaxies and and putting a curse on the whole planet, or, or you know, on you know, everything of this species, you know, just all kinds of crud .
+b	B.110 utt1	Yep.
+aa	B.112 utt1	Yeah,
+sv	B.112 utt2	and they wonder why kids turn out the way they do nowadays .
+aa	A.113 utt1	Yeah,
+sv	A.113 utt2	everything's mutations and and killing
+b	B.114 utt1	Yeah.
+sv	A.115 utt2	and, Gone are the days of those things they use ,
+b	B.116 utt1	Uh huh.
+sd	A.117 utt2	what was it T N, Turner Broadcasting Network used to, do the Saturday morning and Sunday morning cartoons, the old cartoons. They used to put between the first and second feature at the theatre.
+b	B.118 utt1	Uh huh.
+sd	A.119 utt1	Those old little ten minute jobs where, the real ballooned looking art work, you know
+b	B.120 utt1	Uh huh.

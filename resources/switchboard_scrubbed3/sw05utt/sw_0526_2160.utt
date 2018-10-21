@@ -1,0 +1,164 @@
+fp	A.1 utt1	Hello.
+fp	B.2 utt1	Hello there.
+qy	A.3 utt1	Did I reach the Dallas area?
+br	B.4 utt1	I beg your pardon?
+qy^r	A.5 utt1	Did I reach the Dallas area?
+nn	B.6 utt1	No,
+sd^e	B.6 utt2	you've reached Dayton, Ohio.
+b^m	A.7 utt1	Dayton, Ohio,
+sd	A.7 utt2	I'm from North Carolina.
+sd	B.8 utt1	you're from North Carolina.
+qw	B.8 utt2	Where in North Carolina?
+sd	A.9 utt1	In Raleigh.
+b^m	B.10 utt1	Raleigh,
+ba	B.10 utt2	great.
+b	A.11 utt1	Yeah,
+sd	B.12 utt1	Well, my name's Mary.
+fo	B.14 utt1	Fernando, glad to know you.
+qw^t	A.15 utt2	how'd you find out about this?
+sd^t	B.16 utt1	I was visiting my son down in Dallas,
+bk^t	A.17 utt1	okay,
+bf^t	A.17 utt2	he works for T I.
+nn^t	B.18 utt1	No,
+nn^r^t	B.18 utt2	no,
+sd^e^t	B.18 utt3	but his wife has a contract with T I,
+sd^t	B.18 utt4	and that's how we learned about it,
+bk	A.19 utt1	okay,
+sd	A.19 utt2	because I'm down at N C State.
+b	B.20 utt1	Yeah,
+b	B.20 utt2	uh huh.
+sd	A.21 utt1	And so I took a class,
+sd(^q)^t	A.21 utt2	and he said, sign up and get some money and just talk for five minutes.
+ba	B.22 utt1	Right .
+qy^t	A.23 utt2	So are you ready?
+na^t	B.24 utt1	I'm ready.
+ad^t	A.25 utt2	let's get started.
+aa	B.26 utt1	All right,
+aa	B.26 utt2	okay.
+qo	A.27 utt2	so, what do you think, that,
+qo	A.27 utt3	what do, what do you think we can do to solve the crime in America?
+sv	B.28 utt1	if I knew that I'd be a very wealthy person.
+b	A.29 utt1	Yeah,
+qo	A.29 utt2	but what, what are the steps?
+sv	B.30 utt1	Well, you have to see,
+o*	B.30 utt2	the way I look at it, you have to think first of all why, / * listen
+qh	B.30 utt3	or has crime increased,
+qh	B.30 utt4	and if so, why has crime increased?
+sv	A.31 utt1	Well, see the problem is that, what happens is that you know, as you go from the country to a city, crime always increases, right?
+b	B.32 utt1	Uh huh.
+sv	A.33 utt1	Because in the country, people still respect, the property of other people.
+b	B.34 utt1	Right.
+sv	A.35 utt2	and the people in the country don't want as much as the people in the city.
+b	B.36 utt1	Uh huh.
+sv	A.37 utt1	Now what happens is all those that don't have any money in the country move to the cities,
+sv	A.37 utt2	and they rush to get the same thing.
+sv	A.37 utt3	They say, why can't we have the same things that these other people have,
+sv	A.37 utt4	and the thing that we can do is, we need money for drugs,
+sv	A.37 utt5	and what we have to do is, we have to go, get some stuff, steal it, and then, you know, just resell it.
+bf	B.38 utt1	It's easy,
+sv	B.38 utt2	you said the magic word there.
+qw	A.39 utt1	Which one?
+sd	B.40 utt1	Drugs.
+b	A.41 utt1	Yeah.
+sv	B.42 utt1	And that certainly is one reason why crime here has increased.
+sv	A.43 utt1	that's, the main reason I think, everywhere
+sv	A.43 utt2	because, you have deaths.
+sv	A.43 utt3	I mean, I mean, you have murders
+sv	A.43 utt4	and you have, you know, people stealing other people's stuff,
+sv	A.43 utt6	a lot of it has to do with drugs.
+aa	B.44 utt1	yes.
+sv	A.45 utt2	I mean, the thing is that, you know, it's like you might be standing somewhere, right,
+sv	A.45 utt3	and like let's say you're, you're, you know, you're driving out
+sv	A.45 utt4	and you're driving back home
+sv	A.45 utt5	and it's late at night.
+sv	A.45 utt6	And you stop by one of these, you know, twenty four hour, you know, gas stations joints.
+b	B.46 utt1	Yeah.
+sv	A.47 utt1	And, somebody walks in there with a gun.
+sv	A.47 utt2	I mean, they're going to want the money,
+sv	A.47 utt3	and you can tell by the people who are always caught, that these people are there to get money for drugs.
+sv	A.47 utt4	I mean, they don't want the money so they can do something else with it.
+aa	B.48 utt1	No,
+sv	B.48 utt2	they don't want the money for food,
+sv	B.48 utt3	that's for sure.
+aa	A.49 utt1	Right,
+aa	A.49 utt2	right,
+sv	B.50 utt1	Well, but you know, the perhaps, not strange, but something that many people don't realize, is that you can go back as far as nineteen fifty one and fifty two and find that there were drug dealers at that time trying to influence the high school kids,
+sd	B.50 utt2	because, I'm a retired educator.
+bk	A.51 utt1	Okay .
+sd	B.52 utt1	And, in fifty one and fifty two, the police came to the high school where I was and were telling us how to recognize when kids were on drugs, how to recognize the pushers outside the one entrance, that they were giving their drugs away in order to get the kids started, and so on, and so on.
+b	A.53 utt1	Yeah.
+sv	B.54 utt2	So it's a problem that's been around for over forty years,
+sv	B.54 utt3	and we're just really, now, trying to, figure out how to cope with the problem because it has grown so huge.
+b	A.55 utt1	Yeah,
+sd	A.55 utt2	there's a, a song that I know which says, you know, tha ,
+sd	A.55 utt3	it's like, in, nineteen eighty eight, nineteen eighty nine, the local, state, and federal governments spent the least amount of money on crime in America,
+sv	A.55 utt4	and, their figures, I think are so
+sv	A.55 utt5	I mean it's like, you know, compared to, weapons or stuff like that, I mean, you're spending nothing on crime in the country itself.
+sv	A.55 utt7	it's like, you have other things, you know,
+sv	A.55 utt8	you have the AIDS
+sv	A.55 utt9	we're going to solve, try to solve the AIDS problem while, you know, some people are getting killed here and there
+b	B.56 utt1	Uh huh.
+b	B.58 utt1	Yeah
+sv	B.58 utt2	and another one of the problems is that the people who are the dealers, the big dealers in drugs, may be part of the power structure that's keeping us from spending the money in that direction.
+b	A.59 utt1	Uh huh.
+sv	A.61 utt1	But those people never get caught.
+aa	B.62 utt1	That's right,
+sv	B.62 utt2	they'll never get caught.
+sv	A.63 utt2	see, their theory is that if I'm surrounded, and I'm going to be caught, I'm going to try to find my way through,
+sv	A.63 utt3	and they're not going to take me alive.
+b	B.64 utt1	Uh huh.
+sv	A.65 utt1	But I have such a big army outside of my place, that nobody can touch me.
+aa	B.66 utt1	That's right.
+sv	A.67 utt1	You know, it's like,
+sv	A.67 utt2	of course, I mean I might be, you know, the leading drug dealer here,
+sv	A.67 utt3	but you won't find me dealing in drugs,
+sv	A.67 utt4	I mean, there's no connection between me and the people that were caught, you know.
+aa	B.68 utt1	That's right.
+aa	B.70 utt1	That's right,
+sv	B.70 utt3	one person doesn't know the other person down the line.
+aa	A.71 utt1	Right.
+sv	B.72 utt1	But the guy at the very top, the one who's really making the millions and the millions is the one who also many times is part of the power structure, and had the political pull to keep the interest or the emphasis in some other direction, other than on the drug dealing,
+b	A.73 utt1	Yeah.
+sv	B.74 utt2	because it sure is monstrous in this country.
+b	A.75 utt1	Yeah,
+sd	A.75 utt2	I was at a party on Saturday,
+sd	A.75 utt3	and this guy comes over,
+sd(^q)	A.75 utt4	he goes, hey, how you doing,
+sd	A.75 utt5	he started talking to me,
+sd	A.75 utt6	and this guy was from Jamaica, right.
+b	B.76 utt1	Uh huh.
+sd	A.77 utt1	And he's got his little brother selling drugs .
+b	B.78 utt1	Uh huh.
+sd(^q)	A.79 utt1	You know, and he goes, yeah, I just came up here to work,
+sd(^q)	A.79 utt2	and I go, oh you did, you make very good money up here.
+sd(^q)	A.79 utt3	He goes, yeah, I make a lot, a lot of money,
+aa	B.80 utt1	Yeah,
+aa*	B.80 utt2	might. / * spelling??
+qy	A.81 utt1	Did you see it?
+nn	B.82 utt1	Nope,
+sd^e	B.82 utt2	I only heard about it.
+bk	A.83 utt1	Okay,
+sd	A.83 utt2	in one part, the guy goes out of jail,
+sd	A.83 utt3	and within, two months, he has all his house payments gone everything paid, you know,
+b	B.84 utt1	Uh huh.
+sd	A.85 utt2	and he had enough money to, you know,
+sd	A.85 utt3	it's like, those guys, at one point, you know, they had so much money that they didn't know what to do with it .
+b	B.86 utt1	Yeah,
+sv	B.86 utt3	even in our prison systems they're finding that they're having drugs smuggled into them.
+b	A.87 utt1	Yeah,
+b^r	A.87 utt2	yeah,
+sd	A.87 utt3	that, that was also in the movie.
+b	B.88 utt1	Right.
+b	A.89 utt1	Yeah.
+fp	A.89 utt2	So hello Mary.
+fc	B.90 utt1	Been nice talking with you.
+fc	@A.91 utt1	We've been talking for five minutes?
+fc	B.92 utt1	I beg your,
+fc	B.92 utt2	we've been talking for a little bit.
+fc	B.92 utt3	I appreciate the call.
+fc	B.92 utt4	I enjoyed talking with you.
+fc	A.93 utt1	All right, okay,
+fc	A.93 utt2	same here.
+fc	B.94 utt1	Uh huh,
+fc	B.94 utt2	bye bye.
+fc	A.95 utt1	Bye bye.

@@ -1,0 +1,88 @@
+qw	A.1 utt1	what sort of company do you work for?
+qr	A.1 utt2	Do you work for a big or a little place?
+sd	B.2 utt1	I work for Georgia Tech.
+o	B.2 utt2	Yes sir.
+sd	B.2 utt3	I work for the research facility.
+sd	B.2 utt4	and it's kind of small in a sense
+sd	B.2 utt5	but it does have, about, I guess, two thousand civil employees.
+b	A.3 utt1	Uh huh.
+sv	B.4 utt1	And, on a scale, I guess it's still considered small.
+sd	B.4 utt2	It just have a lot of different laboratories.
+b^r	A.5 utt1	Uh huh.
+sd	B.6 utt1	The area I work in, it primarily have maybe a hundred people or so.
+b^r	A.7 utt1	Uh huh.
+sd	B.8 utt1	So that's make up most of the laboratory
+sv	B.8 utt2	so from that standpoint, it's pretty small it's pretty small.
+b^r	A.9 utt1	Uh huh.
+qo	B.10 utt2	What about yourself?
+b	A.11 utt1	Huh.
+sd	A.11 utt2	Well, I work for, actually probably similar kind of place.
+sd	A.11 utt3	I work for, Lincoln Laboratory.
+bk	B.12 utt1	okay.
+b	A.13 utt1	yeah.
+sd	A.13 utt2	We actually do some work with some people down at Georgia Tech.
+bk^r	B.14 utt1	okay.
+b	B.14 utt2	I see.
+sd	A.15 utt2	so we're part, we're actually part of M I T.
+sv	A.15 utt3	So it's very much the same kind of place the technical institution.
+b	B.16 utt1	okay.
+b	B.18 utt1	Right.
+sv	A.19 utt1	while I was sitting here waiting while they tried to find somebody for me to talk to, trying to think of what things were important, besides salary and a job. I guess, list I had scribbled down was the people you worked with and maybe the challenge of the work and, the working conditions, things like that.
+b	B.20 utt1	Uh huh.
+b	B.22 utt1	Right.
+h	A.23 utt1	I don't know.
+qw	A.23 utt2	what sorts of things would you consider important?
+sd	B.24 utt1	Well those and probably the security aspect of it.
+b	A.25 utt1	Uh huh.
+sd	B.26 utt1	Because a lot of time nowadays, even though you're working, you're treated,
+h	B.26 utt2	and it may not be true in every place.
+sv	B.26 utt3	In a lot of cases I think you're treated more like a number instead of a person.
+b^r	A.27 utt1	Uh huh.
+sv	B.28 utt1	Because when it come down to layoff, they don't really consider people and, you know, their well being as far as, you know, how their next dollar going to come in.
+qh	B.28 utt2	How they going to pay their bills.
+sd	B.28 utt3	They just lay them off.
+b	A.29 utt1	Yeah.
+sd	B.30 utt1	And I was reading this book one time about this guy that had,
+sd	B.30 utt2	I think the company still exists.
+sd	B.30 utt3	What they use to do is, they used to cut the number of hours for everybody as opposed to just laying people off you know.
+b	A.31 utt1	Uh huh.
+sd	B.32 utt2	That way that, you know, one person wouldn't get one big blunt blow at one time.
+b^r	A.33 utt1	Uh huh.
+sv	B.34 utt1	And, you know, I think if they had programs that set up to subsidize people that do get laid off a little bit better, you know, other than you know, something like,
+sv	B.34 utt2	unemployment is good
+sd	B.34 utt3	but I mean the company as a whole
+sd	B.34 utt4	because you as an employee, even the company is making money,
+sd	B.34 utt5	they paying you a salary
+sv	B.34 utt6	but you are responsible for that company growth.
+sv	B.34 utt7	You're responsible also for helping that company get to the point that it's at at making profits.
+sv	B.34 utt8	So there should be something in there or some kind of clause that will subsidize people if they did lose their job other than, you know, neglect or something like that.
+b^r	A.35 utt1	Uh huh.
+sv	B.36 utt1	You know. Because it's not a person's fault that, you know, people not buying or businesses are not on the up and up all the time, you know.
+sv	B.36 utt2	I don't see how one or two people, maybe more one or two, but, you know, a number of people can be the downfall of a company situation.
+qo	A.37 utt1	Now how do you mean that?
+qw^d	B.38 utt1	Well in a sense that say, how do you make a conclusion that you're going to lay off these ten people. for the bad times of the company.
+b	A.39 utt1	Uh huh.
+qw^d	B.40 utt2	What about the work effort those ten people did when the company was doing well.
+b	A.41 utt1	Uh huh.
+qy	A.43 utt1	Well, you think it's better than to try to spread the effort equally among all the employees of the company
+ny	B.44 utt1	yes,
+sd^e	B.44 utt2	I do.
+b	A.45 utt1	Uh huh.
+sd	B.46 utt1	I really do.
+sv	B.46 utt2	I think it'd be better that way
+sv	B.46 utt3	and even at that, it would at least give the person time to look for another job because they know that there are problems
+b^r	A.47 utt1	Uh huh.
+sv	B.48 utt2	and, you know, there are reason to look for another job instead of just dumping it on them all at one time.
+b	A.49 utt1	Yeah.
+b	A.51 utt1	Uh huh.
+h	B.52 utt1	You know. that's my views, you know.
+b	A.53 utt1	Yeah.
+sd	A.53 utt2	I've heard of a couple of companies that have done that.
+sd	A.53 utt3	I think, back about, a few years ago when things were tough, Hewlett Packard did that for awhile.
+sd	A.53 utt4	They went to a, a four and a half day work week rather than yeah, just cut everybody back ten percent. And, have to, give everybody a half day a week off.
+b	B.54 utt1	Right.
+b^r	B.56 utt1	Right.
+b^r	B.58 utt1	Right.
+sv	A.59 utt1	And I think you can do that for a little while
+sv	B.60 utt1	Well at least that would give a person a chance to look you know. Because the way it is, a person really don't have a chance .
+b	A.61 utt1	Yeah.

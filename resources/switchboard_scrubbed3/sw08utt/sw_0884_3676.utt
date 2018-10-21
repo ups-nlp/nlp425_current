@@ -1,0 +1,104 @@
+qw	A.1 utt1	What kind of movies have you been seeing lately?
+sd	B.2 utt1	it's been probably a month or so since I've been to the movies.
+sd	B.2 utt2	Course, my favorite now is DANCES WITH WOLVES.
+sd	A.3 utt1	it's an excellent movie.
+sd	B.4 utt1	SILENCE OF THE LAMBS was good.
+b^m	A.5 utt1	SILENCE OF THE LAMBS?
+ny	B.6 utt1	Uh huh.
+qw	A.7 utt1	What was that anyway?
+sd	B.8 utt1	I guess it's a mystery, you'd call it.
+sd	B.8 utt2	It's with, Jodie Foster.
+bk	A.9 utt1	Okay.
+sd	B.10 utt1	And it's pretty good.
+sd	B.10 utt2	Another one that I think I really liked was, THE FISHER KING.
+b	A.11 utt1	Uh huh.
+^h	A.11 utt2	Let's see,
+t1	A.11 utt3	who was in FISHER KING?
+sd	A.11 utt4	That was, Robin Williams
+sd	A.11 utt5	and, and, I can't the last name.
+b	B.12 utt1	Right.
+qo	B.14 utt1	How about you?
+qw	B.14 utt2	What are you?
+sd	A.15 utt1	we've not been having many opportunities to see movies lately.
+sd	A.15 utt2	we really enjoyed, DEAD POETS' SOCIETY.
+b	B.16 utt1	Yes.
+sd	A.17 utt1	several years back one we saw we really, really enjoyed was, ORDINARY PEOPLE, with, Timothy Hutton and, Mary Tyler Moore,
+t1	A.17 utt2	and, who played the father, anyway
+b	B.18 utt1	Right.
+sd	A.19 utt1	excellent movie.
+sd^m	B.20 utt1	that was an excellent movie.
+qy	B.20 utt2	Have you seen DANCES WITH WOLVES?
+ny	A.21 utt1	Yes
+sd^e	A.21 utt2	we have.
+qw	B.22 utt1	What'd you think of it?
+sd	A.23 utt1	we loved it.
+sd	B.24 utt1	I don't think I can see it enough times.
+ba	A.25 utt1	I know what you mean.
+ba^r	A.25 utt2	I know what you mean.
+sd	B.26 utt1	Course I'm a Kevin Costner fan.
+b	A.27 utt1	Yeah,
+sd	A.27 utt2	I'm pretty impressed with stuff he's done.
+sd	A.27 utt3	he made kind of an odd sounding ROBIN HOOD,
+sv	A.27 utt4	but, I mean, you know, basic thick western U S accent for a ROBIN HOOD just doesn't seem to fit.
+aa	B.28 utt1	No,
+sd	B.28 utt2	but you know, it wasn't a bad movie.
+aa	A.29 utt1	no.
+sd	A.29 utt2	It's a good movie.
+sd	B.30 utt1	It got such bad reviews,
+sd	B.30 utt2	really, and I thoroughly enjoyed it.
+sd	B.30 utt3	But then I wasn't expecting any classic either.
+sv	A.31 utt1	Well, they did a real good job with it.
+aa	B.32 utt1	I thought so.
+sd	A.33 utt1	they didn't try to make him super human or, you know, invincible.
+sd	A.33 utt2	They just,
+sd	A.33 utt3	he worked hard at it.
+qy	B.34 utt1	Have you seen THE FISHER KING?
+nn	A.35 utt1	No
+sd^e	A.35 utt2	I haven't, an opportunity to see that,
+sv	B.36 utt3	I guess it really isn't for everybody.
+sd	B.36 utt4	It's, it's pretty deep and, philosophical.
+b	A.37 utt1	Yeah.
+sv	B.38 utt1	But I thought it had a wonderful message to it. It's the kind you came out and looked at somebody and said, You know, I think I liked that .
+b	A.39 utt1	Yeah.
+sd	B.40 utt1	And then the more you got to thinking about it, the more you thought, You know, I did like it .
+b	A.41 utt1	Yeah.
+sv	B.42 utt1	But when you first came out, you weren't real sure.
+sd	A.43 utt1	It sounds kind of like one, we saw at home here rented it, CLARA'S HEART.
+sd	B.44 utt1	Haven't seen that.
+sd	A.45 utt1	Whoopi Goldberg.
+ny	B.46 utt1	yes,
+sd^e	B.46 utt2	I did,
+ny^r	B.46 utt3	yes,
+sd^r	B.46 utt4	I did.
+sd	A.47 utt1	And she played a,
+sd	A.47 utt3	she's a housekeeper.
+bf	B.48 utt1	the nanny type.
+aa	A.49 utt1	Yeah,
+sd^r	A.49 utt2	she's a housekeeper
+sd	A.49 utt3	she. She was now I can't say it, a Haitian.
+b^m	B.50 utt1	Housekeeper, uh huh.
+sd	A.51 utt2	Anyway, she seemed to be that sort of person that seems half crazy,
+sd	A.51 utt3	but then again, she's got a whole lot on the ball,
+sd	A.51 utt4	and the movie had the whole, lot of philosophical content, more than, you know,
+sd	A.51 utt5	it wasn't a mystery,
+sd	A.51 utt6	it wasn't, you know, blood and guts and violence and car chases type thing.
+sd	A.51 utt7	It was just a good movie.
+sd	B.52 utt1	I saw one the other day that was A KISS BEFORE DYING.
+b^m	A.53 utt1	A KISS BEFORE DYING.
+ny	B.54 utt1	Uh huh.
+sd	B.54 utt2	I had not heard about it when it was on the movies, but was out on video.
+sd	B.56 utt1	And it's with Sean Young.
+b	A.57 utt1	Yeah.
+sd	B.58 utt1	And it's a mystery.
+sd	B.58 utt2	It was very predictable,
+sd	B.58 utt3	I mean, you knew when the murder was going to happen or something,
+sd	B.58 utt4	but it was still so well done that it was enjoyable.
+b	A.59 utt1	Yeah.
+sv	A.61 utt1	that takes a good bit to make one that's predictable that's still worth watching.
+aa	B.62 utt1	That's right.
+sd	B.62 utt3	I like the, I think it's called the, RAZOR'S EDGE,
+nn	B.62 utt4	but, no
+nn^r	B.64 utt1	no,
+sd^e	B.64 utt2	the JAGGED EDGE,
+sd^r	B.64 utt3	the JAGGED EDGE with,
+b	A.65 utt1	okay .

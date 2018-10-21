@@ -1,0 +1,256 @@
+o	A.1 utt1	Okay,
+qw	A.1 utt2	what kind of car are you thinking about buying next?
+t1	B.2 utt1	Well, what do we currently have,
+sd	B.2 utt2	I have a Subaru, G O X T.
+qw	A.3 utt1	What year?
+sd	B.4 utt1	Eighty eight.
+bk	A.5 utt1	okay.
+sd	A.5 utt2	Well, I have a ninety Honda Civic,
+sd	A.5 utt3	and I'm ready to get rid of it .
+sv	B.6 utt1	it's not pretty old.
+aa	A.7 utt1	No,
+sd	A.7 utt2	well, I had an eighty eight that I really liked
+sd	A.7 utt3	and it got wrecked,
+sd	A.7 utt4	and so I bought a ninety, because I really liked my eighty eight
+sd	A.7 utt5	and I've had a lot of problems with this one,
+qy	B.8 utt1	So, you think their quality control's going down over there, kind of ?
+^h	A.9 utt2	it's kind of funny,
+sv	A.9 utt3	I know a lot,
+sv	B.10 utt1	Well, I, I think we're going to see that I think, that the quality that the Japan carmakers had is slipping a little bit, while American carmakers are trying to get their, put together,
+b	A.11 utt1	Oh.
+b	A.13 utt1	Yeah.
+aa	A.15 utt1	it's true,
+aa^r	A.15 utt2	it's definitely true because,
+sd	B.16 utt2	I've had no problems with my Subaru,
+sv	B.16 utt3	that's one reason I went with it because Subaru had a good reputation, for, you know, low maintenance,
+aa	A.17 utt1	Yeah,
+sv	A.17 utt2	well, Honda does too , that's why I was really,
+b	B.18 utt1	Well, really,
+sv	B.18 utt2	there's no question
+sd	B.18 utt5	I mean, I've seen and I've had friends that have, like, eighty one or eighty, Celicas,
+b	A.19 utt1	Uh huh.
+sd	B.20 utt1	and those things just keep ticking.
+b	A.21 utt1	Yeah.
+sd	B.22 utt1	I mean, they can rack up a hundred fifty K on them,
+aa	A.23 utt1	That's true.
+sd	B.24 utt1	and they're still beating on them,
+aa	A.25 utt1	That's true.
+sv	B.26 utt1	and it's just amazing
+sv	B.26 utt3	and you know they're not making them like that now, you know,
+aa	A.27 utt1	No,
+aa	A.29 utt1	not at all.
+sv	B.30 utt1	but they're still a lot, I think, definitely better than the American carmaker system .
+aa	A.31 utt1	I definitely agree with you there, , because I had, Ford T Bird before I got my Honda,
+sd	A.31 utt2	and it was the worst car I've ever owned ,
+b	B.32 utt1	Yeah.
+sd	A.33 utt1	and, that's why, I mean, I was so tickled with my Honda
+sd	A.33 utt2	it was just a wonderful car
+sd	A.33 utt3	and then it got wrecked
+sd	A.33 utt4	and, you know, I wouldn't even look at another car ,
+b	B.34 utt1	Yeah.
+sd	A.35 utt1	I just went and bought a Honda, I mean, I didn't look around or anything I just said that this is what I want, ,
+sd	A.35 utt2	and I really have had a lot of problems with it,
+h	A.35 utt3	but I don't know.
+sv	B.36 utt1	Well, maybe you need to unload it on somebody el , .
+sd	A.37 utt1	Well, I'll probably hold on to it since it's still under warranty
+sd	A.37 utt2	but in the first twelve months that I owned it, it was in the shop an average of about once a month, ,
+sd	A.37 utt3	it was in the shop about twelve times the first twelve months .
+b	B.38 utt1	Yeah,
+ba	B.38 utt2	that's a lot.
+aa	A.39 utt1	Yeah,
+aa	A.39 utt2	it was,
+sd	A.39 utt3	I was really disappointed because I was, you know, so, hyped up on Honda,
+b	B.40 utt1	well.
+b	A.41 utt1	Yeah.
+b	B.42 utt1	Anyway,
+qw	B.42 utt2	so, what's your next purchase supposed to be?
+b	B.44 utt1	really ,
+qw	B.44 utt2	if you had a choice of your car, what would you get?
+nd	A.45 utt1	Well, this is going to sound really strange, ,
+nd	A.45 utt2	but I really like to have a Mazda M P V van, ,
+sd	A.45 utt3	I really like those
+sd	A.45 utt4	and I have kids,
+qw^d	B.46 utt1	I'm not sure I'm real familiar with the body style on that.
+sd	A.47 utt2	I don't like the new style, like of the Toyota van, and the new Chevy Lumina van,
+b	B.48 utt1	Uh huh.
+b	B.50 utt1	Uh huh.
+sd	A.51 utt1	I don't like those styles, the M P V is more of, just, I don't know what you, normal, ,
+sd	A.51 utt2	I don't know how to explain, more of an old fashioned type.
+sd	A.51 utt3	I'm not sure how to explain it,
+b	B.52 utt1	Yeah.
+sd	A.53 utt1	I mean it looks, I guess, kind of like, the Chevy Aerostar or Arrow,
+b	B.54 utt1	Yeah.
+ar	A.55 utt1	no,
+sd	A.55 utt3	Astro, I guess, is what it, something like that,
+bk	B.56 utt1	okay,
+sd	A.57 utt2	but I used to really like the looks of the M P V because it looks more like a mini van rather than I think,
+qy	B.58 utt1	do you have a family?
+ny	A.59 utt1	Yeah,
+sd^e	A.59 utt2	I have a couple kids .
+bk	B.60 utt1	Okay,
+sv	B.60 utt2	well, that's probably influenced maybe a little bit .
+aa	A.61 utt1	yeah, ,
+aa	A.61 utt2	definitely.
+sd	A.61 utt3	But, I know that it's got to have a radio, it's got to have air conditioning, ,
+qy^d	A.61 utt4	I'm sure you can, relate to air conditioning . living in Arizona,
+ny	B.62 utt1	yeah.
+sd	A.63 utt2	but, and cruise control and tinted windows, that's about it, .
+sd	A.63 utt3	I mean, it's got to have those things, otherwise, I don't care.
+b	B.64 utt1	Yeah,
+sd	B.64 utt2	well, when I bought my car, it was right out of college
+sd	B.64 utt3	and, you know, I always been looking for something sporty
+sd	B.64 utt4	and I ended up getting, you know, basically something that I could, you know, afford.
+b	A.65 utt1	Uh huh.
+sd	B.66 utt1	The only gripe I have is performance.
+sd	B.66 utt3	a few girls that I've gone out with, I've had, like Mazda R X seven's and stuff
+sd	B.66 utt4	and they're pretty fun to drive,
+sd	B.66 utt5	so, so, I think that's what, I'm going to have to get next time around, I keep holding off
+b	A.67 utt1	Yeah.
+bh	A.69 utt1	really?
+sd	B.70 utt2	and then I could upgrade now if I wanted to
+sv	B.70 utt4	it's just such a huge expense
+sd	B.70 utt5	and, I'm just going to keep holding off
+sd	B.70 utt6	but I'm definitely going to look for something, in the, you know, nice, perpor , you know,
+^2	A.71 utt1	Sports car .
+sd	A.73 utt1	I'd like to have a sports car too,
+sd	A.73 utt2	but it's not practical for me,
+b	B.74 utt1	Yeah .
+qy^c	B.74 utt3	are you still there?
+ny	A.75 utt1	Yeah.
+ba	A.75 utt2	Whoops.
+sv^c	A.75 utt3	There's some kind of problems.
+qy^c	A.75 utt4	Hello,
+qy^c^r	B.76 utt1	Hello.
+qy^c	A.77 utt1	are you still there?
+na	B.78 utt1	Okay.
+sv^c	A.79 utt2	something's wrong.
+qw^d^c	B.80 utt1	Wonder what happened.
+no	A.81 utt1	I don't know,
+qy^g^c	A.81 utt2	it sounds funny though, doesn't it?
+sd	B.84 utt2	it just depends,
+sd	B.84 utt3	I know that's what I want,
+sd	B.84 utt4	but I don't know if I'll get myself to spend that kind of money,
+sv	B.84 utt5	you're looking you know, for a new R X seven or, a Supra or something,
+sv	B.84 utt6	you're looking at twenty five K or something, that like
+aa	A.85 utt1	at least,
+aa	A.85 utt2	yeah,
+sd	B.86 utt2	and so, anyway but, Anyway my ultimate car though, the one that I really want is, five sixty or so, Mercedes,
+sv	A.87 utt1	I know, well, new cars aren't cheap anyway,
+sv	B.92 utt1	maybe someday .
+aa	A.93 utt1	Yeah,
+qy^g	A.93 utt2	we all have those kind of dreams too, don't we?
+ny	B.94 utt1	Yeah.
+sd	B.96 utt1	That's the only one that I, you know,
+qy^c	B.96 utt2	you know, I see, you know, early on that, that says, , it says, you there?
+ny	A.97 utt1	Yeah.
+sv^e	A.97 utt2	This is strange.
+qy^c	B.98 utt1	Hello.
+qy^c^r	A.99 utt1	Hello,
+sv^c	A.99 utt2	I think, something's wrong with this.
+b	B.100 utt1	Okay.
+sd^t	A.101 utt2	I hope it's recording .
+sd	B.102 utt1	I hope it's not my ,
+qy	B.102 utt2	, you there?
+ny	A.103 utt1	Yeah .
+sv	B.104 utt1	It may be my phone,
+sv(^q)	B.104 utt2	anyway it's the only car that says, you know, sporty and class,
+aa	A.105 utt1	Yeah,
+aa	A.105 utt2	you're right .
+aa^r	A.105 utt3	Yeah.
+sd	B.106 utt3	at the other one my brother's got a Miata
+sv	B.106 utt4	and those are fun.
+sv	A.107 utt1	those are nice,
+b	A.109 utt1	yeah,
+sv	A.109 utt2	they're cute cars .
+aa	B.110 utt1	Yeah,
+sd	B.110 utt2	well, he had a red Miata,
+b	A.111 utt1	Uh huh.
+sd	B.112 utt2	they came out with a European racing, green, Miata that's a limited edition,
+b	A.113 utt1	Oh.
+sd	B.114 utt1	they're only going to make like three or four thousand.
+sd	B.114 utt2	So, he went out
+sd	B.114 utt3	and he traded the other one in and got this one,
+sd	A.115 utt1	Wow, I haven't seen those.
+sd	B.116 utt1	and I'm like, , but, I haven't seen one yet either
+sd	B.116 utt2	but supposedly they have some real wood built in to like the clutch and all this and the steering wheel,
+ba	A.117 utt1	Wow.
+sd	B.118 utt1	so, it's very authentic
+sv	B.118 utt2	and there only is supposed to be limited edition so it may be a good investment.
+aa	A.119 utt1	yeah,
+aa	A.119 utt2	definitely.
+b	B.120 utt1	Yeah.
+sv	A.121 utt1	no matter what it is, if it's a limited edition, it's usually worth something later on.
+aa	B.122 utt1	Uh huh.
+qy^c	B.122 utt3	hello,
+ny	A.123 utt1	Yeah.
+bk	B.124 utt1	okay,
+sd	B.124 utt3	I got off my pace or my cordless phone, anyway, hope it's not going bad, ,
+b	A.125 utt1	Oh.
+sd	B.126 utt2	it's going to bump me out.
+sd	B.126 utt3	but I think he, he only spent, you know, the low twenty's
+h	B.126 utt4	so, I don't know.
+bh	A.127 utt1	Really?
+sv	A.129 utt1	Now, see, I would have figured that to be a lot more than that for something that's limited edition.
+h	B.130 utt1	Well, I don't know,
+sd	B.130 utt2	I think the demands gone all, down a little bit.
+sd	B.130 utt3	I think you can,
+sd	B.130 utt4	the prices aren't as high, you know,
+sd	B.130 utt5	and the Miata was first introduced,
+qy^g	A.131 utt1	And, well , they weren't really that bad though when they were introduced were they?
+ny	B.132 utt2	yeah,
+sd^e	B.132 utt3	the demand is so, high that, you know, they were going to retail them around like you know, thirteen standard, you know,
+sd	B.132 utt4	and you get your options, your looking at fifteen or si , fifteen
+aa	A.133 utt1	Yeah.
+aa	A.135 utt1	That's true.
+sd	B.136 utt2	but there were, you know, people were buying them for nineteen and twenty,
+b	A.137 utt1	Uh huh.
+sd	B.138 utt1	and, they may have gone down a little bit
+sd	B.140 utt3	they're still pretty much in demand.
+sd	B.140 utt4	I think there's another car coming in,
+sd	B.140 utt5	it's supposed to come out and compete with that Miata,
+sd	B.142 utt1	and I can't remember what I read about that
+sv	B.142 utt3	I mean, I would think somebody would try to compete with that because it is very popular,
+aa	A.143 utt1	Yeah,
+aa	A.143 utt2	it really is.
+qy	A.145 utt1	Have you seen the new, Dodge Stealth? the, real nice one .
+ny	B.146 utt1	yeah.
+ny	B.148 utt1	yeah,
+sv^e	B.148 utt2	and the Mitsubishi, three thousand G T , is the same.
+b	A.151 utt1	Yeah.
+aa	A.153 utt1	Yeah,
+sv	A.153 utt2	the Mitsubishi is real nice looking too,
+aa	B.154 utt1	Yeah,
+sd	B.154 utt2	well, that's, that's the same manufacturer
+sv	A.155 utt1	now those are nice .
+sd	B.156 utt2	st , so , they just market them.
+b	A.157 utt1	Right.
+b	A.159 utt1	Right.
+b	B.160 utt1	But, yeah,
+sd	B.160 utt2	and those are supposed to be very performance power, I mean, they're, there is, yeah, big time.
+sd	A.161 utt1	The expensive ones, they have a cheaper model too that you can get for about seventeen thousand,
+sd	A.163 utt2	but those are pretty stripped,
+sd	A.163 utt3	and there's nothing,
+sd	A.163 utt5	that one's just more for looks, you know,
+sd	A.163 utt6	it doesn't have really the performance that the expensive one does.
+b	B.164 utt1	Yeah.
+sd	A.165 utt1	You know, but I've seen one of those,
+sd	A.165 utt2	and it's not that great, I mean, because they really,
+sd	B.166 utt1	I think they're only around, twenty nine K.
+b	A.167 utt1	Yeah,
+sd	A.167 utt3	like, I mean they have, better ,
+sd	A.167 utt4	it's not quite as nice for a little bit less.
+b	B.168 utt1	Yeah.
+b^m	A.169 utt1	Yeah,
+sd	A.169 utt2	they're not really that bad
+h	A.169 utt3	but I don't know,
+sd	A.169 utt4	like I said it's still not practical for me .
+sd(^q)	A.169 utt5	I have a hard time looking at cars like that because I think, now, there's no way I can do that .
+b	B.170 utt1	Yeah,
+sd	B.170 utt2	I'm being single
+sd	B.170 utt3	and no other responsibilities for yourself, I guess, you know, it's, I can, I can, I've been pretty happy,
+b	A.171 utt1	Right.
+sd	B.172 utt2	I've, haven't tried to upgrade myself right now,
+sd	B.172 utt3	that's, you know, I could have, you know, get something nice and upgrade
+sd	B.172 utt4	but I'm consulting right now,
+bh	A.173 utt1	really?
+sd	B.174 utt1	I just made my first job hop about eight months ago,

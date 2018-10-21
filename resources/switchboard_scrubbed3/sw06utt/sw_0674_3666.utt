@@ -1,0 +1,207 @@
+fp	A.1 utt1	Hello.
+fp	B.2 utt1	Yes,
+sd^t	B.2 utt2	I forgot we had to hit one .
+sd^t	B.4 utt1	Our time will be up.
+sd^t	A.5 utt1	Well, I hit one and nothing happened.
+qw	A.5 utt2	What's going on?
+sd	B.6 utt1	Well, just go ahead and talk,
+sd	B.6 utt2	that's all.
+qy	A.7 utt1	Are you sure?
+ny	B.8 utt1	Yeah.
+qy^t	A.9 utt1	Don't they usually tell you to say something?
+ng	B.10 utt1	I don't think so.
+b	A.11 utt1	Oh.
+b	B.12 utt1	Uh huh.
+b	A.13 utt1	Okay,
+sd	A.13 utt2	we're supposed to talk about lawn and garden.
+aa	B.14 utt1	Yes,
+sd	B.14 utt2	I'm supposed to find out what you do for your lawn and garden.
+qy	A.15 utt1	What do I do?
+ny	B.16 utt2	Uh huh.
+sd	A.17 utt1	Well, I cut it occasionally.
+b	B.18 utt1	Good.
+b	B.20 utt1	Uh huh,
+sd	B.20 utt2	you're ahead of me.
+qy	A.21 utt1	is that good?
+na	B.22 utt1	That's better.
+sd	A.23 utt1	And I edge it occasionally.
+ba	B.24 utt1	that's really good.
+b	A.25 utt1	Yeah,
+qh	A.25 utt2	see, am I good, or what?
+b	B.26 utt1	Yeah.
+sd	A.27 utt1	And, much beyond that I don't do .
+sd	B.28 utt1	I don't do any of that.
+b	B.30 utt1	Really,
+sd	B.30 utt2	well, I call my lawn man, Eric, whatever his name is, I can't remember. Who's going to come and build me a fence, too.
+b	A.31 utt1	Uh huh.
+qy^d	A.33 utt1	he is going to build you a fence.
+no	B.34 utt1	Well, he's giving me an estimate.
+b	A.35 utt1	Uh huh.
+sv	B.36 utt1	And for ten dollars a week, I don't see any reason for me to be doing it.
+br	A.37 utt1	What, for a fence?
+o@	B.40 utt2	No, for my yard. * needs slash unit Yeah,
+qy	A.41 utt1	well, I thought, isn't he the same one?
+sd	B.42 utt2	he is.
+b	A.43 utt1	Yeah.
+b^m	B.44 utt1	Yeah,
+sv	B.44 utt2	but ten dollars, or what does he charge, not even that.
+qw	B.44 utt3	What does he charge me?
+sd	A.45 utt2	I don't know.
+sv	B.46 utt1	It's like next to nothing.
+sd	B.46 utt2	it's ten because I,
+sd	B.46 utt3	it's forty a month.
+b	A.47 utt1	Yeah.
+sd	B.48 utt1	But if there's five weeks, I still pay forty.
+b	A.49 utt1	Yeah,
+ad	A.49 utt2	but you know, you ought to get him to pull the weeds.
+sd	B.50 utt1	Well, he won't pull weeds.
+sd	B.50 utt2	He says he'll spray them,
+sd	B.50 utt3	but he won't pull them.
+b	A.51 utt1	Oh.
+sd	B.52 utt1	he won't cut them is what he won't do. Because he said with the rocks that it's too dangerous for him to take the trimmer over the rocks
+b	A.53 utt1	Uh huh.
+b	A.55 utt1	Yeah.
+b	A.57 utt1	Uh huh.
+sv	B.58 utt2	and he's right.
+b	A.59 utt1	Yeah.
+sv	B.60 utt1	That's true.
+sd	B.60 utt2	But he just says to keep spraying them so,
+sd	B.62 utt1	Anyway, Gene sprayed them once or twice for me
+sv	B.62 utt2	so that was real,
+b	A.63 utt1	Yeah,
+qy^d	A.63 utt2	so you haven't pulled any weeds lately?
+nn	B.66 utt1	No.
+nn^m	B.68 utt1	No.
+sd	B.68 utt2	There are two out front
+sd	B.68 utt3	I thought I'd grab one of these days,
+sd	B.68 utt4	but I haven't bothered as I walk on by.
+b	A.69 utt1	Yeah.
+sd	B.70 utt1	I started to pull the weeds in the rocks out front
+b	A.71 utt1	Uh huh.
+sd	B.72 utt1	and all of a sudden I came cross this big clump of weeds
+sd	B.72 utt2	and there was dog dirt in it
+ba	A.73 utt1	goody.
+sd	B.74 utt1	and I threw the gloves in the trash bag that was out there
+sd	B.74 utt2	and I left the whole thing
+sd	B.74 utt3	and that was about a month ago.
+sd	A.75 utt1	I thought you were going to say there I thought you were going to say there was a snake in the weeds .
+sd	B.78 utt1	I would rather a snake,
+ar	B.78 utt2	no .
+ba	A.79 utt1	God, .
+sd	B.80 utt1	I just left the whole thing.
+sd	B.80 utt2	The bag is still out there because I haven't touched it.
+b	A.81 utt1	Yeah.
+sd	B.82 utt1	I haven't gone back over there.
+sd	B.82 utt2	It really made me mad.
+ba	A.83 utt1	God.
+qw	A.85 utt1	But, how are your flowers, your little things you planted?
+qy	A.85 utt2	Did they die or what?
+ny	B.86 utt1	yeah,
+sd^e	B.86 utt2	now they died.
+qy	A.87 utt3	are they going to come back in the spring?
+no	B.88 utt1	I don't know.
+b	A.89 utt1	Oh.
+sd^r	B.90 utt1	I don't know,
+sd	B.90 utt2	and then I got some nice, mums at Thanksgiving that I put in the pots out there
+b	A.91 utt1	Uh huh.
+sv	B.92 utt1	and I thought they were supposed to live through all the cold weather.
+b	A.93 utt1	Yeah.
+sv	B.94 utt1	They looked real pretty until about a week before Christmas,
+sd	B.94 utt2	then they started to die, too.
+b	A.95 utt1	Oh.
+sv	B.96 utt1	So, I don't think any of it comes back
+h	B.96 utt2	but I don't know,
+b	A.97 utt1	Yeah.
+sv	B.98 utt2	maybe these,
+sd	B.98 utt3	sometimes things do that aren't even supposed to.
+sd	A.99 utt1	I don't know,
+qy	A.101 utt1	Those flowers, remember those little ones you gave me?
+ny	B.102 utt1	Yeah.
+b^m	A.103 utt1	Yeah,
+sd	A.103 utt2	well, I know they were still blooming up until about a few weeks ago.
+bh	B.104 utt1	Really?
+ny	A.105 utt1	Yeah.
+ba	B.106 utt1	Well, that's good.
+sv	B.106 utt2	They're the best kind.
+b	A.107 utt1	Yeah
+sv	A.107 utt2	they, They're really pretty.
+sv	B.108 utt1	they're like indestructible.
+sv	B.110 utt1	They really grow nice
+sd	B.110 utt2	and sometimes, they're not supposed to come back,
+sd	B.110 utt3	but lots of times they do.
+b	A.111 utt1	Uh huh.
+b	A.113 utt1	Yeah
+sv	B.114 utt1	We'll see.
+qy^g^t	B.114 utt2	They're letting us have a lot of time on this aren't they?
+ny	A.115 utt1	Yeah,
+qy^t	A.115 utt2	I mean isn't it supposed to be five minutes?
+sd	B.118 utt1	But that's because we didn't hit one for a long time.
+qy^g	A.119 utt1	We didn't disconnect, did we ?
+sv	B.120 utt1	I hope not .
+sv	B.122 utt1	Neither one of us is getting paid for this.
+sd	A.123 utt1	Boy, I hate to think I hate to think I'd be talking to you without getting paid .
+b	B.126 utt1	Yeah,
+ba	B.126 utt2	really,
+sd	B.126 utt3	I know it.
+sd	B.126 utt4	I can't believe this.
+sd	B.126 utt5	I got somebody from Utah and somebody,
+br	A.127 utt1	What?
+b	A.129 utt1	Uh huh.
+sd	B.130 utt2	where was the person last night was from far away.
+ba	A.131 utt1	You're kidding?
+bh	A.133 utt1	Really?
+sd	B.134 utt1	And we get each other down the street.
+sv	B.134 utt2	This is so funny.
+sd	A.135 utt2	I talked to someone woman from Oklahoma City and some woman from Dallas
+sd	A.135 utt3	and that was it.
+b	B.136 utt1	Yeah,
+sd	B.136 utt2	I've had Dallas, Arlington.
+sd	B.136 utt3	I've had, one Plano and then a lady from Brigham, Utah whose son lives in Plano on Ranier someplace. And then, another state,
+b	A.137 utt1	Uh huh.
+ba	A.139 utt1	Wow.
+bh	A.141 utt1	Really?
+sd	B.142 utt2	I can't remember,
+sd	B.142 utt3	but she told me about the Utah Jazz,
+sd	B.142 utt4	we talked about basketball.
+bh	A.143 utt1	really ?
+sd	B.144 utt1	And I don't remember what the place was last night,
+sd	B.144 utt2	but I'm thinking Colorado,
+b	A.145 utt1	Yeah.
+sd	B.146 utt2	but I'm not sure
+sd	B.146 utt3	I'd know the place, anyway.
+b	A.147 utt1	Uh huh.
+h	A.149 utt1	I don't know,
+sd	B.150 utt1	But mostly they're from the area.
+b	A.151 utt1	Yeah.
+sv	A.153 utt1	Well, there isn't really much to talk about as far as lawn and garden goes.
+aa	B.154 utt1	Not for me.
+sd^m	A.155 utt1	Not for me either.
+sd	B.156 utt1	You know, not not for me because all I have is rocks and weeds.
+qw	A.157 utt2	What do I,
+b	A.161 utt1	Yeah,
+sd	A.161 utt2	but I don't, you know,
+sd	A.161 utt3	what do I do, cut it one, you know, and edge it
+sd	A.161 utt4	and that's about it.
+sd	B.162 utt1	I know.
+qw	A.163 utt1	What do I do with it?
+sd	B.164 utt1	I know,
+sv	B.164 utt2	we're not typical Texans.
+aa	A.165 utt1	No.
+qw	A.167 utt1	What's going on,
+qy	A.167 utt2	are they going to tell us to stop or what ?
+no	B.168 utt1	I don't know,
+sd	B.168 utt2	I hope so.
+ad	B.170 utt1	Come on,
+ad^r	B.170 utt2	come on.
+qy	A.171 utt1	Isn't it five minutes?
+no	B.172 utt1	I don't know.
+sd	A.173 utt1	I mean, I'm all talked out about gardens.
+sd	B.174 utt1	I know.
+co	B.174 utt2	Well, we can talk about something else.
+sd	B.174 utt3	It's just a suggested topic.
+qy^d	A.175 utt1	it's just suggested?
+qo	B.176 utt1	So, how's the baby, do you think ?
+br	A.177 utt1	What?
+qw	B.178 utt1	How's the,
+co	A.179 utt1	We could talk, Let's talk about the baby.
+ad	B.180 utt1	Let's talk about the baby.

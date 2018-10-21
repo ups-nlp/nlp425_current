@@ -1,0 +1,96 @@
+co	B.1 utt1	tell you what. I'll let you start .
+aa	A.2 utt1	Okay.
+sd	A.2 utt2	My major source of information, I guess, is T V news .
+sd	A.2 utt3	Excuse me. I, wake up to it in the morning.
+sd	A.2 utt4	This is I guess, my prime time for news, first thing in the morning while I'm getting ready to go to work.
+sd	A.2 utt5	I quite frequently glance through headlines or, in the newspaper.
+sd	A.2 utt6	But, primarily mine is T V news.
+qo	A.2 utt7	How about yourself?
+b	B.3 utt1	Yeah.
+sd	B.3 utt2	I have to agree with you,
+sd	B.3 utt3	I normally don't have time in the morning to watch any type of T V.
+sd	B.3 utt4	Usually catch it going to work on the radio. Or when I drag the paper in from the front and catch the head lines, which is normal what you see the night before on the evening news.
+aa*	A.4 utt1	Huh uh. / * LISTEN I think this, and successive "Huh uh" answers, should be "Uh huh"
+aa	A.4 utt2	True.
+sd	B.5 utt2	we have a one year old in the house
+sd	B.5 utt3	so it's kind of hard sometimes to watch T V during the night,
+sd	B.5 utt4	but I usually try to catch the ten o'clock or, those type of .
+b*	A.6 utt1	Huh uh.
+sv	B.7 utt2	I have to say, during the war the American public was probably flooded with too much information
+sd	B.7 utt3	and as far as the sub question about was, am I satisfactorily covered , I have to say yes.
+sv	B.7 utt4	But when it came to the war issues, who's telling the truth.
+sd	B.7 utt5	Between the channels there was, the casualties, the amount of missiles launched were different
+sv	B.7 utt6	and it was almost too much information, over communicated.
+aa	A.8 utt1	Well, that's true,
+sv	A.8 utt3	my personal opinion is that the various network news medias were trying to interpret the news to the best of their abilities since they were not very well informed by the military.
+aa	B.9 utt1	True.
+aa	B.9 utt2	I agree with you.
+sd	A.10 utt1	Now, I can appreciate that, especially after what happened in Vietnam.
+aa	B.11 utt1	Yeah,
+sv	B.11 utt2	which is a joke.
+o	A.12 utt1	let's face it,
+sv	A.12 utt2	today's, means of communication, a newscaster could very well giveaway a piece of top secret information. And, pat himself on the back for, making a good scoop.
+b*	B.13 utt1	Huh uh.
+aa	B.15 utt1	Yeah.
+sv	B.15 utt2	That's a good point.
+sd	B.15 utt3	but I would have to say across the board, I'm satisfied with the way, the news is spread.
+sd	B.15 utt4	of course here at Texas Instruments, the rumor mill runs rampant.
+sd	B.15 utt5	The secretary's probably the best resource, of what the layoff status is.
+aa	A.18 utt1	Very true.
+sd	A.18 utt2	I find T News very enlightening, too.
+b	B.19 utt1	Yeah.
+sd	A.20 utt1	And I check that everyday.
+sd	A.20 utt2	Of course, with that goes along with the stock price of T I.
+aa	B.21 utt1	Yeah.
+aa	B.21 utt2	I agree you.
+sd	B.21 utt3	I think, I'm glad you mentioned that, because I think I have to, since I don't have the opportunity in the morning I'll probably catch the head lines on T News .
+sv	B.21 utt4	That's a good point.
+sd	A.22 utt1	Of course, T NEWS is more or less headlines,
+b*	B.23 utt1	Huh uh.
+sd	A.24 utt1	I don't think much of their sports coverage.
+aa	B.25 utt1	Yeah
+sd	A.26 utt1	Only give the scores.
+b	B.27 utt1	Yeah.
+sd	A.28 utt1	But, that's all right.
+sd	A.28 utt2	outside of pro football, I'm not too interested in other games, other sports, anyway.
+aa	B.29 utt1	Huh uh.
+sv	A.30 utt1	But, the, T NEWS is a good way to keep up to date.
+sv	A.30 utt2	I think they do a pretty good job of selecting the most important items.
+aa	B.31 utt1	Yeah.
+aa	B.31 utt2	They do.
+aa	B.31 utt3	Surely do.
+qy	B.31 utt4	anything else crossed your mind.
+sv	B.31 utt5	I guess most of us go by the audio, which is the television or the radio.
+b*	A.32 utt1	Huh uh.
+sv	B.33 utt1	but you need to continue to read, so you people learn to read, you know .
+sd	A.34 utt1	Well, I spent twenty years in commercial broadcasting radio and T V,
+sd	A.34 utt2	and I know what it takes to get some of those little bits and pieces of news on the air,
+b*	B.35 utt1	Huh uh.
+sd	A.36 utt1	I mean, there are times where, the reporter actually will risk life and limb.
+sd	A.36 utt2	I've seen it happen time and time again.
+sd	A.36 utt3	And, well, I remember one time up in Nashville, Tennessee.
+sd	A.36 utt4	One of the fellows got mixed up in a riot that was going on down there,
+b*	B.37 utt1	Huh uh.
+sd	A.38 utt1	but he was lucky he got out of it for some reason.
+sd	A.38 utt2	Because he was carrying a camera,
+sd	A.38 utt3	they left him alone.
+fe	B.39 utt1	Ouch.
+bf	B.39 utt2	Everybody got excited.
+aa*	A.40 utt1	Huh uh.
+sv	B.41 utt1	That's tough.
+sv^r	B.41 utt2	That's tough.
+fc	B.41 utt3	Well, I've enjoyed speaking with you.
+fc	@A.42 utt1	Nice to talk to you, too, Jim.
+qy^t	B.43 utt1	Did you get your catalog on your gifts?
+nn	A.44 utt1	No.
+sd^t	B.45 utt1	Really I just got mine in the mail
+sd^t	B.45 utt2	so, it kind of sparked me to keep calling .
+b	A.46 utt1	Oh.
+sd^t	A.46 utt2	Well I'll be looking for it then.
+sv*	B.47 utt1	There not to shabby. / * Correction "They're not too shabby"
+sv	B.47 utt2	They're pretty good.
+bh	A.48 utt1	Is that right?
+ny	B.49 utt1	Yeah.
+o@	A.50 utt1	Well, good. * slash error You, too.
+fc	B.51 utt1	Have a great day.
+fc	B.53 utt1	Bye bye.

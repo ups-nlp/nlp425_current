@@ -1,0 +1,80 @@
+o^t	A.1 utt1	Your turn.
+sd^t	B.2 utt1	I start.
+aa	B.2 utt2	Okay.
+sd	B.2 utt3	Well, we keep a budget to an extent.
+sd	B.2 utt4	and i , i , we were really forced into keeping a budget because I'm paid once a month which sort of forces some, restrictions
+sd	B.2 utt5	and you need to make sure all your bills are paid.
+qo	B.2 utt6	about yourself?
+sd	A.3 utt1	Well, I have to say I really don't have a budget.
+sd	A.3 utt2	Both my wife and I, grew up in, families of rather modest means
+sd	A.3 utt3	and, our family income, at this point, is comfortable. Upper middle class I guess you might say.
+sd	A.3 utt4	And, we're both so, frugal that, we really don't need a budget, you know.
+sd	A.3 utt5	We just sort of invest the money and go on vacations and always never seem to have any money problems which I guess is a comfortable thing.
+b	B.4 utt1	Yeah.
+sv	B.4 utt2	Well I guess that really is sort of, keeping a budget,
+bf	B.4 utt3	you know. You stay within your, within your means.
+b^m	A.5 utt1	Well we stay within our means
+sd	A.5 utt2	but we don't do it, by conscious effort.
+sd	A.7 utt2	It just sort of happens automatically.
+b	B.8 utt1	Yeah.
+sd	A.9 utt1	Although we just moved to California
+sd	A.9 utt2	and, the cost of living here in California is, I would say rather pathological .
+aa	B.10 utt1	Yes .
+sd	A.11 utt1	housing prices are, you know, like from four to ten times more expensive than, they were where I came from in, Dallas.
+bf	B.12 utt1	you moved from Dallas to San Francisco.
+aa	A.13 utt1	Yeah.
+sd	A.13 utt2	So, that presents a real shock .
+sv	B.14 utt1	That is a hugh difference.
+b	B.16 utt1	Yeah.
+sd	A.17 utt1	ac , actually our standard of living has gone down somewhat since we've moved to California
+sv	B.18 utt1	But you have good sour dough
+sv	B.18 utt2	and it's a beautiful place to live .
+aa	A.19 utt1	Yeah.
+sv	A.19 utt2	It's God's country.
+b	B.20 utt1	Yeah.
+sv	A.21 utt1	and one way you know that is that only God can afford it .
+sd	A.23 utt1	so budget is not a problem for us.
+sd	A.23 utt2	at least it hasn't been.
+sd	A.23 utt3	It may be at this point.
+sd^r	A.23 utt4	But, up until this point it really hasn't been .
+sd	A.23 utt5	When I, was in, undergraduate school a long, long time ago, I, noted that the starting average monthly salary salary for engineers you know, in my discipline, was like six hundred ten dollars a month or something like that.
+b@	B.24 utt1	Uh huh. / * See B.22 note
+sd	A.25 utt1	And, I noted at that point that you know, if that's what my salary was that I drew then I would be making almost twice as much as my father made during his best year ever.
+sd	A.25 utt2	So I stopped worrying about money.
+b	B.26 utt1	Yeah.
+sd	A.27 utt2	never have worried about money since then.
+sv	B.28 utt1	Well, that's a system too.
+sd	A.29 utt1	Sometimes, it's a bit of a problem, you know, because I guess I don't really manage my money the way I should.
+sd	A.29 utt2	But, I suppose I've lost money on not taking good advantage of, investments
+sd	B.30 utt1	Well then again, you know, you said you are able to take trips.
+sd	B.30 utt2	And you do, obviously, have enough to live on
+sv	B.30 utt3	so I guess you're indirectly budgeting. just bye bye the fact that you said you're both very frugal, in spending the money.
+b	A.31 utt1	Uh huh.
+sv	B.32 utt2	So, I mean that's a form of budgeting I would think .
+sv^t	B.32 utt3	it's kind of a strange topic to try to, for two people who don't really have a budget to talk about budgeting and how they manage their money.
+sv	A.33 utt1	Well, I guess we're both lucky in that regard then.
+b	B.34 utt1	Yeah.
+qw	A.35 utt1	How big is your family?
+sd	B.36 utt1	well we have one on the way.
+bk	A.37 utt1	I see.
+sd	B.38 utt1	my wife,
+sd	B.38 utt2	and then, we're having one on the way in, September.
+sv	A.39 utt2	whe , once you get ten children though, you may have,
+ar	B.40 utt1	No
+sd	B.40 utt2	I think it's just going to be one.
+bk	A.41 utt1	all right .
+qo	B.42 utt1	How about yourself?
+sd	A.43 utt1	I have two kids.
+sd	A.43 utt2	one nine and one thirteen
+sd	A.45 utt2	and they are beginning to be a budget problem but, have not been really up to this point.
+qy	B.46 utt1	Do they budget at all?
+qy	B.46 utt2	I mean do you have them on an allowance?
+sd	A.47 utt1	I give them an allowance
+sd	A.47 utt3	I basically give my son ten dollars a week
+sd	A.47 utt4	and I put half of it in the bank
+sd	A.47 utt5	and I give him the other half in cold cash.
+b	B.48 utt1	Yeah.
+sd	A.49 utt1	And, he has a teller card so he can, do what he wishes with the money that I put in the bank.
+sd	A.49 utt2	But, at least, it isn't, you know, burning a hole in his pocket.
+b	B.50 utt1	Yeah.
+sd	A.51 utt1	If he wants to use it, he has to go get it

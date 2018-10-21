@@ -1,0 +1,128 @@
+o	A.1 utt1	All right.
+sv	A.1 utt2	I think that gets us off to discussing the topic for tonight.
+^2	B.2 utt1	Which is movies,
+^g	B.2 utt2	correct?
+na^m	A.3 utt1	That is correct.
+bk	B.4 utt1	Okay.
+qy	A.5 utt1	Are you a movie buff?
+ny	B.6 utt1	yeah.
+sd^e	B.6 utt2	I don't like going to see them in the theaters
+sd	B.6 utt3	but outside of that, rent a lot,
+sd	B.6 utt4	watch them on T V mostly.
+sd	A.7 utt1	Well, I have a V C R
+sd	A.7 utt2	and I see most all of mine there.
+qw	A.7 utt3	What have you seen recently that you enjoyed?
+^h	B.8 utt1	I don't know,
+sd	B.8 utt2	actually earlier tonight we were watching TO LIVE AND DIE IN L A
+qy	B.8 utt3	Have you seen that movie?
+nn	A.9 utt1	No,
+sd^e	A.9 utt2	I haven't.
+sv	B.10 utt1	It's a kind of one of those psycho ones.
+sd	A.11 utt1	Now, I live alone.
+sd	A.11 utt2	Consequently, I don't like these psycho things.
+sv	B.12 utt1	it's not too bad.
+sd	B.12 utt2	One of those cop thrillers
+b	A.13 utt1	okay.
+qy	A.13 utt2	Have you seen the mov ,
+qy	A.13 utt4	do you have a V C R?
+ny	B.14 utt1	Yes,
+sd^e	B.14 utt2	we do.
+qy	A.15 utt1	Have you seen the movie CLASS ACTION with Gene Hackman?
+nn	B.16 utt1	no,
+sd^e	B.16 utt2	I haven't yet.
+sd	A.17 utt1	I saw it this weekend
+sv	A.17 utt2	and it is, to me an outstanding movie.
+sd	A.17 utt3	I thoroughly enjoyed it.
+sd	A.17 utt4	He is, an attorney and his daughter is an attorney
+sd	A.17 utt5	and she has a suit against his company.
+sd	A.17 utt6	You know, it's one of those things.
+b	B.18 utt1	Yeah,
+sv	A.19 utt2	well, it's something that anyone can watch and enjoy.
+sv	B.20 utt1	He's a good actor though.
+br	A.21 utt1	Beg your pardon?
+sv	B.22 utt1	Gene Hackman's a good actor. I think.
+aa	A.23 utt1	Yes,
+sv	A.23 utt2	he is.
+qy	B.24 utt2	Do you see HOOSIERS?
+ny	A.25 utt1	Yes.
+sd^e	A.25 utt2	I've seen HOOSIERS.
+sd	A.25 utt3	Saw it just again the other night, for,
+b	B.26 utt1	Yeah,
+sd	B.26 utt2	actually we saw her just the other night too.
+bh	A.27 utt1	did you?
+ny	B.28 utt1	Yeah.
+sd	B.28 utt2	It's one of our favorite movies.
+sd	B.28 utt3	I live with, a roommate and my girlfriend the three of us.
+sd	B.28 utt4	We've seen that movie probably six times in the last six months.
+qy	A.29 utt1	Have you seen the movie, CROSSING DELANCY?
+ny	B.30 utt1	Yeah.
+sd	A.31 utt1	Now, that's one I have watched, six or eight times.
+sd	A.31 utt2	I always feel so good when I get through with that movie.
+b	B.32 utt1	Yeah,
+sd	B.32 utt2	I like those movies that you watch time and time again.
+sd	A.33 utt1	I do too.
+sd	A.33 utt2	DIRTY DANCING and CROSSING DELANCY are two of my favorite.
+qw	A.33 utt3	So, well what business are you in?
+sd	B.34 utt1	I'm an electrical engineer.
+b	A.35 utt1	Oh.
+qy^d	A.35 utt2	In New Hampshire.
+bk	A.35 utt3	All right.
+sd	B.36 utt1	I work in Massachusetts actually.
+bk	A.37 utt1	all right.
+b	A.37 utt2	Okay.
+qy	A.37 utt3	So is everything going all right up there?
+sd	B.38 utt1	it's only about, half an hour.
+sd	B.38 utt2	I live on the border.
+sv	A.39 utt1	well that's that bad then.
+sd	A.39 utt2	Half an hour, we do that just going to downtown Dallas.
+aa	B.40 utt1	That's right.
+sd	B.42 utt1	See we live up in tax free New Hampshire and drive down to Massachusetts to work.
+sv	A.43 utt1	That makes a lot of sense .
+qy	A.45 utt2	are you a native of that part of the country?
+ny	B.46 utt1	Yeah,
+sd^e	B.46 utt2	I grew up in New Hampshire.
+sd	B.46 utt3	It seems, southern town,
+sd	B.46 utt4	it's called Portsmouth.
+sd*	B.46 utt5	It's, I don't know, fifteen minutes from the Mass , border and five minutes from the main border. /* main = Maine?
+sd	B.46 utt6	We live right in the corner.
+b	A.47 utt1	Oh.
+sd	B.48 utt1	That one little spot in New Hampshire, we have ten miles of coastline,
+sd	B.48 utt2	I live on that little ten mile spot.
+ba	A.49 utt1	sounds wonderful.
+qy	A.49 utt2	Did you have damage this year with hurricanes?
+ng	B.50 utt1	Not up, where I live
+sd	B.50 utt2	but further down the coast in Massachusetts they got hit pretty bad.
+sd	A.51 utt1	I happened to be in Nassau
+sd	A.51 utt2	and we got the backlash of that thing.
+sd	A.51 utt3	And they had record high waves, thirty year high waves come in there,
+sd	A.51 utt4	and it was quite an experience
+qw	A.51 utt6	Well, what movies are you looking forward to seeing now?
+^h	B.52 utt1	well, I'm only twenty seven years old
+sd	B.52 utt2	so THE DOORS movie, that's out on video. I want to watch that.
+bk	A.53 utt1	Okay.
+qy	A.53 utt2	Have you seen GREEN CARD?
+sv	B.54 utt1	That would be pretty good.
+nn	B.54 utt2	No,
+sd^e	B.54 utt3	I haven't seen that one.
+sv	A.55 utt1	That's a real warm movie.
+sv	A.55 utt2	it really just turned out nicely.
+sd	A.55 utt3	So I would recommend that if you have a chance.
+sd	B.56 utt1	I'm in for it.
+sd	B.56 utt2	We rent a lot of movies
+sd(^q)	B.56 utt3	so we often sit around and say, what movies should we rent?
+sd	B.58 utt1	And we don't know.
+ad	A.59 utt1	Well if you can get GREEN CARD, go for it.
+aa	B.60 utt1	All right,
+sd	B.60 utt2	we'll try that one.
+sd	A.61 utt1	I have been working as an accountant at the medical school here in Dallas
+sd	A.61 utt2	and I have watched, GROSS ANATOMY.
+qy	A.61 utt3	Have you seen that one?
+ny	B.62 utt1	Yeah,
+sd^e	B.62 utt2	I did.
+bk	A.63 utt1	Okay.
+h	A.63 utt2	And I don't know
+sd	A.63 utt3	I can associate with some of the people in that movie because of the young students I see over at the medical school.
+sd	A.63 utt4	But I hope you have a very Merry Christmas.
+sd	B.64 utt1	You too.
+sd	A.65 utt1	I'm looking forward to it.
+sv	B.66 utt1	I think we're going to have a white Christmas up here just like the song says.

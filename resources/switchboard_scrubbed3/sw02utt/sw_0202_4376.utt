@@ -1,0 +1,77 @@
+ad	A.1 utt1	Your turn.
+aa	B.2 utt1	Okay.
+sv	B.2 utt2	I don't think they should abolish it .
+sv	B.2 utt3	I think if they put it into force more often, they wouldn't have as many problems as they've got.
+qy^d	A.3 utt1	But not for petty theft?
+na	B.4 utt1	Right.
+nn	B.4 utt2	No,
+nn^r	B.4 utt3	no.
+sv	B.4 utt4	For major things like premeditated murder. Mass murders. you know, that type of thing.
+sv	B.4 utt5	I don't think it should just be used loosely.
+qy	A.5 utt1	Well, it should be used as a deterrent do you think?
+nd	B.6 utt1	Well,
+qrr	A.7 utt1	Or should it be used,
+qy@	A.7 utt2	to prevent further, crime? 
+ny	B.8 utt1	Yes,
+ny^r	B.8 utt2	yes.
+sv	B.8 utt3	To prevent these people from ever getting out on the street. By, you know, some technicality.
+sv	B.10 utt2	And they go down the line ten years
+sv	B.10 utt3	and then on some little technicality they get out and on the streets again doing the same they did before.
+b	A.11 utt1	Uh huh.
+sv	B.12 utt1	And, you know, that's about the only thing.
+sv	B.12 utt2	Like for theft and stuff like that or manslaughter, you know,
+sv	B.12 utt3	I don't think they should do that.
+sd	A.13 utt1	Well, you know, there's this old, Jewish, is it, saying about an eye for an eye and a tooth for a tooth.
+sv	B.14 utt1	well, I guess, if it was someone in my family, I'd probably feel that way.
+sd	B.16 utt2	You know, I've never had anybody in my immediate family, murdered
+sd	B.16 utt3	and so I really wouldn't know.
+sd	B.16 utt4	but I feel like if I did, I probably would feel that way.
+sv	A.17 utt1	Well, one of the things I was thinking about is, you know, from society's point of view, if you put a value on each person, what you want to do is to maximize the end game value.
+sv	A.17 utt2	So if you have someone that destroys that value then you want to take steps to, minimize the loss.
+b	B.18 utt1	Uh huh.
+sv	A.19 utt2	Of course, you have to also put value on the criminal.
+b	B.20 utt1	Right.
+sv	A.21 utt1	So if you terminate him, that's a loss of value.
+ba	B.22 utt1	Well, that's true .
+sv	A.23 utt1	So, you know, if you weight everyone equally, then you have to say, well the likelihood of not terminating him,
+sv	A.23 utt2	if you don't terminate him, the likelihood is expected value of loss of life is greater than one person.
+sv	A.23 utt3	In other words, you'd have to murder more than one other person in order to justify taking his life.
+^2	B.24 utt1	Besides him.
+b	B.26 utt1	Okay.
+sv	A.27 utt1	Another way you could do it is weight this value by, the value to society of the people. which is pretty delicate thing to do.
+sv	A.27 utt2	But one way of doing it is, by income.
+sv	A.27 utt3	So if this guy doesn't make a great deal of money, which is often times the case, then then he's obviously not worth very much
+^2	B.30 utt1	His life isn't worth very much then .
+sv	A.31 utt2	and so, the likelihood that, you know, maybe expected murders by him is, integrated over the income of the people, that he murders is maybe, you know, a loss of, who knows, eight hundred thousand dollars.
+sv	A.31 utt3	but if he only, you know, integrated income over the expected remainder of his life of is, small, less than eight hundred thousand dollars, then you terminate him .
+ sv	A.31 utt4	Of course, one of the things that happens if you use that algorithm, is you find that it's easier to, to, terminate older people than younger people since the integration of their income over the rest of their lives is going to be less. Which means, well
+b	B.32 utt1	Right.
+sv	A.33 utt2	I suppose you could say, well that has something to do with potential for rehabilitation.
+b^m	B.34 utt1	Potential.
+sv	B.34 utt2	I mean that's the key right there. Potential.
+b	A.35 utt1	Uh huh.
+sv	B.36 utt1	Now, are they rehabilitative or not.
+sv	A.37 utt1	Now that's all fine and well and, good philosophical.
+sd	A.37 utt2	But if you're involved yourself, personally
+b	B.38 utt1	Uh huh.
+sd	A.39 utt1	I know I have a friend whose, son was murdered, on the night before his sixteenth birthday.
+sd	A.39 utt2	And let me tell you, I knew them personally, not intimately, but quite well
+sd	A.39 utt3	and, you're talking about real trauma. I mean trauma that extends beyond the counting of bodies.
+ba	B.40 utt1	I can imagine.
+sd	A.41 utt1	The father, you know,
+sv	A.41 utt2	of course, a parent losing a teenage child is about as bad as it could possibly get, I think, in terms of psychological impact.
+ba	B.42 utt1	Yes.
+qy	B.44 utt1	Was he murdered?
+qy	B.44 utt2	Did they find who killed him?
+ny	A.45 utt1	yes.
+sd^e	A.45 utt2	They found him
+sd	A.45 utt3	and he is on trial for capital murder.
+qy^d	B.46 utt1	So it hasn't been a long time ago.
+qy^d	B.46 utt2	Just recently.
+ng	A.47 utt1	well, actually I, I'm sorry. He was convicted,
+sd	A.47 utt2	and, of course, now, you know, you go through two or three hundred years of appeals process
+ %	A.47 utt3	but ,
+b	B.48 utt1	Yeah,
+b^r	B.48 utt2	yeah.
+sv	B.48 utt3	That appeals process, I mean, it's what, you know, really, you know, just drags out and out and out.
+ sd	B.48 utt4	My brother in law here in Texas, my sister's, husband, his sister was murdered down here by a guy in, well actually in Houston

@@ -1,0 +1,144 @@
+qw	A.1 utt1	music do you like?
+sd	B.2 utt1	lots of different kinds I guess.
+sd	B.2 utt2	I like country music, of course
+b	A.3 utt1	Uh huh.
+sd	B.4 utt1	Texas
+sd	B.4 utt2	and I listen to Christian music a lot because there's a Christian music station here in in our city.
+sd	B.4 utt3	So I listen to it quite a bit.
+b	A.5 utt1	Uh huh.
+sd	A.7 utt1	I am more into rock and roll myself.
+b	B.8 utt1	Uh huh.
+sd	B.8 utt2	And I listen cause on Friday nights they have what they call Saturday Night Alive
+sd	B.8 utt3	or on Saturday night, Friday night and Saturday night and they have Christian rock and roll.
+b	A.9 utt1	Uh huh.
+b@	A.11 utt1	Uh huh. Uh huh.
+sd	B.12 utt1	you know, they have that type of music,
+sd	B.12 utt2	but they just have different words
+sd	B.14 utt1	so, I listen to that too.
+qy	A.15 utt1	Do you like any bluegrass?
+nn	B.16 utt1	no.
+sd^e	B.16 utt2	Not really,
+nn	B.16 utt3	huh uh.
+bk	A.17 utt1	Oh.
+sd	B.18 utt1	And I like I like rap music.
+qy	B.20 utt2	Do you like rap music?
+ng	A.21 utt1	Not really .
+b^m	B.22 utt1	Not really .
+sv	B.24 utt1	Well, I can tell we're together here .
+b	A.25 utt1	Yeah.
+b	B.26 utt1	Okay.
+sd	A.31 utt1	I have a lot of friends that like country music .
+qw	B.32 utt1	What kind of rock music do you listen to?
+qy	B.32 utt2	Do you listen to like that really heavy metal stuff
+nn	A.33 utt1	No,
+sd^e	A.33 utt2	I'm more into, older rock, like the psychedelic era, like,
+qy^d	B.34 utt1	Seventies and like that stuff.
+nd	A.35 utt1	late sixties, seventies,
+b	B.36 utt1	Uh huh.
+sd	A.37 utt1	Greatful Dead, Crosby, Stills and Nash.
+b	B.38 utt1	Yeah,
+sd	B.38 utt2	I have friends that like that.
+bh	A.39 utt1	What ?
+b	B.40 utt1	Yeah .
+qy^d	B.42 utt1	So you have never heard of like the Christian music that I listen to probably.
+nd	A.43 utt1	I've heard a little bit of it.
+qy	B.44 utt1	Like have you heard of Carmen?
+qy	B.44 utt2	Have you ever heard of Kim?
+sd	A.45 utt1	now I've heard of Striper.
+b	B.46 utt1	Striper,
+qy^d	B.46 utt2	they're the really heavy, yeah like the heavy metal stuff I guess.
+b	A.47 utt1	Uh huh.
+b	A.49 utt1	Uh huh.
+sv	A.51 utt1	the first of Amy Grant before
+b	B.52 utt1	Yeah.
+sv	A.53 utt1	you know, became more mainstream, top forty.
+aa	B.54 utt1	Yeah.
+sd	B.54 utt2	Cause she plays both secular and Christian
+b	A.55 utt1	Uh huh.
+b	B.56 utt1	Yeah,
+sd	B.56 utt2	I like her too.
+sd	B.58 utt1	I have been to a concert a couple of times of hers.
+sd	A.59 utt1	I've never actually seen her in concert.
+qy^d	A.59 utt2	I imagine that she puts on a pretty good show.
+na	B.60 utt1	She does.
+b	A.61 utt1	Uh huh.
+sv	B.62 utt1	She's real good.
+sd	B.62 utt2	So, I like her.
+b	A.63 utt1	Uh huh .
+sd	A.65 utt1	I like some country music.
+sd(^q)	B.66 utt1	I don't like the country music that's like my wife left me, my dog left me, everybody's left me.
+b	A.67 utt1	Yeah .
+^q	A.69 utt1	Mama got run over by the train.
+aa	B.70 utt1	Yeah.
+sd	B.70 utt2	I don't like that.
+b	A.71 utt1	Uh huh.
+sd	B.72 utt1	You know, I like Randy Travis
+b	A.73 utt1	Uh huh.
+sd	B.74 utt1	you know, I like more of the real new ones, you know.
+qy^d	A.75 utt1	Like Garth Brooks.
+^h	B.76 utt1	Garth Brooks,
+ny	B.76 utt2	yes,
+sv^e	B.76 utt3	you know he's fine.
+qy^d	A.77 utt1	Reba MacIntyre.
+ny	B.78 utt1	Yeah.
+sd^e	B.78 utt2	I like them.
+sd	B.78 utt3	I don't care for the older, you know, like the dog left me stuff.
+qy	A.79 utt1	You don't like Patsy Cline?
+qy^r	A.81 utt1	You don't like Patsy Cline.
+nn	B.82 utt1	No,
+nn	B.82 utt2	huh uh.
+sd^e	B.82 utt3	I don't even really know who she is, you know .
+qy	B.84 utt1	You know, But, have you ever been to any of them concerts that you like?
+ny	A.85 utt1	yeah
+sd^e	A.85 utt2	actually I just went to see the Greatful Dead I guess about a week ago.
+qy	B.86 utt1	But aren't they done with?
+sd	B.86 utt2	I thought that they .
+nn	A.87 utt1	No,
+sd^e	A.87 utt2	they are still on tour.
+sd	A.87 utt3	They have been touring, since the late sixties .
+sd	B.90 utt1	And I just thought that they done broke up and left.
+ar	A.91 utt1	No.
+sd	A.93 utt1	They're still together.
+sd	A.93 utt2	They're still making albums.
+ba	B.96 utt1	Wow,
+sd	B.96 utt2	I didn't know that.
+b	A.97 utt1	Uh huh.
+ba	B.100 utt1	That's interesting.
+sd	A.101 utt1	In fact, I mean there are people you know that basically just follow them around, from city to city on tour selling tie dye and things like that.
+b	B.102 utt1	Uh huh.
+qy^g	B.106 utt1	Cause they are on up there in age, aren't they?
+ny	A.107 utt1	Yeah,
+sd^e	A.107 utt2	they're like late forties, early fifties,
+sd	A.107 utt3	but you know like whenever one of them dies off they get a replacement .
+bk	B.108 utt1	Okay.
+b	B.110 utt1	Alright.
+sd	A.111 utt1	You know, they seem to have a really bad time with keyboard players.
+sd	A.111 utt2	They keep on dying
+sd	A.111 utt3	and they keep on replacing them
+sd	A.111 utt4	and the new ones in this thirties you know.
+b	B.112 utt1	alright.
+sv	B.114 utt1	Cause they look pretty rough.
+sd	B.114 utt2	I mean, I've seen like picture of them
+aa	A.115 utt1	Yeah.
+sv	A.115 utt2	Well, they don't actually look as rough as the Rolling Stones.
+qy^d	A.115 utt4	I don't know if you saw the tour posters of the Rolling Stones when they last toured,
+sv	A.115 utt5	but it looked like leather day at the geriatric,
+aa	B.118 utt1	Yeah,
+sv	A.119 utt1	All their faces were just all shriveled,
+aa	B.120 utt1	Uh huh.
+sv	B.120 utt2	Yuck looking, I mean
+b	A.121 utt1	Uh huh.
+sv	A.123 utt1	I mean it just just looked like they, got a bunch of retirees and put them in leather jackets and blue jeans.
+aa	B.126 utt1	Uh huh.
+qy	B.126 utt2	Well are you into that rock music, you know, all that druggy stuff and all that I mean?
+qh	B.130 utt1	You know what I am saying
+sv	B.130 utt2	I mean like they come on the stage
+sv	B.130 utt4	they don't even know they are there. You know.
+sv	B.130 utt5	They are just so out of it.
+ng	A.131 utt1	Actually, I prefer my performers to be pretty sober, you know, just so you know, that if they're jamming, you know, that they don't just lose themselves and you know, go into lala land.
+b	B.132 utt1	Yeah.
+b	A.133 utt1	Uh huh.
+sd	B.134 utt1	So, I just don't like you know.
+b	A.135 utt1	Uh huh.
+h	B.136 utt2	So, I don't know .
+qy	A.137 utt1	So, have you seen any concerts lately?

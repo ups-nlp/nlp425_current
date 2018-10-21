@@ -1,0 +1,97 @@
+^h	A.1 utt1	let's see.
+sd	A.1 utt2	Personal computers.
+b	B.2 utt1	Yes.
+qy	A.3 utt1	So, do you use them?
+ny	B.4 utt1	yes,
+sd^e	B.4 utt2	we own one.
+ba	A.5 utt1	Terrific.
+qw	A.5 utt2	What kind?
+sd	B.6 utt1	its an Emerson eighty eighty six, two low density floppy drives, and no hard drive yet.
+sd	B.6 utt2	But, you know, it comes in mighty handy.
+qy	A.7 utt1	Mostly for word processing type things?
+ny	B.8 utt1	yeah,
+sd^e	B.8 utt2	a big chunk of it's word processing.
+sd	B.8 utt3	We're also taking programming classes,
+sd	B.8 utt4	and, so there's a fair amount of programming getting done on it.
+sd	B.8 utt6	right now we got a project going where we're trying to put, all my wife's stray recipes on the disk.
+ba	A.9 utt1	Nice.
+qy	A.9 utt2	Did you buy a program to handle menus?
+sd	B.10 utt1	it came with a menus program,
+sd	B.10 utt5	mostly kind of a pain in the neck without a hard drive
+ba	A.11 utt1	yes.
+sd	B.12 utt1	and hopefully sometime this spring we'll be able to get one and get it configured.
+br^m	A.13 utt1	Eighty eighty eight is what you said?
+sd	B.14 utt1	Eighty eighty six.
+b^m	A.15 utt1	Eighty,
+sv	A.15 utt2	gosh, it's worth your time to just upgrade,
+sv	A.15 utt3	they're so darned cheap now.
+qw	B.16 utt1	Which,
+sd	A.17 utt1	Computers.
+sd	B.18 utt1	impoverished college student.
+ba	A.19 utt1	no.
+sd	B.20 utt1	This one went on a credit card,
+sd	B.20 utt2	and we got a way out, while to pay it off yet.
+o@	B.20 utt3	So it's, * B's next turn is not a continuation of this. that's sounds nice. / * slash error
+sd	A.21 utt1	I've got one at home too.
+sd	A.21 utt2	It's a three eighty six, thirty three megahertz, forty, four meg ram and hundred and thirty meg drive
+sd	A.21 utt3	and super V G A
+sd	A.23 utt2	and, yeah, it's fun.
+sd	A.23 utt3	I do programming, too.
+sd	A.23 utt4	My job is, E D P auditor,
+sd	A.23 utt5	and so I'm into computers all the time.
+b^m	B.24 utt1	E D P.
+sd	A.25 utt1	Electronic Data Processing.
+bk	B.26 utt1	Okay,
+sv	B.26 utt2	that sounds like fun job.
+b	A.27 utt1	Yeah,
+sd	A.27 utt2	I really enjoy it,
+sd	A.27 utt3	and it treats me well.
+b	B.28 utt1	Yes.
+qy	A.29 utt1	what are you studying in college computers?
+sd	B.30 utt1	 Computer engineering.
+ba	A.33 utt1	How nice.
+sd	B.34 utt1	Well, computer engineering technology, which, all I can understand is it's a slightly more hands on version of computer engineering.
+sd	B.34 utt2	But, I've got a ways to go yet.
+sd	B.34 utt3	So far most of what I've done is getting, core classes out of the way,
+sd	B.34 utt4	taken some electronics classes, and one class with computer logic.
+sd	A.35 utt1	How they work is fascinating to me.
+aa	B.36 utt1	yes.
+sd	B.36 utt2	I enjoy it myself .
+sd	B.36 utt3	The, lab for that, computer logic class was a lot of fun.
+bh	A.37 utt1	Was it.
+ny	B.38 utt1	Yeah,
+sd^e	B.38 utt2	we got to hook up a few, counters and, encoders.
+bf	A.39 utt1	Hardware stuff,
+aa	B.40 utt1	Yeah.
+qo	A.41 utt1	What do you think of that fuzzy logic?
+sd	B.42 utt1	I've not had a chance to work with it, although, my, data structures teacher was telling us something about how fuzzy logic works as far as the concept behind it.
+b	A.43 utt1	Uh huh.
+sd	B.44 utt1	Now how you'd implement that software wise or mechanically I don't know,
+sd	B.44 utt2	but, it sounds like a very impressive piece of work.
+b	A.45 utt1	Yeah,
+sv	A.45 utt2	they're pretty amazing.
+sd	A.45 utt3	I've written a couple of programs for, commercially,
+b	B.46 utt1	Yes.
+sd	A.47 utt1	and it's a fun field.
+qy	B.48 utt1	In the fuzzy logic direction?
+br	A.49 utt1	What,
+nn	A.49 utt2	no,
+nn	A.49 utt4	no,
+sd^e	A.49 utt5	just regular,
+sd	A.49 utt6	but you have to take into account, you know, with any computer program all the type of things people can do to you to make your program crash or things you normally don't consider.
+b	B.50 utt1	Yeah.
+sd	B.52 utt1	Entering bad information of one sort or another
+aa	A.53 utt1	Yeah,
+bf	A.53 utt2	pushing keys certain times and, messing up your files and things like that.
+b	B.54 utt1	Yeah.
+b	B.56 utt1	Uh huh.
+qy^d	A.57 utt1	And you're going to be an computer engineer type.
+ny	B.58 utt1	yeah,
+sd^e	B.58 utt2	well, what the C E T program seems to be so far is just a broad based specialized from,
+sd	B.58 utt3	you get a fair amount of programming,
+sd	B.58 utt4	you get hardware,
+sd	B.58 utt5	you get basic electronics courses that, deal with, you know, not only the digital circuitry but, you know, power supplies and, just the whole gambit, but mostly towards, computer electronics.
+sd	B.58 utt6	So, the idea is that, you can go in a variety of direction from C E T major,
+sd	B.58 utt7	but I have more with the hardware than I do with the software,
+sd	B.58 utt9	I pretty much plan on, I mean, so far I'm planning to go in the engineering direction.
+ba	A.61 utt1	That's good,
