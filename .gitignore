@@ -16,7 +16,7 @@ __pycache__
 lib/
 
 # resources directory
-resources/
+# resources/
 
 # Package Files #
 *.jar
