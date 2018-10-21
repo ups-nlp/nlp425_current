@@ -33,7 +33,7 @@ public class Controller {
 		model.loadState();
 		
 		// Provide an initial greeting
-		out.print(model.initialResponse());
+		out.print("Agent: " + model.initialResponse() + "\n");
 		
 		while(!model.conversationIsOver()){
 			// Read the human's typed input

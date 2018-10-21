@@ -67,7 +67,7 @@ public class DumbGenerator implements Generator {
     	responses.get(Action.CONVENTIONAL_OPENING).add("Hello");
     	responses.get(Action.QUESTION_WH).add("What is your name?");
     	responses.get(Action.QUESTION_YES_NO).add("Do you like cats?");
-    	responses.get(Action.SIGNAL_NON_UNDERSTANDING).add("What?!");
+    	responses.get(Action.SIGNAL_NON_UNDERSTANDING).add("What?");
     	responses.get(Action.SIGNAL_NON_UNDERSTANDING).add("I am confused.");
     	responses.get(Action.STATEMENT).add("The weather is nice today!");
     	responses.get(Action.STATEMENT).add("I like you.");
