@@ -9,7 +9,7 @@ public interface StateSpace {
 	 * @param id The id of the state
 	 * @return A string representation of the states or null if the id does not correspond to a state 
 	 */
-	public String idToState(int id) throws IndexOutOfBoundsException;
+	public String idToState(int id);
 	
 	/**
 	 * Returns the id of the current state of the conversation

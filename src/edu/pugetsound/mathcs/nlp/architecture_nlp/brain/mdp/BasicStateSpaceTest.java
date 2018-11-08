@@ -16,6 +16,17 @@ class BasicStateSpaceTest {
 	private BasicStateSpace states = new BasicStateSpace();
 	private Random rng = new Random();
 
+	@Test
+	void testNullState() {
+		String state = states.idToState(-1);
+		assertEquals(state, null);
+		
+		state = states.idToState(states.numStates());
+		assertEquals(state, null);
+		
+		state = states.idToState(states.numStates()+1);
+		assertEquals(state, null);
+	}
 	
 	/*
 	 * Checks for the correct state in the initial stages of the conversation:

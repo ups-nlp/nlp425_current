@@ -73,8 +73,6 @@ public class BasicStateSpace implements StateSpace {
 	public int getStateId(Conversation conversation){
 		// The last utterance was made by the agent and not the human 
 		if(conversation.size() % 2 == 1) {
-			System.out.println("Size of conversation: " + conversation.size());
-			System.out.println(conversation.getStringRepresentation());
 			throw new IllegalStateException();
 		}		
 				
