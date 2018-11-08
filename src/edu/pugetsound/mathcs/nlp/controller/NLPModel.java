@@ -36,7 +36,7 @@ public class NLPModel implements Model {
 		// Using a Markov Decision Process for the brain
 		final double GAMMA = 0.1; // discounted value for the MDP	
 		final int EXPLORE = 1000; // explore/exploit parameter (larger value corresponds to longer explore phase)
-		brain = new QLearner(new HyperVariables(GAMMA, EXPLORE),true);
+		brain = new QLearner(new HyperVariables(GAMMA, EXPLORE), false);
 		
 		conversationOver = false;
 	}
@@ -106,6 +106,8 @@ public class NLPModel implements Model {
 
 	@Override
 	public String initialResponse() {
+		Utterance agentUtt = analyzer.analyze(INITIAL_GREETING, conversation);
+		conversation.addUtterance(agentUtt);		
 		return INITIAL_GREETING;		
 	}
 
