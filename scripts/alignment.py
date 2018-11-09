@@ -37,7 +37,7 @@ def main():
 	cwd = os.getcwd()
 	dir_path = cwd + "/../resources/switchboard_scrubbed3/"
 	#create output file in resources folder
-	dataset_path = cwd + "/../resources/dataset.utt"
+	dataset_path = cwd + "/../resources/dataset.txt"
 	dataset = open(dataset_path,"w+")
 
 	#iterate through all files in all subfolders, print them all
