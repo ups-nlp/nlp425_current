@@ -7,7 +7,7 @@ import edu.pugetsound.mathcs.nlp.architecture_nlp.features.TextAnalyzer;
 import edu.pugetsound.mathcs.nlp.kb.KBController;
 
 /**
- * This class seeks to demonstrate basic understanding of the inner moduels within the agent
+ * This class seeks to demonstrate basic understanding of the inner modules within the agent
  * @author jpolonitza
  */
 public class JaredTextAnalyzer {
@@ -42,7 +42,7 @@ public class JaredTextAnalyzer {
 				 scan.close();
 			 }
 			 else {
-				 Utterance u = analyzer.analyze(line,new Conversation());
+				 Utterance u = analyzer.analyze(line,convo);
 				 convo.addUtterance(u);
 			 }
 		 }
