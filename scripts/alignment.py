@@ -13,14 +13,16 @@ def text_align(utterance_file_name, dataset_file_name):
 	text = open(utterance_file_name, "r")
 	dataset = open(dataset_file_name, "a")
 	for line in text:
-		str_array = line.split("	")
+		print(utterance_file_name)
+		str_array = line.split("\t")
 		str_array_person = str_array[1].split(".")[0]
 		str_array_utt = str_array[1].split(".")[1]
 		#if we are currently switching to A or B's response
 		if last_utt_person == "A" and str_array_person == "B" and last_utt != []:
 			#create tab separated strings including the info
-			utt1 = last_utt[0] + "\t" + last_utt_utt + "\t" + last_utt_person + "\t" + last_utt[2]
-			utt2 = "\t" + str_array[0] + "\t" + str_array_utt + "\t" + str_array_person + "\t" + str_array[2] + "\n"
+			utt1 = last_utt[0] + "\t" + last_utt[2]
+			utt1 = utt1.strip("\n")
+			utt2 = "\t" + str_array[0] + "\t" + str_array[2] + "\n"
 			utt = utt1 + utt2
 			#write these strings to the output file
 			dataset.write(utt)
@@ -44,7 +46,8 @@ def main():
 	#specify files to skip
 	doc = dir_path + "doc"
 	readme = dir_path + "README"
-	ignore_list = [doc, readme]
+	small_test = dir_path + "dataset_small_test_file.txt"
+	ignore_list = [doc, readme, small_test]
 	for subdir, dirs, files in os.walk(dir_path):
 		for file in files:
 			utt_filename = os.path.join(subdir, file)
