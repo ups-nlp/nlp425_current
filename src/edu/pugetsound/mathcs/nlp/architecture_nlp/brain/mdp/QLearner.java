@@ -17,21 +17,21 @@ import java.util.*;
  * @version 05/30/18
  */
 public class QLearner implements DecisionMaker {
-	private HyperVariables params;
+	protected HyperVariables params;
 
-	private Action[] actions;
-	private StateSpace states;
-	private double[][] q_table;
+	protected Action[] actions;
+	protected StateSpace states;
+	protected double[][] q_table;
 
-	private int lastState;
-	private int lastAction;
-	private int lastReward;
-	private int numItersSoFar;
+	protected int lastState;
+	protected int lastAction;
+	protected int lastReward;
+	protected int numItersSoFar;
 	
 	protected Random rng;
 	protected Scanner in;
 	
-	private static final String INPUT_PATH = PathFormat.absolutePathFromRoot("models/qlearner/qlearner");
+	protected static final String INPUT_PATH = PathFormat.absolutePathFromRoot("models/qlearner/qlearner");
 
 	
 	/**
@@ -52,7 +52,7 @@ public class QLearner implements DecisionMaker {
 		
 		//create states and actions
 		actions = Action.values(); // TODO: Do we need a deep copy here? Are we ever changing actions?
-		states = new StateBuilder();
+		states = new BasicStateSpace();
 		q_table = new double[states.numStates()][actions.length];
 		if (readFromFile) {
 			readFromFile(null);
@@ -67,7 +67,6 @@ public class QLearner implements DecisionMaker {
 		in = new Scanner(System.in);
 		rng = new Random();
 	}
-
 	
 
 	
@@ -82,6 +81,13 @@ public class QLearner implements DecisionMaker {
 			assert(conversation.size() == 0);
 			numItersSoFar++;
 			return Action.CONVENTIONAL_OPENING;
+		}
+		
+		if(Logger.debug()) {
+			System.out.println("lastState was: " + lastState);
+			System.out.println("last action was: " + lastAction);
+			System.out.println("last reward was: " + lastReward);
+			System.out.println("num iters so far: " +numItersSoFar);
 		}
 		
 		// Compute the updated annealing parameter which ranges 
@@ -99,6 +105,7 @@ public class QLearner implements DecisionMaker {
 		int stateIndex = states.getStateId(conversation);
 		if (Logger.debug()) {
 			System.out.println("current state index: " + stateIndex);
+			System.out.println("current state: " + states.idToState(states.getStateId(conversation)));
 			System.out.println("Updating previous states");
 		}
 
