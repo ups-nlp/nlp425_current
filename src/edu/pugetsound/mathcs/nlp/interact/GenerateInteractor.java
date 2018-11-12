@@ -1,5 +1,20 @@
-package edu.pugetsound.mathcs.nlp.think;
-
+package edu.pugetsound.mathcs.nlp.interact;
+/*******************************************************************************
+ * Copyright (C) 2011 - 2015 Yoav Artzi, All rights reserved.
+ * <p>
+ * This program is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License as published by the Free Software
+ * Foundation; either version 2 of the License, or any later version.
+ * <p>
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+ * details.
+ * <p>
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, write to the Free Software Foundation, Inc., 51
+ * Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ *******************************************************************************/
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,6 +42,7 @@ import edu.cornell.cs.nlp.spf.data.singlesentence.SingleSentenceCollection;
 import edu.cornell.cs.nlp.spf.data.utils.LabeledValidator;
 import edu.cornell.cs.nlp.spf.genlex.ccg.ILexiconGenerator;
 import edu.cornell.cs.nlp.spf.genlex.ccg.template.TemplateSupervisedGenlex;
+import edu.cornell.cs.nlp.spf.geoquery.GeoExpSimple;
 import edu.cornell.cs.nlp.spf.learn.ILearner;
 import edu.cornell.cs.nlp.spf.learn.validation.stocgrad.ValidationStocGrad;
 import edu.cornell.cs.nlp.spf.learn.validation.stocgrad.ValidationStocGrad.Builder;
@@ -73,24 +89,22 @@ import edu.cornell.cs.nlp.utils.log.Log;
 import edu.cornell.cs.nlp.utils.log.LogLevel;
 import edu.cornell.cs.nlp.utils.log.Logger;
 import edu.cornell.cs.nlp.utils.log.LoggerFactory;
+import edu.pugetsound.mathcs.nlp.interact.Interactor;
 /**
+ * Cross validation experiment for GeoQuery using fold0 for testing. This class
+ * is intended to illustrate how an experiment is structured. For complete
+ * experiments see the accompanying ExPlat files.
+ *
  * @author Yoav Artzi & Jared Polonitza
  */
-public class TrainModel {
-	
-	private TrainModel() {
-		// Private ctor. Service class.
+public class GenerateInteractor {
+	public static final ILogger LOG = LoggerFactory.create(GeoExpSimple.class);
+	private Interactor<Sentence,LogicalExpression,Sentence> interactor;
+
+	public GenerateInteractor() {
 	}
 
-	public static void main(String[] args) {
-
-		// //////////////////////////////////////////
-		// Init logging
-		// //////////////////////////////////////////
-		Logger.DEFAULT_LOG = new Log(System.err);
-		Logger.setSkipPrefix(true);
-		LogLevel.setLogLevel(LogLevel.INFO);
-
+	public Interactor generate() {
 		// //////////////////////////////////////////
 		// Set some locations to use later
 		// //////////////////////////////////////////
@@ -98,6 +112,7 @@ public class TrainModel {
 		final File resourceDir = new File("SpfResources/resources/");
 		final File dataDir = new File("SpfResources/experiments/data");
 		final File modelDir = new File("SpfResources/model");
+
 
 		// //////////////////////////////////////////
 		// Use tree hash vector
@@ -238,191 +253,27 @@ public class TrainModel {
 										nf))
 						.build();
 
-		// //////////////////////////////////////////////////
-		// Model
-		// //////////////////////////////////////////////////
-
-		final Model<Sentence, LogicalExpression> model = new Model.Builder<Sentence, LogicalExpression>()
-				.setLexicon(new FactoredLexicon())
-				.addFeatureSet(new FactoredLexicalFeatureSet.Builder<Sentence>()
-						.setTemplateScale(0.1).build())
-				.addFeatureSet(new DynamicWordSkippingFeatures<>(
-						categoryServices.getEmptyCategory()))
-				.addFeatureSet(
-						new LogicalExpressionCoordinationFeatureSet<Sentence>(
-								true, true, true))
-				.build();
-
-		// Model logger
-		final ModelLogger modelLogger = new ModelLogger(true);
-
-		// //////////////////////////////////////////////////
-		// Validation function
-		// //////////////////////////////////////////////////
-
-		final LabeledValidator<SingleSentence, LogicalExpression> validator = new LabeledValidator<SingleSentence, LogicalExpression>();
-
-		// //////////////////////////////////////////////////
-		// Genlex function
-		// //////////////////////////////////////////////////
-
-		final TemplateSupervisedGenlex<Sentence, SingleSentence> genlex = new TemplateSupervisedGenlex<Sentence, SingleSentence>(
-				4, false, ILexiconGenerator.GENLEX_LEXICAL_ORIGIN);
-
-		// //////////////////////////////////////////////////
-		// Load training and testing data
-		// //////////////////////////////////////////////////
-
-		final List<IDataCollection<? extends SingleSentence>> folds = new ArrayList<IDataCollection<? extends SingleSentence>>(
-				10);
-		for (int i = 0; i < 10; ++i) {
-			folds.add(SingleSentenceCollection
-					.read(new File(dataDir, String.format("fold%d.ccg", i))));
-		}
-		final CompositeDataCollection<SingleSentence> train = new CompositeDataCollection<SingleSentence>(
-				folds.subList(1, folds.size()));
-		final IDataCollection<? extends SingleSentence> test = folds.get(0);
-		
-		final SentenceCollection talk = SentenceCollection.read(new File(dataDir, "sentence.ccg"));
-
-		// //////////////////////////////////////////////////
-		// Learner
-		// //////////////////////////////////////////////////
-
-		// Many complex classes use the builder design pattern. For example, the
-		// learner we will use in this example is created via a builder. The
-		// builder constructor takes the non-optional argument the learner will
-		// need. All other parameters are optional and have default values
-		// inside the builder. In general, builder classes are located in the
-		// classes they are used to create.
-		final Builder<Sentence, SingleSentence, LogicalExpression> builder = new ValidationStocGrad.Builder<Sentence, SingleSentence, LogicalExpression>(
-				train, parser, validator);
-
-		// Add the GENLEX procedure to allow for lexical learning.
-		builder.setGenlex(genlex, categoryServices);
-
-		// We will use a larger beam for lexical generation. This will override
-		// the beam set for the parser.
-		builder.setLexiconGenerationBeamSize(100);
-
-		// 4 learning iterations. If we hadn't specified 4 here, the learner
-		// would have used the default value from the builder class. Usually, we
-		// run experiments with a higher number of iterations, when possible.
-		// However, we use 4 iterations here to make this example faster to run.
-		builder.setNumIterations(4);
-
-		// We are doing supervised learning, so we will use a supervised filter.
-		// See the filter factory for an explanation.
-		builder.setParsingFilterFactory(
-				new SupervisedFilterFactory<>(PredicateUtils.alwaysTrue()));
-
-		// To make learning faster we are going to ignore all sentences that are
-		// longer than 50 tikens.
-		builder.setProcessingFilter(new SentenceLengthFilter<>(50));
-
-		// To speed learning further, we make the learner error driven, meaning:
-		// if it can parse a sentence, it will skip lexical induction.
-		builder.setErrorDriven(true);
-
-		// Another option for speeding the learner. This time we choose not to
-		// use it. If this was set to true, it would have recycled derivations
-		// between the two steps (lexical induction and parameter update).
-		builder.setConflateGenlexAndPrunedParses(false);
-
-		// Optional: we have the option to create files with more verbose
-		// logging. This is separate from simply increasing the log level of the
-		// system (or of a specific class). The output logger we use here dumps
-		// the chart of the CKY parser to a file. It assumes the directory given
-		// exists. If the directory is missing, it will LOG an error message and
-		// won't log the chart. Naturally, this logging slows the system.
-		builder.setParserOutputLogger(new ChartLogger<>(new File("/tmp/charts"),
-				"geoexpsimple", false));
-
-		// Not that we set all the learning parameters, we call build() to
-		// create the learner.
-		final ILearner<Sentence, SingleSentence, Model<Sentence, LogicalExpression>> learner = builder
-				.build();
-
-		// //////////////////////////////////////////////////
-		// Tester
-		// //////////////////////////////////////////////////
-
-		final Tester.Builder<Sentence, LogicalExpression, SingleSentence> testBuilder = new Tester.Builder<Sentence, LogicalExpression, SingleSentence>(
-				test, parser);
-
-		// Optional: we have the option to create files with more verbose
-		// logging. This is separate from simply increasing the log level of the
-		// system (or of a specific class). The output logger we use here dumps
-		// the chart of the CKY parser to a file. It assumes the directory given
-		// exists. If the directory is missing, it will LOG an error message and
-		// won't log the chart. Naturally, this logging slows the system.
-		testBuilder.setOutputLogger(new ChartLogger<>(new File("/tmp/charts"),
-				"geoexpsimple", false));
-
-		final Tester<Sentence, LogicalExpression, SingleSentence> tester = testBuilder
-				.build();
-
-		// //////////////////////////////////////////////////
-		// Init model
-		// //////////////////////////////////////////////////
-
-		new LexiconModelInit<Sentence, LogicalExpression>(semiFactored)
-				.init(model);
-		new LexiconModelInit<Sentence, LogicalExpression>(npLexicon)
-				.init(model);
-		new LexicalFeaturesInit<Sentence, LogicalExpression>(semiFactored,
-				KeyArgs.read("FACLEX#LEX"),
-				new ExpLengthLexicalEntryScorer<LogicalExpression>(10.0, 1.1))
-						.init(model);
-		new LexicalFeaturesInit<Sentence, LogicalExpression>(npLexicon,
-				KeyArgs.read("FACLEX#LEX"),
-				new ExpLengthLexicalEntryScorer<LogicalExpression>(10.0, 1.1))
-						.init(model);
-		new LexicalFeaturesInit<Sentence, LogicalExpression>(semiFactored,
-				KeyArgs.read("FACLEX#XEME"), 10.0).init(model);
-		new LexicalFeaturesInit<Sentence, LogicalExpression>(npLexicon,
-				KeyArgs.read("FACLEX#XEME"), 10.0).init(model);
-
-		// Init the weight for the dynamic word skipping feature.
-		model.getTheta().set("DYNSKIP", -1.0);
-
-		// //////////////////////////////////////////////////
-		// Log initial model
-		// //////////////////////////////////////////////////
-
-		modelLogger.log(model, System.err);
-
-		// //////////////////////////////////////////////////
-		// Training
-		// //////////////////////////////////////////////////
-
-		final long startTime = System.currentTimeMillis();
-
-		learner.train(model);
-
-		// //////////////////////////////////////////////////
-		// Log final model.
-		// //////////////////////////////////////////////////
-
-		modelLogger.log(model, System.err);
-
-		// //////////////////////////////////////////////////
-		// Testing.
-		// //////////////////////////////////////////////////
-
-		final ExactMatchTestingStatistics<Sentence, LogicalExpression, SingleSentence> stats = new ExactMatchTestingStatistics<Sentence, LogicalExpression, SingleSentence>();
-		tester.test(model, stats);
-		System.out.println(model);
-		
-		// //////////////////////////////////////////////////
-		// Write the model to file.
-		// //////////////////////////////////////////////////
 		try {
-			model.write(model, new File(modelDir, "model2"));
+			// //////////////////////////////////////////////////
+			// Model
+			// //////////////////////////////////////////////////
+			
+			final Model<Sentence, LogicalExpression> model = Model.readModel(new File(modelDir,"model"));
+						
+			// //////////////////////////////////////////////////
+			// Wrap
+			// //////////////////////////////////////////////////
+			
+			final Interactor.Builder<Sentence,LogicalExpression,Sentence> interBuild = new Interactor.Builder<Sentence, LogicalExpression,Sentence>(parser,model);
+			interactor = interBuild.build();
+			
+		}
+		catch (ClassNotFoundException message){
+			System.out.println(message);
 		}
 		catch (IOException message) {
 			System.out.println(message);
 		}
-		
+		return interactor;
 	}
 }

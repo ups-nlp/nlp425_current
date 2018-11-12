@@ -94,6 +94,8 @@ public class Utterance {
 	 */
 	public List<MyPredicate> firstOrderRep;
 	
+	public String SPFparse;
+	
 	
 	/**
 	 * The dialogue act of the utterance
