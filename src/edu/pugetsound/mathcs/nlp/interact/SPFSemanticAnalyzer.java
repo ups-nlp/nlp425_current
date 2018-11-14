@@ -2,12 +2,16 @@ package edu.pugetsound.mathcs.nlp.interact;
 
 import edu.cornell.cs.nlp.spf.base.string.IStringFilter;
 import edu.cornell.cs.nlp.spf.base.string.StubStringFilter;
+import edu.cornell.cs.nlp.spf.ccg.lexicon.LexicalEntry;
 import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
 import edu.cornell.cs.nlp.spf.mr.lambda.LogicalExpression;
 import edu.cornell.cs.nlp.spf.parser.IDerivation;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.features.SemanticAnalyzer;
 import edu.pugetsound.mathcs.nlp.lang.Conversation;
 import edu.pugetsound.mathcs.nlp.lang.Utterance;
+
+import java.util.LinkedHashSet;
+import java.util.List;
 
 public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 	private Interactor<Sentence,LogicalExpression,Sentence> interactor;
@@ -25,7 +29,9 @@ public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 		Sentence sentence = new Sentence(currentSentence);
 		Sentence dataItem = new Sentence(sentence);
 		IDerivation<LogicalExpression> parse = interactor.interact(dataItem);
-		System.out.println(parse);
-	}
-
+		//Set information about the utterance
+		utt.SPFparse = parse.toString();
+		utt.SpfWordBreaks = parse.getAllLexicalEntries();
+		System.out.println(utt.SPFparse);
+ 	}
 }

@@ -2,8 +2,11 @@ package edu.pugetsound.mathcs.nlp.lang;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 
+import edu.cornell.cs.nlp.spf.ccg.lexicon.LexicalEntry;
+import edu.cornell.cs.nlp.spf.mr.lambda.LogicalExpression;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.brain.DialogueActTag;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.features.MyTree;
 import edu.pugetsound.mathcs.nlp.kb.MyPredicate;
@@ -94,8 +97,15 @@ public class Utterance {
 	 */
 	public List<MyPredicate> firstOrderRep;
 	
+	/*
+	 * Representation of the meaning of the utterance in lambda calculus
+	 */
 	public String SPFparse;
 	
+	/*
+	 * List of all words in utt, stored with their CYK representation, and logical representation
+	 */
+	public LinkedHashSet<LexicalEntry<LogicalExpression>> SpfWordBreaks;
 	
 	/**
 	 * The dialogue act of the utterance
