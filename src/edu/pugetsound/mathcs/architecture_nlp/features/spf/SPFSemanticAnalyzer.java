@@ -1,4 +1,4 @@
-package edu.pugetsound.mathcs.nlp.interact;
+package edu.pugetsound.mathcs.architecture_nlp.features.spf;
 
 import edu.cornell.cs.nlp.spf.base.string.IStringFilter;
 import edu.cornell.cs.nlp.spf.base.string.StubStringFilter;
@@ -12,7 +12,14 @@ import edu.pugetsound.mathcs.nlp.lang.Utterance;
 
 import java.util.LinkedHashSet;
 import java.util.List;
-
+/**
+ * This class acts as a platform to take user utterances and derive Logical representations
+ * of the meaning of the utterance. This is done so via the usage of Yoav Artzi's SPF model, 
+ * contained within Interactor.
+ * 
+ * @author jpolonitza
+ * @version 1.0
+ */
 public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 	private Interactor<Sentence,LogicalExpression,Sentence> interactor;
 	private GenerateInteractor translate = new GenerateInteractor(); 
@@ -21,6 +28,10 @@ public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 		interactor = translate.generate();
 	}
 	
+	/*
+	 * This method takes an utterance, populating the SPFParse field of the utterance
+	 * with the resulting parse from the SPF model.
+	 */
 	@Override
 	public void analyze(Utterance utt, Conversation convo) {
 		IStringFilter textFilter = new StubStringFilter();
