@@ -21755,7 +21755,7 @@ aa	Sure	qo	what is your feeling about expressing yourself by burning the America
 sd	But I would never	ad	Well now wait a minute there
 aa	Yeah.	sd	you just said it.
 qy^d	I guess you feel differently.	qy	Then would you condone the burning of the capitol building?
-sv	If somebody buys their own flag and burns it that's fine	x
+sv	If somebody buys their own flag and burns it that's fine	x	
 sv	but that's you know that's destruction of public property and whatever.	bf	then you don't draw a line between public property and a public symbol.
 sv	I think what America stands for is the right to be able to disagree with the government.	b	yeah
 sv	I think that's what's made democracy	sd	but here again I go back to the second amendment
@@ -42077,7 +42077,7 @@ o*	Way. / * what is this?	sd(^q)	and I said "you can walk off your lunch."
 sv	That's the way to do it.	aa	Yeah.
 sd	it's just a chore, you know,	b	 Oh.
 sv	and that will get me where I'll have to do it, you know,	b	Uh huh.
-sd	and they were offering a walking class, where you know, you have to walk, you know, like for every mile you walk and every so many minutes, you get points, you know,	b
+sd	and they were offering a walking class, where you know, you have to walk, you know, like for every mile you walk and every so many minutes, you get points, you know,	b	
 sd	and, at the end of the semester you go back in and like your final exam is a three mile walk.	b	Oh.
 sd	this many minutes you get a B,	b	Uh huh.
 sd	like about the middle of the semester I ended up having to have surgery on my foot,	b	no.
