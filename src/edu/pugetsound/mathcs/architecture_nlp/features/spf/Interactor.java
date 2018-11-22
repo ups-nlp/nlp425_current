@@ -16,6 +16,11 @@
  *******************************************************************************/
 package edu.pugetsound.mathcs.architecture_nlp.features.spf;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import edu.cornell.cs.nlp.spf.base.hashvector.IHashVector;
@@ -24,6 +29,7 @@ import edu.cornell.cs.nlp.spf.data.IDataItem;
 import edu.cornell.cs.nlp.spf.data.ILabeledDataItem;
 import edu.cornell.cs.nlp.spf.data.collection.IDataCollection;
 import edu.cornell.cs.nlp.spf.data.sentence.Sentence;
+import edu.cornell.cs.nlp.spf.data.sentence.SentenceCollection;
 import edu.cornell.cs.nlp.spf.explat.IResourceRepository;
 import edu.cornell.cs.nlp.spf.explat.ParameterizedExperiment.Parameters;
 import edu.cornell.cs.nlp.spf.explat.resources.IResourceObjectCreator;
@@ -67,11 +73,15 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 	private IModelImmutable<SAMPLE,MR> model;
 
 	private IFilter<SAMPLE> skipParsingFilter;
+	
+	private final IDataCollection<? extends DI> testData;
 
-	private Interactor(IFilter<SAMPLE> skipParsingFilter, IParser<SAMPLE, MR> parser, IModelImmutable<SAMPLE, MR> model) {
+	private Interactor(IFilter<SAMPLE> skipParsingFilter, IParser<SAMPLE, MR> parser,
+						IModelImmutable<SAMPLE, MR> model, IDataCollection<? extends DI> testData) {
 		this.skipParsingFilter = skipParsingFilter;
 		this.parser = parser;
 		this.model = model;
+		this.testData = testData;
 	}
 	
 	public IDerivation<MR> interact(final DI dataItem) {
@@ -130,6 +140,35 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 //		System.out.println(bestModelParses.getClass());
 		
 	}
+	
+	@Override
+	public void conversation() {
+		String path = System.getProperty("user.dir");
+		ArrayList<IDerivation<MR>> parses = new ArrayList<>();
+		System.out.println(testData.size());
+		for (DI d : testData) {
+			parses.add(interact(d));
+		}
+		String str = "";
+		for (IDerivation<MR> i : parses) {
+			if (i != null) {
+				str += i.toString() + "\n";
+			}
+			else {
+				str += "null \n";
+			}
+		}
+		File name = new File(path + "/resources/SpfResources/experiments/data/results");
+		try {
+
+			BufferedWriter writer = new BufferedWriter(new FileWriter(name));
+	        writer.write(str);
+	        writer.close();
+		}
+		catch (IOException e) {
+			System.out.print(e);
+		}
+	}
 
 	//Returns a successful parse
 	private MR processSingleBestParse(final SAMPLE sample,
@@ -145,6 +184,8 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 		
 		private final IParser<SAMPLE, MR> parser;
 		
+		private final IDataCollection<? extends DI> testData;
+		
 
 		/** Filters which data items are valid for parsing with word skipping */
 		private IFilter<SAMPLE> skipParsingFilter = e -> true;		
@@ -152,10 +193,17 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 		public Builder(IParser<SAMPLE, MR> parser,IModelImmutable<SAMPLE, MR> model) {
 			this.parser = parser;
 			this.model = model;
+			testData = null;
+		}
+		
+		public Builder(IParser<SAMPLE, MR> parser,IModelImmutable<SAMPLE, MR> model, IDataCollection<? extends DI> testData) {
+			this.parser = parser;
+			this.model = model;
+			this.testData = testData;
 		}
 
 		public Interactor<SAMPLE, MR, DI> build() {
-			return new Interactor<SAMPLE, MR, DI>(skipParsingFilter, parser, model);
+			return new Interactor<SAMPLE, MR, DI>(skipParsingFilter, parser, model,testData);
 		}
 
 		public Builder<SAMPLE, MR, DI> setSkipParsingFilter(

@@ -100,18 +100,27 @@ import edu.pugetsound.mathcs.architecture_nlp.features.spf.Interactor;
 public class GenerateInteractor {
 	public static final ILogger LOG = LoggerFactory.create(GeoExpSimple.class);
 	private Interactor<Sentence,LogicalExpression,Sentence> interactor;
+	private boolean fromFile;
+	private String fileName;
 
 	public GenerateInteractor() {
+		fromFile = false;
+		this.fileName = "";
+	}
+	
+	public GenerateInteractor(String fileName) {
+		fromFile = true;
+		this.fileName = fileName;
 	}
 
 	public Interactor generate() {
 		// //////////////////////////////////////////
 		// Set some locations to use later
 		// //////////////////////////////////////////
-
-		final File resourceDir = new File("SpfResources/resources/");
-		final File dataDir = new File("SpfResources/experiments/data");
-		final File modelDir = new File("SpfResources/model");
+		String path = System.getProperty("user.dir");
+		final File resourceDir = new File(path + "/resources/SpfResources/resources/");
+		final File dataDir = new File(path + "/resources/SpfResources/experiments/data");
+		final File modelDir = new File(path + "/resources/SpfResources/model");
 
 
 		// //////////////////////////////////////////
@@ -264,8 +273,15 @@ public class GenerateInteractor {
 			// Wrap
 			// //////////////////////////////////////////////////
 			
-			final Interactor.Builder<Sentence,LogicalExpression,Sentence> interBuild = new Interactor.Builder<Sentence, LogicalExpression,Sentence>(parser,model);
-			interactor = interBuild.build();
+			if (fromFile) {
+				final SentenceCollection talk = SentenceCollection.read(new File(dataDir, fileName));
+				final Interactor.Builder<Sentence,LogicalExpression,Sentence> interBuild = new Interactor.Builder<Sentence, LogicalExpression,Sentence>(parser,model,talk);
+				interactor = interBuild.build();
+			}
+			else {
+				final Interactor.Builder<Sentence,LogicalExpression,Sentence> interBuild = new Interactor.Builder<Sentence, LogicalExpression,Sentence>(parser,model);
+				interactor = interBuild.build();
+			}
 			
 		}
 		catch (ClassNotFoundException message){

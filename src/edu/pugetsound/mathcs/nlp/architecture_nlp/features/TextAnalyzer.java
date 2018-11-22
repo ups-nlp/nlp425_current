@@ -77,7 +77,7 @@ public class TextAnalyzer {
 	public TextAnalyzer(KBController kb){
 		nlpAnalyzer = new StanfordSuite();		
 		//semAnalyzer = new CFGSemanticAnalyzer(kb);
-		semAnalyzer = new SPFSemanticAnalyzer();
+		semAnalyzer = new SPFSemanticAnalyzer("sentence.ccg");
 		anaphoraAnalyzer = new AnaphoraAnalyzer();
 		standardizedForms = new HashMap<String, String>();
 		greetClose = new HashMap<String, DialogueActTag>();

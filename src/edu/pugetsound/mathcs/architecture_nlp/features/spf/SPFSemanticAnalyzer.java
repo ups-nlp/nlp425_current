@@ -22,10 +22,17 @@ import java.util.List;
  */
 public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 	private Interactor<Sentence,LogicalExpression,Sentence> interactor;
-	private GenerateInteractor translate = new GenerateInteractor(); 
+	private GenerateInteractor translate; 
 	
 	public SPFSemanticAnalyzer() {
+		translate = new GenerateInteractor();
 		interactor = translate.generate();
+	}
+	
+	public SPFSemanticAnalyzer(String fileName) {
+		translate = new GenerateInteractor(fileName);
+		interactor = translate.generate();
+		testDataSet();
 	}
 	
 	/*
@@ -45,4 +52,8 @@ public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 		utt.SpfWordBreaks = parse.getAllLexicalEntries();
 		System.out.println(utt.SPFparse);
  	}
+	
+	public void testDataSet() {
+		interactor.conversation();
+	}
 }

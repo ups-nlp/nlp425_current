@@ -8,5 +8,8 @@ public interface IInteract<SAMPLE extends IDataItem<?>, LABEL, DI extends IDataI
 
 	//Feed the model a sentence
 	IDerivation<LABEL> interact(DI sentence);
-
+	
+	//Feed the model a set of sentences
+	void conversation();
+	
 }
