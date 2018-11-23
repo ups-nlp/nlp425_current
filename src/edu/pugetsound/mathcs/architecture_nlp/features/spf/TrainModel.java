@@ -283,7 +283,6 @@ public class TrainModel {
 				folds.subList(1, folds.size()));
 		final IDataCollection<? extends SingleSentence> test = folds.get(0);
 		
-		final SentenceCollection talk = SentenceCollection.read(new File(dataDir, "sentence.ccg"));
 
 		// //////////////////////////////////////////////////
 		// Learner
