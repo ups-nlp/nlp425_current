@@ -77,12 +77,11 @@ public class TextAnalyzer {
 	public TextAnalyzer(KBController kb){
 		nlpAnalyzer = new StanfordSuite();		
 		//semAnalyzer = new CFGSemanticAnalyzer(kb);
-		semAnalyzer = new SPFSemanticAnalyzer("sentence.ccg");
+		semAnalyzer = new SPFSemanticAnalyzer();
 		anaphoraAnalyzer = new AnaphoraAnalyzer();
 		standardizedForms = new HashMap<String, String>();
 		greetClose = new HashMap<String, DialogueActTag>();
 		dialogueClassifier = new DAClassifier(DAClassifier.Mode.DUMB_NAIVE_BAYES);
-
 		HashReader reader = new HashReader();
 		reader.populateGreeting();
 		reader.populateStandardForms();

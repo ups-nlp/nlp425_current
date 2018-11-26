@@ -117,10 +117,10 @@ public class GenerateInteractor {
 		// //////////////////////////////////////////
 		// Set some locations to use later
 		// //////////////////////////////////////////
-		String path = System.getProperty("user.dir");
-		final File resourceDir = new File(path + "/resources/SpfResources/resources/");
-		final File dataDir = new File(path + "/resources/SpfResources/experiments/data");
-		final File modelDir = new File(path + "/resources/SpfResources/model");
+		String path = System.getProperty("resources");
+		final File resourceDir = new File(path + "/SpfResources/resources/");
+		final File dataDir = new File(path + "/SpfResources/experiments/data");
+		final File modelDir = new File(path + "/SpfResources/model");
 
 
 		// //////////////////////////////////////////

@@ -95,9 +95,10 @@ public class TrainModel {
 		// Set some locations to use later
 		// //////////////////////////////////////////
 
-		final File resourceDir = new File("resources/SpfResources/resources/");
-		final File dataDir = new File("resources/SpfResources/experiments/data");
-		final File modelDir = new File("resources/SpfResources/model");
+		String path = System.getProperty("resources");
+		final File resourceDir = new File(path + "/SpfResources/resources/");
+		final File dataDir = new File(path + "/SpfResources/experiments/data");
+		final File modelDir = new File(path + "/SpfResources/model");
 
 		// //////////////////////////////////////////
 		// Use tree hash vector
@@ -283,7 +284,6 @@ public class TrainModel {
 				folds.subList(1, folds.size()));
 		final IDataCollection<? extends SingleSentence> test = folds.get(0);
 		
-
 		// //////////////////////////////////////////////////
 		// Learner
 		// //////////////////////////////////////////////////
