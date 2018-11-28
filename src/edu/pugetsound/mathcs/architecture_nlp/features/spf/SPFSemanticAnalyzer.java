@@ -48,9 +48,11 @@ public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 		Sentence dataItem = new Sentence(sentence);
 		IDerivation<LogicalExpression> parse = interactor.interact(dataItem);
 		//Set information about the utterance
-		utt.SPFparse = parse.toString();
-		utt.SpfWordBreaks = parse.getAllLexicalEntries();
-		System.out.println(utt.SPFparse);
+		if (parse != null) {
+			utt.SPFparse = parse.toString();
+			utt.SpfWordBreaks = parse.getAllLexicalEntries();
+			System.out.println(utt.SPFparse);
+		}
  	}
 	
 	public void testDataSet() {
