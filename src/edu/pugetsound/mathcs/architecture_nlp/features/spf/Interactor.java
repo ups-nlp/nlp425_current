@@ -143,7 +143,9 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 	
 	@Override
 	public void conversation() {
-		String path = System.getProperty("resources");
+		String p = System.getProperty("user.dir");
+		File f = new File(p + "/resources");
+		String path = f.getAbsolutePath();
 		ArrayList<IDerivation<MR>> parses = new ArrayList<>();
 		System.out.println(testData.size());
 		for (DI d : testData) {

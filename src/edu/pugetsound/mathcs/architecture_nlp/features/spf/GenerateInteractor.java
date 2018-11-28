@@ -117,7 +117,10 @@ public class GenerateInteractor {
 		// //////////////////////////////////////////
 		// Set some locations to use later
 		// //////////////////////////////////////////
-		String path = System.getProperty("resources");
+		String p = System.getProperty("user.dir");
+		File f = new File(p + "/resources");
+		String path = f.getAbsolutePath();
+		System.out.println(path);
 		final File resourceDir = new File(path + "/SpfResources/resources/");
 		final File dataDir = new File(path + "/SpfResources/experiments/data");
 		final File modelDir = new File(path + "/SpfResources/model");
