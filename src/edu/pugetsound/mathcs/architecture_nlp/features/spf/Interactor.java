@@ -50,15 +50,11 @@ import edu.cornell.cs.nlp.utils.log.LoggerFactory;
 
 /**
  * Module to allow the interaction of the Model with both singular sentences and with a set of sentences.
- * When given a set of sentences, resulting parses are written out to file
+ * When given a set of sentences, resulting parses are written out to file. This file is modeled off of Yoav 
+ * Artiz's Tester unit. Instead of taking in results from parses and catologuing results, this unit takes in
+ * sentences and returns LogicalRepresentation parses to be used by the rest of the system.
  *
  * @author Yoav Artzi & Jared Polonitza
- * @param <SAMPLE>
- *            Inference data item.
- * @param <MR>
- *            Meaning representation.
- * @param <DI>
- *            Labeled data item.
  */
 
 //THINGS TO ADD: list of sentences translated so far

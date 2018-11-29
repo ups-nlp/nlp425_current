@@ -17,7 +17,7 @@ import java.util.List;
  * of the meaning of the utterance. This is done so via the usage of Yoav Artzi's SPF model, 
  * contained within Interactor.
  * 
- * @author jpolonitza
+ * @author Jared Polonitza
  * @version 1.0
  */
 public class SPFSemanticAnalyzer implements SemanticAnalyzer{

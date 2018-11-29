@@ -91,10 +91,10 @@ import edu.cornell.cs.nlp.utils.log.Logger;
 import edu.cornell.cs.nlp.utils.log.LoggerFactory;
 import edu.pugetsound.mathcs.architecture_nlp.features.spf.Interactor;
 /**
- * Cross validation experiment for GeoQuery using fold0 for testing. This class
- * is intended to illustrate how an experiment is structured. For complete
- * experiments see the accompanying ExPlat files.
- *
+ * Class to generate a SPF parser and load an SPF model from file. This class passes these values to 
+ * an Interactor object and as a result returns an Interactor. This is modified from Yoav Artzi's GeoExpSimple, 
+ * edited to load a model from file and allow said model to be held in an object.
+ * 
  * @author Yoav Artzi & Jared Polonitza
  */
 public class GenerateInteractor {
