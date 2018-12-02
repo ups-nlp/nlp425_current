@@ -76,7 +76,8 @@ import edu.cornell.cs.nlp.utils.log.LoggerFactory;
 /**
  * Class to train a SPFModel. Using the data files in preset directories, this will train a new Sentence
  * to LogicalExpression parser, and write the results to a file that can later be used by GenerateInteractor
- * to incorporate the SPFModel into the current NLP pipeline
+ * to incorporate the SPFModel into the current NLP pipeline.
+ * 
  * 
  * @author Yoav Artzi & Jared Polonitza
  */

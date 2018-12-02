@@ -95,7 +95,7 @@ import edu.pugetsound.mathcs.architecture_nlp.features.spf.Interactor;
  * an Interactor object and as a result returns an Interactor. This is modified from Yoav Artzi's GeoExpSimple, 
  * edited to load a model from file and allow said model to be held in an object.
  * 
- * @author Yoav Artzi & Jared Polonitza
+ * @author Jared Polonitza
  */
 public class GenerateInteractor {
 	public static final ILogger LOG = LoggerFactory.create(GeoExpSimple.class);
@@ -103,16 +103,22 @@ public class GenerateInteractor {
 	private boolean fromFile;
 	private String fileName;
 
+	//Constructor to create Interactor without pre-bundled data
 	public GenerateInteractor() {
 		fromFile = false;
 		this.fileName = "";
 	}
 	
+	//Generate Interactor with pre-bundled data
 	public GenerateInteractor(String fileName) {
 		fromFile = true;
 		this.fileName = fileName;
 	}
 
+	/*
+	 * Create parser and read model from file. These parameters are then fed to an Interactor builder, returning an Interactor
+	 * @return Interactor
+	 */
 	public Interactor generate() {
 		// //////////////////////////////////////////
 		// Set some locations to use later
@@ -275,12 +281,14 @@ public class GenerateInteractor {
 			// Wrap
 			// //////////////////////////////////////////////////
 			
+			//Build interactor with prepackaged data
 			if (fromFile) {
+				//Create bundle of data objects to feed model
 				final SentenceCollection talk = SentenceCollection.read(new File(dataDir, fileName));
 				final Interactor.Builder<Sentence,LogicalExpression,Sentence> interBuild = new Interactor.Builder<Sentence, LogicalExpression,Sentence>(parser,model,talk);
 				interactor = interBuild.build();
 			}
-			else {
+			else { //Build interactor without data
 				final Interactor.Builder<Sentence,LogicalExpression,Sentence> interBuild = new Interactor.Builder<Sentence, LogicalExpression,Sentence>(parser,model);
 				interactor = interBuild.build();
 			}

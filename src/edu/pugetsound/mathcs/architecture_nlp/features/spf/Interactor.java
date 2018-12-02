@@ -51,18 +51,14 @@ import edu.cornell.cs.nlp.utils.log.LoggerFactory;
 /**
  * Module to allow the interaction of the Model with both singular sentences and with a set of sentences.
  * When given a set of sentences, resulting parses are written out to file. This file is modeled off of Yoav 
- * Artiz's Tester unit. Instead of taking in results from parses and catologuing results, this unit takes in
- * sentences and returns LogicalRepresentation parses to be used by the rest of the system.
- *
- * @author Yoav Artzi & Jared Polonitza
+ * Artiz's Tester unit. Instead of taking in results from parses and tabulating results, this unit takes in
+ * sentences and returns Logical Representation parses to be used by the rest of the system.
+ * 
+ * @author Jared Polonitza
  */
 
-//THINGS TO ADD: list of sentences translated so far
 public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SAMPLE>>
 		implements IInteract<SAMPLE, MR, DI> {
-
-	public static final ILogger LOG = LoggerFactory
-			.create(Interactor.class.getName());
 
 	private IParser<SAMPLE, MR> parser;
 	
@@ -80,6 +76,12 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 		this.testData = testData;
 	}
 	
+	/*
+	 * Interact takes a sentence and returns a parse representing the logical form of the given sentence
+	 * 
+	 * @param DI dataItem -> One of the data items in SPF file
+	 * @return IDerivation<MR> -> logical expression of the given sentence
+	 */
 	public IDerivation<MR> interact(final DI dataItem) {
 		
 		final IDataItemModel<MR> dataItemModel = model
@@ -88,9 +90,7 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 		// Try a simple model parse
 		final IParserOutput<MR> modelParserOutput = parser
 				.parse(dataItem.getSample(), dataItemModel);
-		LOG.info("Test parsing time %.2fsec",
-				modelParserOutput.getParsingTime() / 1000.0);
-
+	
 		final List<? extends IDerivation<MR>> bestModelParses = modelParserOutput
 				.getBestDerivations();
 		if (bestModelParses.size() == 1) {
@@ -107,14 +107,11 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 			return bestModelParses.get(0);
 		} else {
 			// No parses
-			LOG.info("no parses");
 			System.out.println("Ive got nothing");
 			// Potentially re-parse with word skipping
 			if (skipParsingFilter.test(dataItem.getSample())) {
 				final IParserOutput<MR> parserOutputWithSkipping = parser
 						.parse(dataItem.getSample(), dataItemModel, true);
-				LOG.info("EMPTY Parsing time %fsec",
-						parserOutputWithSkipping.getParsingTime() / 1000.0);
 				final List<? extends IDerivation<MR>> bestEmptiesParses = parserOutputWithSkipping
 						.getBestDerivations();
 				if (bestEmptiesParses.size() == 1) {
@@ -123,21 +120,23 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 							true);
 				} else if (bestEmptiesParses.isEmpty()) {
 					// No parses
-					LOG.info("no parses");
 
 				} else {
 					// too many parses or no parses
 				}
 			} else {
-				LOG.info("Skipping word-skip parsing due to length");
+				//Catch otherwise
 			}
 			return null;
 		}
-//		System.out.println(bestModelParses.getClass());
 		
 	}
 	
 	@Override
+	/*
+	 * Method to take a list of sentences from file, parse said sentences, then write parses 
+	 * back out to file
+	 */
 	public void conversation() {
 		String p = System.getProperty("user.dir");
 		File f = new File(p + "/resources");
@@ -168,7 +167,9 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 		}
 	}
 
-	//Returns a successful parse
+	/*
+	 * Once parses have been made, ascertain which is the best parse
+	 */
 	private MR processSingleBestParse(final SAMPLE sample,
 			IDataItemModel<MR> dataItemModel,
 			final IParserOutput<MR> modelParserOutput,
@@ -177,6 +178,14 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 		return label;
 	}
 
+	/*
+	 * Public builder to construct an Interactor
+	 * 
+	 * @param model -> SPF Sentence to Logical Representation parser
+	 * 	      parser -> CKY parser from the SPF framework 
+	 * 		  testData -> bundle of DI, in this case, Sentence objects 
+	 * @return Interactor
+	 */
 	public static class Builder<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SAMPLE>> {
 		private final IModelImmutable<SAMPLE,MR> model;
 		
@@ -188,22 +197,26 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 		/** Filters which data items are valid for parsing with word skipping */
 		private IFilter<SAMPLE> skipParsingFilter = e -> true;		
 		
+		//Constructor for Interactor with no test data given, used for regular pipeling
 		public Builder(IParser<SAMPLE, MR> parser,IModelImmutable<SAMPLE, MR> model) {
 			this.parser = parser;
 			this.model = model;
 			testData = null;
 		}
 		
+		//Constructor for Interactor with package of Sentences 
 		public Builder(IParser<SAMPLE, MR> parser,IModelImmutable<SAMPLE, MR> model, IDataCollection<? extends DI> testData) {
 			this.parser = parser;
 			this.model = model;
 			this.testData = testData;
 		}
 
+		//Call to return the new class
 		public Interactor<SAMPLE, MR, DI> build() {
 			return new Interactor<SAMPLE, MR, DI>(skipParsingFilter, parser, model,testData);
 		}
 
+		//Add a skipParsing filter to the package
 		public Builder<SAMPLE, MR, DI> setSkipParsingFilter(
 				IFilter<SAMPLE> skipParsingFilter) {
 			this.skipParsingFilter = skipParsingFilter;

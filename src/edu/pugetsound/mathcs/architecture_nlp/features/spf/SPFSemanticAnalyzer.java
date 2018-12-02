@@ -24,11 +24,13 @@ public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 	private Interactor<Sentence,LogicalExpression,Sentence> interactor;
 	private GenerateInteractor translate; 
 	
+	//Constructor for SPFSemanticAnalyzer with Interactor that does not contain prepackaged data
 	public SPFSemanticAnalyzer() {
 		translate = new GenerateInteractor();
 		interactor = translate.generate();
 	}
 	
+	//Constructor for SPFSemanticAnalyzer with Interactor that does contain prepackaged data
 	public SPFSemanticAnalyzer(String fileName) {
 		translate = new GenerateInteractor(fileName);
 		interactor = translate.generate();
@@ -38,6 +40,9 @@ public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 	/*
 	 * This method takes an utterance, populating the SPFParse field of the utterance
 	 * with the resulting parse from the SPF model.
+	 * 
+	 * @param Utterance utt -> Utterance object to be populated with parse 
+	 * 		  Converstaion convo -> Conversation object utterance is to be added too
 	 */
 	@Override
 	public void analyze(Utterance utt, Conversation convo) {
@@ -55,6 +60,7 @@ public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 		}
  	}
 	
+	//Read all sentences, write out parses
 	public void testDataSet() {
 		interactor.conversation();
 	}
