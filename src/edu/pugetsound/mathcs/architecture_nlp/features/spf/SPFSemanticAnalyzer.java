@@ -23,15 +23,18 @@ import java.util.List;
 public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 	private Interactor<Sentence,LogicalExpression,Sentence> interactor;
 	private GenerateInteractor translate; 
+	private SPFPreProcessor preProcessor;
 	
 	public SPFSemanticAnalyzer() {
 		translate = new GenerateInteractor();
 		interactor = translate.generate();
+		preProcessor = new SPFPreProcessor();
 	}
 	
 	public SPFSemanticAnalyzer(String fileName) {
 		translate = new GenerateInteractor(fileName);
 		interactor = translate.generate();
+		preProcessor = new SPFPreProcessor();
 		testDataSet();
 	}
 	
@@ -43,7 +46,7 @@ public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 	public void analyze(Utterance utt, Conversation convo) {
 		IStringFilter textFilter = new StubStringFilter();
 		//Create sentence object to pass to parser 
-		final String currentSentence = textFilter.filter(utt.utterance);
+		final String currentSentence = preProcessor.process(textFilter.filter(utt.utterance));
 		Sentence sentence = new Sentence(currentSentence);
 		Sentence dataItem = new Sentence(sentence);
 		IDerivation<LogicalExpression> parse = interactor.interact(dataItem);
