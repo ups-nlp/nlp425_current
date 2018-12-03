@@ -107,7 +107,6 @@ public class Interactor<SAMPLE extends IDataItem<?>, MR, DI extends IDataItem<SA
 			return bestModelParses.get(0);
 		} else {
 			// No parses
-			System.out.println("Ive got nothing");
 			// Potentially re-parse with word skipping
 			if (skipParsingFilter.test(dataItem.getSample())) {
 				final IParserOutput<MR> parserOutputWithSkipping = parser
