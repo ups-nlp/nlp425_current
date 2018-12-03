@@ -13,6 +13,7 @@ import java.util.regex.Pattern;
 import edu.pugetsound.mathcs.nlp.lang.*;
 import edu.pugetsound.mathcs.nlp.util.Logger;
 import edu.pugetsound.mathcs.nlp.util.PathFormat;
+import edu.pugetsound.mathcs.architecture_nlp.features.spf.SPFSemanticAnalyzer;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.brain.DialogueActTag;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.datag.DAClassifier;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.features.stanford.StanfordSuite;
@@ -75,12 +76,12 @@ public class TextAnalyzer {
 	 */
 	public TextAnalyzer(KBController kb){
 		nlpAnalyzer = new StanfordSuite();		
-		semAnalyzer = new CFGSemanticAnalyzer(kb);
+		//semAnalyzer = new CFGSemanticAnalyzer(kb);
+		semAnalyzer = new SPFSemanticAnalyzer();
 		anaphoraAnalyzer = new AnaphoraAnalyzer();
 		standardizedForms = new HashMap<String, String>();
 		greetClose = new HashMap<String, DialogueActTag>();
 		dialogueClassifier = new DAClassifier(DAClassifier.Mode.DUMB_NAIVE_BAYES);
-
 		HashReader reader = new HashReader();
 		reader.populateGreeting();
 		reader.populateStandardForms();

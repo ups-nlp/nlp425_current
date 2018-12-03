@@ -1,0 +1,9 @@
+S : (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (size:<lo,i> $1)))
+S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (river:<r,t> $0) (loc:<lo,<lo,t>> $0 usa:co))) (lambda $1:e (len:<r,i> $1)))
+S : (argmax:<<e,t>,<<e,i>,e>> (lambda $0:e (and:<t*,t> (place:<p,t> $0) (loc:<lo,<lo,t>> $0 (the:<<e,t>,e> (lambda $1:e (state:<s,t> $1)))))) (lambda $2:e (elevation:<lo,i> $2)))
+S : (lambda $0:e (and:<t*,t> (major:<lo,t> $0) (river:<r,t> $0) (loc:<lo,<lo,t>> $0 ohio:s)))
+S : (lambda $0:e (and:<t*,t> (major:<lo,t> $0) (river:<r,t> $0) (loc:<lo,<lo,t>> $0 florida:s)))
+S : (population:<lo,i> erie_pa:c)
+S : (argmin:<<e,t>,<<e,i>,e>> (lambda $0:e (state:<s,t> $0)) (lambda $1:e (density:<lo,i> $1)))
+null 
+null 
