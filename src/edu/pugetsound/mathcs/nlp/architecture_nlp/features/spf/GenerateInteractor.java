@@ -1,4 +1,5 @@
-package edu.pugetsound.mathcs.architecture_nlp.features.spf;
+package edu.pugetsound.mathcs.nlp.architecture_nlp.features.spf;
+
 /*******************************************************************************
  * Copyright (C) 2011 - 2015 Yoav Artzi, All rights reserved.
  * <p>
@@ -89,7 +90,10 @@ import edu.cornell.cs.nlp.utils.log.Log;
 import edu.cornell.cs.nlp.utils.log.LogLevel;
 import edu.cornell.cs.nlp.utils.log.Logger;
 import edu.cornell.cs.nlp.utils.log.LoggerFactory;
-import edu.pugetsound.mathcs.architecture_nlp.features.spf.Interactor;
+
+import edu.pugetsound.mathcs.nlp.architecture_nlp.features.spf.Interactor;
+
+
 /**
  * Class to generate a SPF parser and load an SPF model from file. This class passes these values to 
  * an Interactor object and as a result returns an Interactor. This is modified from Yoav Artzi's GeoExpSimple, 

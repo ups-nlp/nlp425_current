@@ -1,4 +1,4 @@
-package edu.pugetsound.mathcs.architecture_nlp.features.spf;
+package edu.pugetsound.mathcs.nlp.architecture_nlp.features.spf;
 
 import edu.cornell.cs.nlp.spf.data.IDataItem;
 import edu.cornell.cs.nlp.spf.parser.IDerivation;

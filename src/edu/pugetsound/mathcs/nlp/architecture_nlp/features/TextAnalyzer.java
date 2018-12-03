@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 import edu.pugetsound.mathcs.nlp.lang.*;
 import edu.pugetsound.mathcs.nlp.util.Logger;
 import edu.pugetsound.mathcs.nlp.util.PathFormat;
-import edu.pugetsound.mathcs.architecture_nlp.features.spf.SPFSemanticAnalyzer;
+import edu.pugetsound.mathcs.nlp.architecture_nlp.features.spf.SPFSemanticAnalyzer;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.brain.DialogueActTag;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.datag.DAClassifier;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.features.stanford.StanfordSuite;
