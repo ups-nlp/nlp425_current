@@ -1,13 +1,16 @@
 package edu.pugetsound.mathcs.nlp.architecture_nlp.generator;
 
-public interface TextGenerator {
-	
+import java.io.IOException;
+
+public interface TextGenerator 
+{	
 	/**
-	 * This method will produce a natural language response from an input using a trained python model.
+	 * This method will produce a natural language response.
 	 * 
 	 * @param input 	A string containing an input utterance 
 	 * @return String	A string containing a natural language output
+	 * @throws IOException 	  if error occurs while sending input to script and receiving response
 	 */
-	String generateResponse(String input);
+	String generateResponse(String input) throws IOException;
 
 }
