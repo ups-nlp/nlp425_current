@@ -36,9 +36,12 @@ public interface MyPredicate {
 	 * @param arg Predicate argument
 	 * @param index Position of the argument in the predicate
 	 * @throws IllegalArgumentException if an illegal index is passed in
+	 * 
+	 * @deprecated
 	 */
+	@Deprecated
 	public void addArgument(String arg, int index) throws IllegalArgumentException;
-
+	
 	/**
 	 * Returns the specified argument of the predicate
 	 * 
