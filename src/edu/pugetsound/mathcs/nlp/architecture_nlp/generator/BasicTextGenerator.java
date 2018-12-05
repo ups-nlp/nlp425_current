@@ -24,56 +24,48 @@ public class BasicTextGenerator implements TextGenerator
 	 */
 	public String generateResponse(String input) throws IOException 
 	{
+		//make folder in scripts called generator and have ian put it there and tell the name
+		//Get rid of IOException
+		//use generator interface
 		final String OS = System.getProperty("os.name");
 		String output = null;
 		String command = "";
 		
-		 try 
-		 {
-			 //Storing project path on current machine
-			 Path currentRelativePath = Paths.get("");
-			 String path = currentRelativePath.toAbsolutePath().toString();	
+		 //Storing project path on current machine
+		 Path currentRelativePath = Paths.get("");
+		 String path = currentRelativePath.toAbsolutePath().toString();	
 			 
-			 //Checking OS to determine which slashes to use in file path to script
-			 //This file is a test file that only works on my (kmramos) machine right now
-			 //This will change once I know where the script will be placed in the project file structure
-			 if (OS.contains("Windows"))
-			 {
-				 command = "python " + "\""+ path + "\\Local Tests\\HelloWorld.py" + "\"";
-			 }
-			 else
-			 {
-				 command = "python " + "\""+ path + "/Local Tests/HelloWorld.py" + "\"";
-			 }
+		 //Checking OS to determine which slashes to use in file path to script
+		 //This file is a test file that only works on my (kmramos) machine right now
+		 //This will change once I know where the script will be placed in the project file structure
+		if (OS.contains("Windows"))
+		{
+			command = "python " + "\""+ path + "\\Local Tests\\HelloWorld.py" + "\"";
+		}
+		else
+		{
+			command = "python " + "\""+ path + "/Local Tests/HelloWorld.py" + "\"";
+		}
 
-		     //Run the command in the command line with input as a command line argument
-			 Process process = Runtime.getRuntime().exec(command + " " + "\"" + input + "\"");
+		//Run the command in the command line with input as a command line argument
+		Process process = Runtime.getRuntime().exec(command + " " + "\"" + input + "\"");
 			 	
-			 BufferedReader stdInput = new BufferedReader(new InputStreamReader(process.getInputStream()));
+		BufferedReader stdInput = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
-		     BufferedReader stdError = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+		BufferedReader stdError = new BufferedReader(new InputStreamReader(process.getErrorStream()));
 
-		     // read the output from the command line (should only be one line if working correctly)
-		     while ((output = stdInput.readLine()) != null) 
-		     {
-		    	 return output;
-		     }
+		// read the output from the command line (should only be one line if working correctly)
+		while ((output = stdInput.readLine()) != null) 
+		{
+		    return output;
+		}
 		            
-		     // read any errors from the attempted command
-		     // prints python errors if there are any
-		     while ((output = stdError.readLine()) != null) 
-		     {
-		    	 System.out.println(output);
-		     }
-		            			 		
-		 }
-		 catch (IOException e) 
-		 {
-		      System.out.println("exception happened - here's what I know: ");
-		      e.printStackTrace();
-		      System.exit(-1);
-		 }
-		
+		// read any errors from the attempted command
+		// prints python errors if there are any
+		while ((output = stdError.readLine()) != null) 
+		{
+			System.out.println(output);
+		}
 		
 		return output;
 	}
@@ -86,6 +78,7 @@ public class BasicTextGenerator implements TextGenerator
 	public static void main(String[] args)
 	{
 		String response ="Failed";
+		
 		BasicTextGenerator gen = new BasicTextGenerator();
 		try {
 			response = gen.generateResponse("I am an utterance.");
