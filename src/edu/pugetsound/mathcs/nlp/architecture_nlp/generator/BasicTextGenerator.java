@@ -24,15 +24,6 @@ public class BasicTextGenerator implements TextGenerator
 	 */
 	public String generateResponse(String input) throws IOException 
 	{
-		/*Basically, you use the exec method of the Runtime class to run 
-		 * the command as a separate process. Invoking the exec method returns 
-		 * a Process object for managing the subprocess.
-		 */
-		
-		/*Then you use the getInputStream() and getErrorStream() methods of the
-		 *  Process object to read the normal output of the command, and the 
-		 *  error output of the command.
-		 */
 		final String OS = System.getProperty("os.name");
 		String output = null;
 		String command = "";
@@ -75,7 +66,7 @@ public class BasicTextGenerator implements TextGenerator
 		    	 System.out.println(output);
 		     }
 		            			 		
-		     }
+		 }
 		 catch (IOException e) 
 		 {
 		      System.out.println("exception happened - here's what I know: ");
@@ -97,7 +88,7 @@ public class BasicTextGenerator implements TextGenerator
 		String response ="Failed";
 		BasicTextGenerator gen = new BasicTextGenerator();
 		try {
-			response = gen.generateResponse("I am a cat.");
+			response = gen.generateResponse("I am an utterance.");
 			} 
 		catch (IOException e) 
 			{
