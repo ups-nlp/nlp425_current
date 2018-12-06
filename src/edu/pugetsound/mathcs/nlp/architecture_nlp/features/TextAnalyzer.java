@@ -83,7 +83,8 @@ public class TextAnalyzer {
 	 */
 	public TextAnalyzer(KBController kb){
 		nlpAnalyzer = new StanfordSuite();		
-		semAnalyzer = new CFGSemanticAnalyzer(kb);
+		//semAnalyzer = new CFGSemanticAnalyzer(kb);
+		semAnalyzer = new SPFSemanticAnalyzer();
 		anaphoraAnalyzer = new AnaphoraAnalyzer();
 		standardizedForms = new HashMap<String, String>();
 		contractionExpansion = new HashMap<String, String>();
