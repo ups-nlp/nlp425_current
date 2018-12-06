@@ -41,10 +41,10 @@ public class BasicTextGenerator implements Generator {
 		//This file is a test file that only works on my (kmramos) machine right now
 		//This will change once I know where the script will be placed in the project file structure
 		if (OS.contains("Windows")) {
-			command = "python " + "\""+ path + "\\scripts\\generator\\HelloWorld.py" + "\"";
+			command = "python " + "\""+ path + "\\scripts\\generator\\responseGenerator.py" + "\"";
 		}
 		else {
-			command = "python " + "\""+ path + "/scripts/generator/HelloWorld.py" + "\"";
+			command = "python " + "\""+ path + "/scripts/generator/responseGenerator.py" + "\"";
 		}
 
 		try {
@@ -77,8 +77,7 @@ public class BasicTextGenerator implements Generator {
 	 * Used for testing purposes using hard-coded objects
 	 * @param args	Not used
 	 */
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		//Unused right now
 		Action act = null;
 		KBController kb = null;
