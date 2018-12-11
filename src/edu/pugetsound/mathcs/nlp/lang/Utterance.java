@@ -32,6 +32,12 @@ public class Utterance {
 	public String utterance;
 	
 	/**
+	 * String representing the sentence with contractions removed, set to lowercase
+	 */
+	
+	public String canonicalUtterance;
+	
+	/**
 	 * A list of tokens in the utterance. Tokens are delimited by spaces.
 	 */
 	public List<Token> tokens = new ArrayList<Token>();
@@ -129,6 +135,7 @@ public class Utterance {
 	public String toString(){
 		String str = "";
 		str += "Utterance: " + utterance + "\n";
+		str += "Canonical: " + canonicalUtterance + "\n";
 		str += "Tokens: " 	+ tokens + "\n";
 		str += "Punct: " 	+ punct + "\n";
 		str += "Parse: " 	+ constituencyParse + "\n";

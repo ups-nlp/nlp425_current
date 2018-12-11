@@ -54,6 +54,12 @@ public class TextAnalyzer {
 	 * dialogue act tags
 	 */
 	protected HashMap<String, DialogueActTag> greetClose;
+	
+	/**
+	 * Maps contractions to common expansions
+	 */
+	
+	protected HashMap<String,String> contractionExpansion;
 
 	/**
 	 * A semantic analyzer to translate from utterances to a first-order representation
@@ -71,6 +77,7 @@ public class TextAnalyzer {
 	protected DAClassifier dialogueClassifier;
 
 
+
 	/**
 	 * Creates a new TextAnalyzer
 	 */
@@ -80,11 +87,14 @@ public class TextAnalyzer {
 		semAnalyzer = new SPFSemanticAnalyzer();
 		anaphoraAnalyzer = new AnaphoraAnalyzer();
 		standardizedForms = new HashMap<String, String>();
+		contractionExpansion = new HashMap<String, String>();
 		greetClose = new HashMap<String, DialogueActTag>();
 		dialogueClassifier = new DAClassifier(DAClassifier.Mode.DUMB_NAIVE_BAYES);
+
 		HashReader reader = new HashReader();
 		reader.populateGreeting();
 		reader.populateStandardForms();
+		reader.populateContractions();
 	}
 
 	/**
@@ -162,6 +172,21 @@ public class TextAnalyzer {
 		stop = System.currentTimeMillis();
 		if(Logger.debug()) {
 			System.out.println("\tDialogue Classifier: " + (stop-start) + " milliseconds");
+		}
+		
+		//Sets sentence to lowercase and removes contractions, for use with spf semantic analyzer
+		start = System.currentTimeMillis();		
+		String canonical = stripped.toLowerCase();
+		String[] words = canonical.split(" ");
+		for(String w : words) {
+			if(contractionExpansion.containsKey(w)) {
+				canonical = canonical.replaceAll(w, contractionExpansion.get(w));
+			}
+		}
+		h.canonicalUtterance = canonical;
+		stop = System.currentTimeMillis();
+		if(Logger.debug()) {
+			System.out.println("\tContraction?Expansion?: " + (stop-start) + " milliseconds");
 		}
 
 		
@@ -275,6 +300,30 @@ public class TextAnalyzer {
 				System.out.println(e);
 			}
 		}
+		
+		
+
+		/**
+		 * Populates the hash of contraction expansions.
+		 */
+		public void populateContractions(){
+			try{
+				BufferedReader input = new BufferedReader(new FileReader(PathFormat.absolutePathFromRoot("models/phrases/contractions.txt")));
+				String line = input.readLine();
+				while(line != null){
+					int sep = line.indexOf("\t");
+					if(sep != -1){
+						contractionExpansion.put(line.substring(0, sep), line.substring(sep+1));
+					}
+					line = input.readLine();
+				}
+				input.close();
+			}
+			catch(IOException e){
+				System.out.println(e);
+			}
+		}
+		
 
 		/**
 		 * Reads lines from a text file and adds them to the greetClose hash with the
