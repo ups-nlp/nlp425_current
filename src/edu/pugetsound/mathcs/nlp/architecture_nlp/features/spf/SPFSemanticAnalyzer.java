@@ -9,6 +9,7 @@ import edu.cornell.cs.nlp.spf.parser.IDerivation;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.features.SemanticAnalyzer;
 import edu.pugetsound.mathcs.nlp.lang.Conversation;
 import edu.pugetsound.mathcs.nlp.lang.Utterance;
+import edu.pugetsound.mathcs.nlp.util.Logger;
 
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -23,20 +24,20 @@ import java.util.List;
 public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 	private Interactor<Sentence,LogicalExpression,Sentence> interactor;
 	private GenerateInteractor translate; 
-	
+
 	//Constructor for SPFSemanticAnalyzer with Interactor that does not contain prepackaged data
 	public SPFSemanticAnalyzer() {
 		translate = new GenerateInteractor();
 		interactor = translate.generate();
 	}
-	
+
 	//Constructor for SPFSemanticAnalyzer with Interactor that does contain prepackaged data
 	public SPFSemanticAnalyzer(String fileName) {
 		translate = new GenerateInteractor(fileName);
 		interactor = translate.generate();
 		testDataSet();
 	}
-	
+
 	/*
 	 * This method takes an utterance, populating the SPFParse field of the utterance
 	 * with the resulting parse from the SPF model.
@@ -48,7 +49,7 @@ public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 	public void analyze(Utterance utt, Conversation convo) {
 		IStringFilter textFilter = new StubStringFilter();
 		//Create sentence object to pass to parser 
-		final String currentSentence = textFilter.filter(utt.utterance);
+		final String currentSentence = textFilter.filter(utt.canonicalUtterance);
 		Sentence sentence = new Sentence(currentSentence);
 		Sentence dataItem = new Sentence(sentence);
 		IDerivation<LogicalExpression> parse = interactor.interact(dataItem);
@@ -56,10 +57,12 @@ public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 		if (parse != null) {
 			utt.SPFparse = parse.toString();
 			utt.SpfWordBreaks = parse.getAllLexicalEntries();
-			System.out.println(utt.SPFparse);
+			if(Logger.debug()) {
+				System.out.println(utt.SPFparse);
+			}
 		}
- 	}
-	
+	}
+
 	//Read all sentences, write out parses
 	public void testDataSet() {
 		interactor.conversation();

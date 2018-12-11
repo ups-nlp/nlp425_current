@@ -214,7 +214,11 @@ public class TextAnalyzer {
 			System.out.println("\tSemantic analyzer: " + (stop-start) + " milliseconds");
 		}
 
-		
+		if(Logger.debug()) {
+			System.out.println("\nThe final utterance is: ");
+			System.out.println(h);
+		}
+
 		return h;
 	}
 

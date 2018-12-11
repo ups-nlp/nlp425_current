@@ -146,6 +146,7 @@ public class Utterance {
 		str += "Root Con: " + rootConstituency + "\n";
 		str += "Passive:" 	+ isPassive  + "\n";
 		str += "FOL: "      + firstOrderRep + "\n";
+		str += "SPF Parse: "+ SPFparse + "\n";
 		str += "DATag: "    + daTag + "\n";	
 		str += "Anaphoras: " + resolutions + "\n";
 		
