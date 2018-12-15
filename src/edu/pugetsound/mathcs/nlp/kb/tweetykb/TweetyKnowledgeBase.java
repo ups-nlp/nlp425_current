@@ -33,6 +33,7 @@ import net.sf.tweety.logics.fol.syntax.FolSignature;
 /**
  * Implementation of the KnowledgeBase interface using the Tweety library
  * @author jjenks
+ * @version 12/03/18
  */
 public class TweetyKnowledgeBase implements KnowledgeBase {
 	private FolSignature signature;

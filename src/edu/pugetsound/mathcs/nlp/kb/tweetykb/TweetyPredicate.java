@@ -14,6 +14,7 @@ import net.sf.tweety.logics.commons.syntax.Sort;
  * depending on which constructor is used. Once this is decided,
  * a constant cannot become a predicate and vice-versa
  * @author jjenks
+ * @version 12/03/18
  */
 public class TweetyPredicate implements MyPredicate {
 	private Predicate predicate;

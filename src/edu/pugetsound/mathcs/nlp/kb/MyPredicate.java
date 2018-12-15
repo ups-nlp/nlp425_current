@@ -3,8 +3,8 @@ package edu.pugetsound.mathcs.nlp.kb;
 /**
  * This interface represents a predicate in first-order logic. 
 
- * @author alchambers
- * @version 6/2/18
+ * @author alchambers and jjenks
+ * @version 12/3/18
  *
  */
 public interface MyPredicate {

@@ -3,6 +3,12 @@ package edu.pugetsound.mathcs.nlp.kb.tweetykb.tests;
 import edu.pugetsound.mathcs.nlp.kb.KnowledgeBase;
 import edu.pugetsound.mathcs.nlp.kb.tweetykb.TweetyKnowledgeBase;
 
+/**
+ * 
+ * @author jjenks
+ * @version 12/03/18
+ *
+ */
 public class TweetyKnowledgeBaseTest {
 	public static void main(String[] args) {
 		System.out.println("Tests for TweetyKnowledgeBase.java");
@@ -23,13 +29,14 @@ public class TweetyKnowledgeBaseTest {
 		kb.assertFormula("siblingOf(sister,me)");
 		kb.assertFormula("forall X: (forall Y: (spouseOf(X,Y) => spouseOf(Y,X)))");
 		kb.assertFormula("forall X: (forall Y: (siblingOf(X,Y) => siblingOf(Y,X)))");
+		// not necessarily true, but just as an example
 		kb.assertFormula("forall X: (forall Y: (forall Z: ((spouseOf(X,Y) && parentOf(Y,Z)) => parentOf(X,Z))))");
 		
 		System.out.println(kb);
 		
 // 		SUCCESS!
 //		returns true
-//		but extremely slow
+//		but extremely, extremely slow
 //		System.out.println("parentOf(dad,me)? > "+kb.query("parentOf(dad,me)"));
 		
 // 		SUCCESS!
