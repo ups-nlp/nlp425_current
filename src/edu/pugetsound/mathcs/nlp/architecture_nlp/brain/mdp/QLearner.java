@@ -10,6 +10,8 @@ import java.io.*;
 import java.util.*;
 
 /**
+ * TODO: The state is off sync
+ * TODO: Sometimes the assertion that choice is valid is false. Choice is -1 still????
  * @author Zachary Cohan, Damon Williams
  * @version 05/12/16
  * 
@@ -26,7 +28,6 @@ public class QLearner implements DecisionMaker {
 	protected int lastState;
 	protected int lastAction;
 	protected int lastReward;
-	protected int numItersSoFar;
 
 	protected Random rng;
 	protected Scanner in;
@@ -61,7 +62,6 @@ public class QLearner implements DecisionMaker {
 		lastState = states.getStateId(null);
 		lastAction = Action.NULL.ordinal();
 		lastReward = -1;
-		numItersSoFar = 0;
 
 		//TODO: Refactor this so that we can unit test it???
 		in = new Scanner(System.in);
@@ -93,14 +93,12 @@ public class QLearner implements DecisionMaker {
 			System.out.println("lastState was: " + lastState);
 			System.out.println("last action was: " + lastAction);
 			System.out.println("last reward was: " + lastReward);
-			System.out.println("num iters so far: " +numItersSoFar);
 		}
 
 		// Compute the updated annealing parameter which ranges 
 		// from 1 to 0 over the course of EXPLORE iterations
 		params.anneal = (double) params.remaining_iters/params.EXPLORE;		
 		if (Logger.debug()) {
-			System.out.println("\n===== Iteration " + numItersSoFar + " =====");
 			System.out.println("Remaining Iterations: " + params.remaining_iters);
 			System.out.println("Explore: " + params.EXPLORE);
 			System.out.println("anneal = remain/explore: " + params.anneal);
