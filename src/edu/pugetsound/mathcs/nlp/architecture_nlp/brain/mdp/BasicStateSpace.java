@@ -71,23 +71,24 @@ public class BasicStateSpace implements StateSpace {
 	 * @return The id of the current state
 	 */
 	public int getStateId(Conversation conversation){
-		// The last utterance was made by the agent and not the human 
-		if(conversation.size() % 2 == 1) {
-			throw new IllegalStateException();
-		}		
-				
-		// At this point, we know that the size of the conversation is a multiple of 2
-		
-		// Assumes the agent always speaks first in the conversation 
-		if(conversation.size() == 0) {
+		// We're at the beginning of the conversation...nothing has happened yet
+		if(conversation == null || conversation.size() == 0) {
 			return state_to_id.get(new State(DialogueActTag.NULL, DialogueActTag.NULL));
 		}
+
+		// Throw an error if the last utterance was made by the agent and not the human 
+		if(conversation.size() % 2 == 1) {
+			throw new IllegalStateException();
+		}
+		
+		// At this point, we know that the size of the conversation is a multiple of 2
+
 
 		List<Utterance> utterances = conversation.getConversation();
 
 		DialogueActTag olderDAtag = (conversation.size() == 2) ? 
-									DialogueActTag.NULL : 				
-									utterances.get(utterances.size()-3).daTag;
+				DialogueActTag.NULL : 				
+					utterances.get(utterances.size()-3).daTag;
 
 		DialogueActTag recentDAtag = utterances.get(utterances.size()-1).daTag;
 
@@ -112,59 +113,59 @@ public class BasicStateSpace implements StateSpace {
 		id_to_state.put(index,state);
 	}
 
-	
+
 	/**
 	 * An inner-class that unifies all of the pieces of information that make up a single state
 	 * @author alchambers
 	 * @version 11/8/18
 	 */
 	private class State {
-	    private DialogueActTag tag1;
-	    private DialogueActTag tag2;
+		private DialogueActTag tag1;
+		private DialogueActTag tag2;
 
-	    public State(DialogueActTag daTag1, DialogueActTag daTag2) {
-	        this.tag1 = daTag1;
-	        this.tag2 = daTag2;
-	    }
+		public State(DialogueActTag daTag1, DialogueActTag daTag2) {
+			this.tag1 = daTag1;
+			this.tag2 = daTag2;
+		}
 
-	    public DialogueActTag getTag1() {
-	        return tag1;
-	    }
-	    
-	    public DialogueActTag getTag2() {
-	        return tag2;
-	    }
-	    
-	    @Override
-	    public int hashCode(){
-	        return tag1.toString().hashCode() + tag2.toString().hashCode();
-	    }
+		public DialogueActTag getTag1() {
+			return tag1;
+		}
 
-	    @Override
-	    public boolean equals(Object obj) {        
-	    	if (obj == null) {
-	            return false;
-	        }
-	        if (this == obj) {
-	            return true;
-	        }
-	        if (getClass() != obj.getClass()) {
-	            return false;
-	        }
-	        
-	        final State other = (State) obj;
-	        if (this.tag1 != other.tag1) {
-	            return false;
-	        }
-	        if (this.tag2 != other.tag2) {
-	            return false;
-	        }
-	        return true;
-	    }
-	    
-	    @Override
-	    public String toString(){
-	        return "["+tag1.toString()+", "+tag2.toString()+"]";
-	    }
+		public DialogueActTag getTag2() {
+			return tag2;
+		}
+
+		@Override
+		public int hashCode(){
+			return tag1.toString().hashCode() + tag2.toString().hashCode();
+		}
+
+		@Override
+		public boolean equals(Object obj) {        
+			if (obj == null) {
+				return false;
+			}
+			if (this == obj) {
+				return true;
+			}
+			if (getClass() != obj.getClass()) {
+				return false;
+			}
+
+			final State other = (State) obj;
+			if (this.tag1 != other.tag1) {
+				return false;
+			}
+			if (this.tag2 != other.tag2) {
+				return false;
+			}
+			return true;
+		}
+
+		@Override
+		public String toString(){
+			return "["+tag1.toString()+", "+tag2.toString()+"]";
+		}
 	}
 }

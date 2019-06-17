@@ -27,13 +27,13 @@ public class QLearner implements DecisionMaker {
 	protected int lastAction;
 	protected int lastReward;
 	protected int numItersSoFar;
-	
+
 	protected Random rng;
 	protected Scanner in;
-	
+
 	protected static final String INPUT_PATH = PathFormat.absolutePathFromRoot("models/qlearner/qlearner");
 
-	
+
 	/**
 	 * Constructs the original QLearner: defines the states and actions that are
 	 * possible, and initializes the QTable based on those states and actions.
@@ -49,7 +49,7 @@ public class QLearner implements DecisionMaker {
 	 */
 	public QLearner(HyperVariables hyperVariables, boolean readFromFile) {
 		params = hyperVariables;
-		
+
 		//create states and actions
 		actions = Action.values(); // TODO: Do we need a deep copy here? Are we ever changing actions?
 		states = new BasicStateSpace();
@@ -57,19 +57,19 @@ public class QLearner implements DecisionMaker {
 		if (readFromFile) {
 			readFromFile(null);
 		}
-		
-		lastState = -1;
-		lastAction = -1;
+
+		lastState = states.getStateId(null);
+		lastAction = Action.NULL.ordinal();
 		lastReward = -1;
 		numItersSoFar = 0;
-		
+
 		//TODO: Refactor this so that we can unit test it???
 		in = new Scanner(System.in);
 		rng = new Random();
 	}
-	
 
-	
+
+
 	/**
 	 *	This runs one iteration of the Q-learning algorithm. 
 	 *
@@ -77,11 +77,17 @@ public class QLearner implements DecisionMaker {
 	 * @return The recommended action to take
 	 */
 	public Action getAction(Conversation conversation) {
-		if(numItersSoFar == 0){
-			assert(conversation.size() == 0);
-			numItersSoFar++;
+		if(conversation.size() == 0){
 			return Action.CONVENTIONAL_OPENING;
 		}
+		else if(conversation.size() % 2 == 1) {
+			// The last utterance in the conversation was made by the agent...so this method shouldn't have been called
+			throw new IllegalStateException();
+		}
+
+		// We know that the conversation has length of at least 2, that is the conversation consists of at least:
+		// Agent's first utterance
+		// Human's first utterance
 		
 		if(Logger.debug()) {
 			System.out.println("lastState was: " + lastState);
@@ -89,7 +95,7 @@ public class QLearner implements DecisionMaker {
 			System.out.println("last reward was: " + lastReward);
 			System.out.println("num iters so far: " +numItersSoFar);
 		}
-		
+
 		// Compute the updated annealing parameter which ranges 
 		// from 1 to 0 over the course of EXPLORE iterations
 		params.anneal = (double) params.remaining_iters/params.EXPLORE;		
@@ -109,20 +115,19 @@ public class QLearner implements DecisionMaker {
 			System.out.println("Updating previous states");
 		}
 
-		
-		if (numItersSoFar > 1) {
-			// Updates the Q-table given the sample (s, a, r, s') where
-			// s is the state from *last* time
-			// a is the action taken from *last* time
-			// r is the reward given for that action
-			// s' is the result of taking action a in state s
-			updateQTable(lastState, lastAction, lastReward, stateIndex);
-		}
+
+		// Updates the Q-table given the sample (s, a, r, s') where
+		// s is the state from *last* time
+		// a is the action taken from *last* time
+		// r is the reward given for that action
+		// s' is the result of taking action a in state s
+		updateQTable(lastState, lastAction, lastReward, stateIndex);
+
 
 		// TODO: They are using the same annealed parameter for (1) deciding between exploring/exploiting
 		// and (2) the \alpha value in the Q learning update equation. Are these the same value? Can they be?
 
-		
+
 		// Choose an action by either exploring or exploiting
 		int choice = -1;
 		if (rng.nextInt(params.EXPLORE) < params.remaining_iters) {
@@ -132,10 +137,10 @@ public class QLearner implements DecisionMaker {
 		}
 		assert(choice > 0 && choice < actions.length);
 
-		
+
 		// Present the action to the user and get the reward
 		lastReward = rateActionChoice(stateIndex, choice);
-	
+
 		// The next state is determined by the user (i.e. the dialogue act tag of whatever response they
 		// give to our action). As such, we cannot immediately update the Q-table. We must wait until the
 		// user types the next utterance. Therefore, we store all information necessary to update the
@@ -143,12 +148,12 @@ public class QLearner implements DecisionMaker {
 		lastAction = choice;
 		lastState = stateIndex;
 		params.decrement();
-		
+
 		//return the action that we decided to take to the processing actions team.
 		return actions[choice];
 	}
 
-	
+
 	/**
 	 * Iterates through the QTable and prints the best decision determined for each state.
 	 */
@@ -165,7 +170,7 @@ public class QLearner implements DecisionMaker {
 		System.out.println();
 	}
 
-	
+
 	/**
 	 * Randomly chooses an action to take
 	 * 
@@ -212,11 +217,11 @@ public class QLearner implements DecisionMaker {
 		final int MAX = 5;
 		final int MIN = 1;
 		int reward = -1;
-		
+
 		System.out.println("I am in state " + states.idToState(state));
 		System.out.println("I will respond with a " + actions[choice]);
 		System.out.println("On a scale of " + MAX + "-" + MIN + ", how accurate is this response?");
-		
+
 		while(reward < MIN || reward > MAX){
 			try {
 				reward = in.nextInt();
@@ -247,8 +252,8 @@ public class QLearner implements DecisionMaker {
 		}
 		return maxAPrime;
 	}
-	
-	
+
+
 	/**
 	 * Updates the Q table given the new sample (state, action, reward) 
 	 * 
