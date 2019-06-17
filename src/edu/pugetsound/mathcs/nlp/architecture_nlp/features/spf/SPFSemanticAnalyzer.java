@@ -61,6 +61,14 @@ public class SPFSemanticAnalyzer implements SemanticAnalyzer{
 				System.out.println(utt.SPFparse);
 			}
 		}
+		if(Logger.debug() == true) {
+			if(parse == null) {
+				System.out.println("Parse is null");
+			}
+			else {
+				System.out.println(utt.SPFparse);
+			}
+		}
 	}
 
 	//Read all sentences, write out parses
