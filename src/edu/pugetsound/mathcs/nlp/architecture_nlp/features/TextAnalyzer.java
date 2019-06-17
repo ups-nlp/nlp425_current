@@ -64,7 +64,13 @@ public class TextAnalyzer {
 	/**
 	 * A semantic analyzer to translate from utterances to a first-order representation
 	 */
-	protected SemanticAnalyzer semAnalyzer;
+	protected SemanticAnalyzer folSemAnalyzer;
+	
+	/**
+	 * A semantic analyzer
+	 */
+	protected SemanticAnalyzer spfSemAnalyzer;
+	
 
 	/**
 	 * An anaphora analyzer
@@ -83,8 +89,8 @@ public class TextAnalyzer {
 	 */
 	public TextAnalyzer(KBController kb){
 		nlpAnalyzer = new StanfordSuite();		
-		//semAnalyzer = new CFGSemanticAnalyzer(kb);
-		semAnalyzer = new SPFSemanticAnalyzer();
+		folSemAnalyzer = new CFGSemanticAnalyzer(kb);
+		spfSemAnalyzer = new SPFSemanticAnalyzer();
 		anaphoraAnalyzer = new AnaphoraAnalyzer();
 		standardizedForms = new HashMap<String, String>();
 		contractionExpansion = new HashMap<String, String>();
@@ -204,7 +210,8 @@ public class TextAnalyzer {
 		
 		start = System.currentTimeMillis();
 		try {
-			semAnalyzer.analyze(h, conversation);
+			folSemAnalyzer.analyze(h, conversation);
+			spfSemAnalyzer.analyze(h, conversation);
 		} catch (java.lang.IndexOutOfBoundsException e) {
 			System.out.println("Error with semantic analysis");
 			System.out.println(e);
