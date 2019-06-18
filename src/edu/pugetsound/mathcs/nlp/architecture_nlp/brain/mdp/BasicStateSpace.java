@@ -8,10 +8,10 @@ import edu.pugetsound.mathcs.nlp.lang.Conversation;
 import edu.pugetsound.mathcs.nlp.lang.Utterance;
 
 /**
- * The state is represented by the dialogue act tags of the human's past two utterances 
- * That is, the state is given by the pair (da_{t-2}, da_{t}) where 
- * da_{t-2} is the dialogue act tag for the second to last human utterance
- * da_{t} is the dialogue act tag for the last human utterance
+ * The state is represented by the dialogue act tags of the past two utterances 
+ * That is, the state is given by the pair (da_{t-1}, da_{t}) where 
+ * da_{t-1} is the dialogue act tag for the second to last utterance
+ * da_{t} is the dialogue act tag for the last utterance
  * 
  * In general, the conversation can be viewed as
  * 
@@ -81,16 +81,14 @@ public class BasicStateSpace implements StateSpace {
 			throw new IllegalStateException();
 		}
 		
-		// At this point, we know that the size of the conversation is a multiple of 2
-
+		// At this point, we know that the size of the conversation is a multiple of 2 and is at least 2 
+		assert(conversation.size() >= 2);
 
 		List<Utterance> utterances = conversation.getConversation();
-
-		DialogueActTag olderDAtag = (conversation.size() == 2) ? 
-				DialogueActTag.NULL : 				
-					utterances.get(utterances.size()-3).daTag;
-
+		
+		// Get the dialogue act tag from second to last utterance
 		DialogueActTag recentDAtag = utterances.get(utterances.size()-1).daTag;
+		DialogueActTag olderDAtag  = utterances.get(utterances.size()-2).daTag;				
 
 		// Now that we have constructed the state, map it to the corresponding state id
 		State curr = new State(olderDAtag, recentDAtag);

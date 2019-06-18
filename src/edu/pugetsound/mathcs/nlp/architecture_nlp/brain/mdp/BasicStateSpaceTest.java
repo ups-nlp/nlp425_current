@@ -29,29 +29,48 @@ class BasicStateSpaceTest {
 	}
 	
 	/*
-	 * Checks for the correct state in the initial stages of the conversation:
-	 * - There have been no utterances made
-	 * - The human has made a single utterance
-	 * 
-	 *  Checking for the correct state when the human has made 2 or more utterances
-	 *  is handled by a different unit test
+	 * Checks for the correct behavior after each utterance
 	 */
 	@Test
 	void testInitialConversation() {
 		Conversation convo = new Conversation();
+		
+		// No utterances so far ---> (NULL, NULL)
 		int id = states.getStateId(convo);
 		String state = states.idToState(id);		
 		assertEquals(state.toString(), "[" + DialogueActTag.NULL.toString() + ", " + DialogueActTag.NULL.toString() + "]");
 				
+		// The agent has 1 utterance ---> IllegalStateException
 		Utterance utt = new Utterance("agent1");
-		convo.addUtterance(utt);
+		utt.daTag = DialogueActTag.STATEMENT;
+		convo.addUtterance(utt);		
+		Assertions.assertThrows(IllegalStateException.class, ()->{states.getStateId(convo);});		
+
 		
+		// The human has 1 uttearnce ---> (NULL, STATEMENT)
 		utt = new Utterance("human1");
 		utt.daTag = DialogueActTag.STATEMENT;
 		convo.addUtterance(utt);
 		id = states.getStateId(convo);
 		state = states.idToState(id);
-		assertEquals(state.toString(), "[" + DialogueActTag.NULL.toString() + ", " + DialogueActTag.STATEMENT.toString() + "]");	
+		assertEquals("[" + DialogueActTag.STATEMENT.toString() + ", " + DialogueActTag.STATEMENT.toString() + "]", state.toString());
+		
+		
+		// The agent has 2 utterances ---> IllegalStateException
+		utt = new Utterance("agent2");
+		utt.daTag = DialogueActTag.APOLOGY;
+		convo.addUtterance(utt);		
+		Assertions.assertThrows(IllegalStateException.class, ()->{states.getStateId(convo);});		
+
+		// The human has 2 utterances ---> (APOLOGY, BACKCHANNEL)
+		utt = new Utterance("human1");
+		utt.daTag = DialogueActTag.BACKCHANNEL;
+		convo.addUtterance(utt);
+		id = states.getStateId(convo);
+		state = states.idToState(id);
+		assertEquals("[" + DialogueActTag.APOLOGY.toString() + ", " + DialogueActTag.BACKCHANNEL.toString() + "]", state.toString());
+	
+		
 	}
 	
 	
@@ -68,7 +87,7 @@ class BasicStateSpaceTest {
 	}
 	
 	/*
-	 * Ensures that an exception is thrown when the conversation consists of just 3 utterances: agent, human, agent
+	 * Ensures that an exception is thrown when the last utterance in the conversation is by the agent
 	 */	
 	@Test
 	void testIllegalConversation2(){
@@ -76,18 +95,28 @@ class BasicStateSpaceTest {
 		Utterance utt = new Utterance("agent1");
 		convo.addUtterance(utt);
 		
+		Assertions.assertThrows(IllegalStateException.class, ()->{states.getStateId(convo);});		
+
 		utt = new Utterance("human1");
 		convo.addUtterance(utt);
 		
 		utt = new Utterance("agent2");
 		convo.addUtterance(utt);
 		
-		Assertions.assertThrows(IllegalStateException.class, ()->{states.getStateId(convo);});	
+		Assertions.assertThrows(IllegalStateException.class, ()->{states.getStateId(convo);});		
+		
+		utt = new Utterance("human2");
+		convo.addUtterance(utt);
+		
+		utt = new Utterance("agent3");
+		convo.addUtterance(utt);
+		
+		Assertions.assertThrows(IllegalStateException.class, ()->{states.getStateId(convo);});
 	}
 			
 	
 	/*
-	 * Checks for the correct state when the human has made exactly 2 utterances: agent, human, agent, human
+	 * Checks for the correct state when exactly 2 utterances have been made (agent, human)
 	 */
 	@Test
 	void testStateBuilder() {
@@ -108,19 +137,13 @@ class BasicStateSpaceTest {
 			Conversation convo = new Conversation();	
 			
 			Utterance utt = new Utterance("agent1");
-			convo.addUtterance(utt);
-			
-			utt = new Utterance("human1");
 			utt.daTag = tag1;
 			convo.addUtterance(utt);
 			
-			utt = new Utterance("agent2");
-			convo.addUtterance(utt);
-			
-			utt = new Utterance("human2");
+			utt = new Utterance("human1");
 			utt.daTag = tag2;
 			convo.addUtterance(utt);
-
+			
 			int id = states.getStateId(convo);
 			String state = states.idToState(id);
 			

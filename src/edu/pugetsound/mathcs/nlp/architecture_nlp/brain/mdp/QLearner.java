@@ -128,12 +128,17 @@ public class QLearner implements DecisionMaker {
 
 		// Choose an action by either exploring or exploiting
 		int choice = -1;
-		if (rng.nextInt(params.EXPLORE) < params.remaining_iters) {
-			choice = explore(stateIndex); // explore
+		if (rng.nextInt(params.EXPLORE) < params.remaining_iters) {		
+			choice = explore(); // explore
 		} else {
 			choice = exploit(stateIndex); // exploit
 		}
-		assert(choice > 0 && choice < actions.length);
+		if(Logger.debug()){
+			System.out.println("Chosen action:");
+			System.out.println(choice);
+			System.out.println(actions[choice]);
+		}
+		assert(choice >= 0 && choice < actions.length);
 
 
 		// Present the action to the user and get the reward
@@ -177,7 +182,7 @@ public class QLearner implements DecisionMaker {
 	 * @return choice
 	 * 						The index of a randomly chosen action
 	 */
-	protected int explore(int stateIndex) {
+	protected int explore() {
 		int choice = rng.nextInt(actions.length);
 		return choice;
 	}
@@ -215,7 +220,7 @@ public class QLearner implements DecisionMaker {
 		final int MAX = 5;
 		final int MIN = 1;
 		int reward = -1;
-
+		System.out.println("===================================================");
 		System.out.println("I am in state " + states.idToState(state));
 		System.out.println("I will respond with a " + actions[choice]);
 		System.out.println("On a scale of " + MAX + "-" + MIN + ", how accurate is this response?");
@@ -230,6 +235,7 @@ public class QLearner implements DecisionMaker {
 				System.out.println("Error: Please enter an integer between " + MIN + " and " + MAX);				
 			}
 		}
+		System.out.println("===================================================");
 
 		return reward;
 	}
