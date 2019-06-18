@@ -4,11 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Properties;
 import java.util.Scanner;
-import java.util.Set;
-import java.util.regex.Pattern;
 
 import edu.pugetsound.mathcs.nlp.lang.*;
 import edu.pugetsound.mathcs.nlp.util.Logger;
@@ -18,19 +14,6 @@ import edu.pugetsound.mathcs.nlp.architecture_nlp.brain.DialogueActTag;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.datag.DAClassifier;
 import edu.pugetsound.mathcs.nlp.architecture_nlp.features.stanford.StanfordSuite;
 import edu.pugetsound.mathcs.nlp.kb.KBController;
-import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.ling.IndexedWord;
-import edu.stanford.nlp.pipeline.Annotation;
-import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.semgraph.SemanticGraph;
-import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.CollapsedCCProcessedDependenciesAnnotation;
-import edu.stanford.nlp.trees.GrammaticalRelation;
-import edu.stanford.nlp.trees.TreeCoreAnnotations.TreeAnnotation;
-import edu.stanford.nlp.util.CoreMap;
 
 
 /**
@@ -157,29 +140,7 @@ public class TextAnalyzer {
 			System.out.println("\tStrip punctuation: " + (stop-start) + " milliseconds");
 		}
 
-		
-		start = System.currentTimeMillis();		
-		if(greetClose.containsKey(stripped)){
-			h.daTag = greetClose.get(stripped);
-			return h;
-		}
-		stop = System.currentTimeMillis();
-		if(Logger.debug()) {
-			System.out.println("\tGreeting?Closing?: " + (stop-start) + " milliseconds");
-		}
-
-		
-		// Certain dialogue acts do not need deep semantic and anaphora analysis
-		start = System.currentTimeMillis();
-		h.daTag = dialogueClassifier.classify(h, conversation);
-		if(canShortCircuit(h)){
-			return h;
-		}
-		stop = System.currentTimeMillis();
-		if(Logger.debug()) {
-			System.out.println("\tDialogue Classifier: " + (stop-start) + " milliseconds");
-		}
-		
+				
 		//Sets sentence to lowercase and removes contractions, for use with spf semantic analyzer
 		start = System.currentTimeMillis();		
 		String canonical = stripped.toLowerCase();
@@ -199,6 +160,29 @@ public class TextAnalyzer {
 		// Run the NLP Analyzer
 		nlpAnalyzer.analyze(input, h);
 	
+		start = System.currentTimeMillis();		
+		if(greetClose.containsKey(stripped)){
+			h.daTag = greetClose.get(stripped);
+			return h;
+		}
+		stop = System.currentTimeMillis();
+		if(Logger.debug()) {
+			System.out.println("\tGreeting?Closing?: " + (stop-start) + " milliseconds");
+		}
+
+		
+		// Certain dialogue acts do not need deep semantic and anaphora analysis
+		start = System.currentTimeMillis();
+
+		h.daTag = dialogueClassifier.classify(h, conversation);
+		if(canShortCircuit(h)){
+			return h;
+		}
+		stop = System.currentTimeMillis();
+		if(Logger.debug()) {
+			System.out.println("\tDialogue Classifier: " + (stop-start) + " milliseconds");
+		}
+
 		
 		start = System.currentTimeMillis();
 		anaphoraAnalyzer.analyze(h, conversation);
