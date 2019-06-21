@@ -9,7 +9,7 @@ public class PathFormat {
 	
 	public static final char SEPARATOR = '/';
 	
-	private static final String BASE_DIR = "nlp425";
+	private static final String BASE_DIR = "nlp425_current";
 	private static final String USER_DIR = System.getProperty("user.dir");
 	private static final String ROOT = USER_DIR.substring(0, USER_DIR.indexOf(BASE_DIR) + BASE_DIR.length());
 	
