@@ -20,6 +20,7 @@ public class KBController{
 	public static final String ENTITY = "entity";
 	public static final String POSSESSION = "possessedBy";	
 	public static final String PROPERTY = "property";
+	public static final String MANNER = "manner";
 	
 	private KnowledgeBase current;
 	private String dir;
