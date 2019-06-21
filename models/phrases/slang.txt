@@ -7,4 +7,6 @@ whatcha up to	    What are you doing?
 how's it goin	How are you doing?
 how you doin	How are you doing?
 how's it hangin	How are you doing?
-
+how's it hanging	How are you doing?
+yeah	yes
+Yeah	Yes
