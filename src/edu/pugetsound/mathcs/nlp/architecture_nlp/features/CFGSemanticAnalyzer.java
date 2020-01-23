@@ -73,6 +73,8 @@ public class CFGSemanticAnalyzer implements SemanticAnalyzer {
 	 */
 	public void analyze(Utterance utt, Conversation convo){
 		current = utt;		
+		
+		System.out.println("Starting.... with parse tree: " + utt.constituencyParse);
 
 		if(utt.rootConstituency.equals("SQ") || utt.daTag == DialogueActTag.QUESTION_YES_NO){
 			utt.firstOrderRep = processYesNoQuestion();
@@ -86,7 +88,9 @@ public class CFGSemanticAnalyzer implements SemanticAnalyzer {
 		else if(utt.rootConstituency.equals("S")){
 			utt.firstOrderRep = processStatement();			
 		}
-		System.out.println(utt.firstOrderRep);
+		System.out.println("FINAL PARSE IS: " + utt.firstOrderRep);
+		
+		
 	}
 
 
@@ -162,123 +166,128 @@ public class CFGSemanticAnalyzer implements SemanticAnalyzer {
 	 */
 	private ArrayList<MyPredicate> depthFirstSearch(MyTree node){	
 		String nodeLabel = label(node);
-		if(Logger.debug()) {
-			System.out.println("SemanticAnalyzer DFS: " + node + " with label: " + nodeLabel);
-		}
-
+		System.out.println("DFS: " + nodeLabel + " with " + node.numChildren() + " children");
+		
+		// The node has only 1 child
 		if(node.numChildren() == 1) {
 			return singleChildRules(node, nodeLabel);
 		}
-
-		/*
-		 * The following conditionals handle rewrite rules of the form:
-		 *   A --> B1 	B2 	... BN
-		 */
-
+		
+		// Recurse on each child
+		ArrayList<ArrayList<MyPredicate>> children = new ArrayList<>(); // God this is ugly....
+		for(int i = 0; i < node.numChildren(); i++) {
+			MyTree child = node.getChild(i);
+			if(analyzer.isPunctuation(label(child))) {
+				children.add(null);
+			}
+			else {
+				children.add(depthFirstSearch(child));
+			}
+		}
+		
+		
+		// Okay, now we have the predicates for each child. Put them together according to the rule
+		
 
 		/*
 		 * NP --> Det NN
+		 * The dog is black.
 		 * 
 		 * TODO: Does this work if NN is a proper noun?
-		 * TODO: Right now, I'm ignoring the quantifier. By default, all variables are existentially
-		 * quantified. How do we want to deal with the universal quantifier? 
 		 */
 		if(pattern1(node)){
-			if(Logger.debug()) {
-				System.out.println("NP --> Det NN entering");
-			}
-			ArrayList<MyPredicate> child1 = depthFirstSearch(node.getChild(1)); // IsA(X, noun)
-			if(Logger.debug()) {
-				System.out.println("NP --> Det NN returns back " + child1);
-			}
-			return child1;
+			// We are ignoring children.get(0) which is the determinant...by default all variables are existentially
+			// quantified. How do we want to deal with the universal quantifier?
+			assert(children.get(1) != null);
+			System.out.println("Pattern1: " + children.get(1));
+			return children.get(1);
 		}
 
 		/*
 		 * VP --> Verb NP(directObject)
-		 */
+		 * The boy kicked the ball.
+		 */		
 		else if(pattern2(node)){	
-			ArrayList<MyPredicate> child0 = depthFirstSearch(node.getChild(0)); //IsA(E, verbEvent)
-			MyPredicate child1 = depthFirstSearch(node.getChild(1)).get(0); // IsA(X,noun) or Term
-
-			String recipient = child1.getArity() == 0 ? child1.getName() : child1.getArgument(0);
-			MyPredicate vp = kb.makeBinaryPredicate(KBController.THEME, child0.get(0).getArgument(0), recipient);
-
-			child0.add(vp);			
-			if(child1.getArity() != 0){ 
-				child0.add(child1);
-			}
-			return child0;
+			ArrayList<MyPredicate> verb = children.get(0);
+			assert(verb.size() == 1);
+			
+			ArrayList<MyPredicate> nounPhrase = children.get(1);			
+			MyPredicate directObject = nounPhrase.get(0);						
+			String recipient = directObject.getArity() == 0 ? directObject.getName() : directObject.getArgument(0);			
+			
+			// Create a new predicate to express the object of the verb
+			MyPredicate vp = kb.makeBinaryPredicate(KBController.THEME, verb.get(0).getArgument(0), recipient);
+			
+			// Add everything to the verb phrase
+			verb.add(vp);			
+			verb.addAll(nounPhrase);
+			System.out.println("Pattern2: " + verb);
+			return verb;
 		}
 
-
-		/*
-		 * S --> NP(subject) VP(non-copula)
-		 */
-		else if(pattern3(node) && !analyzer.isCopula(label(node.getChild(1).getTerminal()))){
-			ArrayList<MyPredicate> list = depthFirstSearch(node.getChild(0));
-			if(Logger.debug()) {
-				System.out.println("S --> NP VP returns " + list);
-			}
-			MyPredicate child0 = list.get(0); // IsA(X,noun) or Term
-			ArrayList<MyPredicate> child1 = depthFirstSearch(node.getChild(1)); // IsA(E, verbEvent)
-			//assert child1.size() > 0;
-
-			// Agent(E, X)
-			// TODO: Can't guarantee that the first predicate in the VP clause has E as the first term
-			String actor = child0.getArity() == 0 ? child0.getName() : child0.getArgument(0);			
-			MyPredicate agent = kb.makeBinaryPredicate(KBController.AGENT, child1.get(0).getArgument(0), actor); 					
-
-			child1.add(agent);
-			if(child0.getArity() != 0){
-				child1.add(child0);
-			}			
-			return child1;
-		}
-
-
+		
 		/*
 		 * S --> NP(subject) VP(copula)
+		 * The dog is black.
 		 */
 		else if(pattern3(node) && analyzer.isCopula(label(node.getChild(1).getTerminal()))){
-			MyPredicate child0 = depthFirstSearch(node.getChild(0)).get(0); // IsA(X,noun1) or Term
-			ArrayList<MyPredicate> child1 = depthFirstSearch(node.getChild(1)); // IsA(Y,noun2)
+			MyPredicate noun = children.get(0).get(0); // IsA(X, noun) or Term
+			System.out.println("\t>>>>" + noun);
+ 			ArrayList<MyPredicate> verbPhrase = children.get(1); // property(X, descriptor)
+ 			System.out.println("\t>>>>" + verbPhrase);
 
-			if(child0.getArity() == 0){
-				child1.get(0).addArgument(child0.getName(), 0);
+ 			// The verb phrase is of the form property(X, descriptor). We need to unify X with the noun
+ 			// In this case, the noun is a proper noun and so we overwrite X with the name of the proper noun
+			if( noun.getArity() == 0){
+				verbPhrase.get(0).addArgument(noun.getName(), 0);
 			}
+			
+			// In this case, the verb phrase is of the form property(X, descriptor) and the noun is of the form
+			// isA(Y, noun). We need to unify X and Y so we create a new variable Z and we overwrite 
+			// property(X, descriptor) with property(Z, descriptor) and isA(Y, noun) with isA(Z, noun).
 			else{
 				String newVar = kb.makeVariable();
-				child0.addArgument(newVar, 0);
-				child1.get(0).addArgument(newVar, 0);
-				child1.add(child0);				
-			}
-			return child1;
+				noun.addArgument(newVar, 0);
+				verbPhrase.get(0).addArgument(newVar, 0);
+				verbPhrase.addAll(children.get(0));				
+			}			
+			System.out.println("Pattern3: " + verbPhrase);
+			return verbPhrase;
 		}
 
 
 		/*
 		 * VP --> Copula NP
-		 * TODO: Right now, the copula is being ignored. Later, if we add tense (e.g. past, present)
-		 * we'll need to examine the copula
+		 * Bob is a teacher.
 		 */
 		else if(pattern4(node)){
-			// PrologStructure child0 = depthFirstSearch(node.getChild(0)).get(0); // copula
-			ArrayList<MyPredicate> child1 = depthFirstSearch(node.getChild(1)); // IsA(X,noun) or Term
+			 // TODO: Right now, the copula is being ignored. Later, if we add tense (e.g. past, present)
+			 // we'll need to examine the copula
+			ArrayList<MyPredicate> nounPhrase = children.get(1); // IsA(X,noun) or Term
 
-			if(child1.get(0).getArity()==0){
-				MyPredicate binaryPred = kb.makeBinaryPredicate(KBController.ISA, kb.makeVariable(), child1.get(0).getName());
+			if(nounPhrase.get(0).getArity()==0){
+				MyPredicate binaryPred = kb.makeBinaryPredicate(KBController.ISA, kb.makeVariable(), nounPhrase.get(0).getName());
 				ArrayList<MyPredicate> list = new ArrayList<MyPredicate>();
 				list.add(binaryPred);
+				System.out.println(nodeLabel + "Pattern4 if statement returned: " + list);
 				return list;
 			}
 			else{
-				return child1;
+				System.out.println(nodeLabel + "Pattern4 else statement returned: " + nounPhrase);
+				return nounPhrase;
 			}
 		}
 
+		
+		/**
+		 * PICK UP HERE WITH REFACTORING!!!
+		 */
+		
+		
 		/*
 		 * VP --> Copula ADJP/ADVP
+		 * 
+		 * WHY DOES THIS ENCOMPASS ADVP AS WELL?
 		 */
 		else if(pattern5(node)){
 			if(Logger.debug()) {
@@ -293,19 +302,94 @@ public class CFGSemanticAnalyzer implements SemanticAnalyzer {
 			list.add(binaryPred);
 
 			if(Logger.debug()) {
-				System.out.println("Inside pattern 5: " + list);
+				System.out.println(nodeLabel + "Inside pattern 5: " + list);
 			}
+			
+			System.out.println(nodeLabel + "Pattern5 returned: " + list);
 			return list;
 		}
-
+		
 		/*
-		 * This will return back and cause a runtime exception... 
+		 * VP --> Verb ADVP
 		 */
-		MyTree[] children = node.children();
-		for(MyTree child : children){
-			depthFirstSearch(child);
+		else if(pattern6(node)) {
+			ArrayList<MyPredicate> child0 = depthFirstSearch(node.getChild(0)); // IsA(E, verbEvent)						
+			MyPredicate child1 = depthFirstSearch(node.getChild(1)).get(0); // Return adverb			
+			assert(child1.getArity() == 0);	
+				
+			MyPredicate manner = kb.makeBinaryPredicate(KBController.MANNER, child0.get(0).getArgument(0), child1.getName()); // manner(E, adverb)
+
+			child0.add(manner);
+			System.out.println(nodeLabel + "Pattern6 returned: " + child0);
+			return child0;
 		}
-		return new ArrayList<MyPredicate>();
+		/*
+		 * VP --> ADVP Verb
+		 */
+		else if(pattern6b(node)) {
+			MyPredicate child0 = depthFirstSearch(node.getChild(0)).get(0); // Return adverb						
+			ArrayList<MyPredicate> child1 = depthFirstSearch(node.getChild(1)); // IsA(E, verbEvent)			
+			assert(child0.getArity() == 0);	
+				
+			MyPredicate manner = kb.makeBinaryPredicate(KBController.MANNER, child1.get(0).getArgument(0), child0.getName()); // manner(E, adverb)
+
+			child1.add(manner);
+			System.out.println(nodeLabel + "Pattern6 returned: " + child1);
+			return child1;
+		}
+		/*
+		 * S --> NP ADVP VP
+		 */
+		else if(pattern7(node)) {
+			MyPredicate  noun = depthFirstSearch(node.getChild(0)).get(0); // Return noun
+
+			MyPredicate adverb = depthFirstSearch(node.getChild(1)).get(0); // Return adverb						
+			assert(adverb.getArity() == 0);
+			
+			ArrayList<MyPredicate> verb = depthFirstSearch(node.getChild(2)); // Return IsA(E, verbEvent)			
+							
+			MyPredicate manner = kb.makeBinaryPredicate(KBController.MANNER, verb.get(0).getArgument(0), adverb.getName()); // manner(E, adverb)
+			verb.add(manner);
+			
+			String actor = noun.getArity() == 0 ? noun.getName() : noun.getArgument(0);			
+			MyPredicate agent = kb.makeBinaryPredicate(KBController.AGENT, verb.get(0).getArgument(0), actor); 					
+
+			verb.add(agent);
+			if(noun.getArity() != 0){
+				verb.add(noun);
+			}			
+			
+				
+			System.out.println(nodeLabel + "Pattern7 returned: " + verb);
+
+			return verb;
+		}
+		
+		
+		
+		/*
+		 * S --> NP VP(non-copula)
+		 */
+		 if(pattern3(node) && !analyzer.isCopula(label(node.getChild(1).getTerminal()))){			
+			ArrayList<MyPredicate> nounList = depthFirstSearch(node.getChild(0)); // predicates related to the subject/noun
+			ArrayList<MyPredicate> verbList = depthFirstSearch(node.getChild(1)); // predicates related to the verb
+			
+			// TODO: Need to guarantee that isA(E, verbEvent) is always the first predicate in the list. THIS IS HUGELY IMPORTANT!!!
+			// TODO: Need to do something analogous for the noun phrase
+			String actor = nounList.get(0).getArity() == 0 ? nounList.get(0).getName() : nounList.get(0).getArgument(0);			
+			
+			MyPredicate agent = kb.makeBinaryPredicate(KBController.AGENT, verbList.get(0).getArgument(0), actor); 					
+
+			// We add all predicates to the verb list...
+			verbList.add(agent);
+			verbList.addAll(nounList);
+			
+			System.out.println(nodeLabel + "Pattern3 returned: " + verbList);
+			return verbList;
+		}
+		 
+		 System.out.println(nodeLabel + "Found no matching pattern. Returning empty arraylist");
+		 return new ArrayList<MyPredicate>();
 	}
 
 	/**
@@ -357,6 +441,8 @@ public class CFGSemanticAnalyzer implements SemanticAnalyzer {
 	 * Processes all rules of the form A --> B
 	 */
 	private ArrayList<MyPredicate> singleChildRules(MyTree node, String nodeLabel){
+		System.out.println("\t" + nodeLabel);
+		
 		ArrayList<MyPredicate> list = new ArrayList<>();
 		if(analyzer.isProperNoun(nodeLabel)) {
 			list.add(properNoun(node));
@@ -382,6 +468,10 @@ public class CFGSemanticAnalyzer implements SemanticAnalyzer {
 		else if(analyzer.isAdjective(nodeLabel)) {
 			list.add(adjective(node));
 		}
+		else if(analyzer.isAdverb(nodeLabel)) {
+			list.add(adverb(node));
+			System.out.println("\tList: " + list);
+		}
 		else {
 			list = depthFirstSearch(node.getChild(0));				
 		}			
@@ -399,6 +489,14 @@ public class CFGSemanticAnalyzer implements SemanticAnalyzer {
 		return kb.makeConstant(property, null); 
 	}
 
+	// Adverb -- e.g., "regularly", "quickly," "slowly"
+	private MyPredicate adverb(MyTree node) {
+		System.out.println("\t\t" + node);
+		assert hasSingleLeafChild(node);
+		String property = label(node.getChild(0));
+		return kb.makeConstant(property, null);
+	}
+	
 	// Determinant -- e.g., "a", "the", "some", "every", "none"
 	private MyPredicate determinant(MyTree node){
 		assert hasSingleLeafChild(node);
@@ -538,7 +636,7 @@ public class CFGSemanticAnalyzer implements SemanticAnalyzer {
 	/*
 	 * VP --> Copula ADJP/ADVP 
 	 */
-	public boolean pattern5(MyTree node){
+	private boolean pattern5(MyTree node){
 		String nodeLabel = label(node);		
 		if(!nodeLabel.equals("VP") || node.numChildren() != 2){
 			return false;
@@ -551,6 +649,61 @@ public class CFGSemanticAnalyzer implements SemanticAnalyzer {
 		return analyzer.isCopula(headVerb);
 	}
 
+	/*
+	 * VP --> Verb ADVP
+	 */
+	private boolean pattern6(MyTree node) {
+		String nodeLabel = label(node);
+		if(!nodeLabel.equals("VP") || node.numChildren() != 2) {
+			return false;
+		}
+		
+		String childLabel1 = label(node.getChild(0));
+		String childLabel2 = label(node.getChild(1));
+		if((childLabel1.equals("VB") || childLabel1.equals("VBP")) && childLabel2.equals("ADVP")) {
+			return true;
+		}
+		return false;
+	}
+	
+	/*
+	 * VP --> ADVP Verb
+	 */
+	private boolean pattern6b(MyTree node) {
+		String nodeLabel = label(node);
+		if(!nodeLabel.equals("VP") || node.numChildren() != 2) {
+			return false;
+		}
+		
+		String childLabel1 = label(node.getChild(0));
+		String childLabel2 = label(node.getChild(1));
+		if((childLabel2.equals("VB") || childLabel2.equals("VBP")) && childLabel1.equals("ADVP")) {
+			return true;
+		}
+		return false;
+	}
+	
+	/*
+	 * S --> NP ADVP VP
+	 */
+	private boolean pattern7(MyTree node) {
+		String nodeLabel = label(node);
+		if(!nodeLabel.equals("S") || node.numChildren() < 3) {
+			System.out.println("Returned false1++++++");
+			return false;
+		}
+		
+		String childLabel1 = label(node.getChild(1)); // Adverb phrase
+		String childLabel2 = label(node.getChild(2)); // Verb phrase
+		if(childLabel1.equals("ADVP") && childLabel2.equals("VP")) {
+			System.out.println("Returned true++++++");
+			return true;
+		}
+		System.out.println("Returned false2++++++");
+		
+		return false;
+	}
+	
 	public static void main(String[] args) {
 		CFGSemanticAnalyzer analyzer = new CFGSemanticAnalyzer(new KBController(""));
 		Conversation convo = new Conversation();

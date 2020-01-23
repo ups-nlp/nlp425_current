@@ -38,6 +38,17 @@ public class ParseTreeAnalyzer {
 	}	
 
 	/**
+	 * Determines if the string is a punctuation symbol
+	 * 
+	 * NEED TO REPLACE THIS WITH 
+	 * @param str
+	 * @return
+	 */
+	public boolean isPunctuation(String str) {
+		return str.equals(".") || str.equals("?") || str.equals("!") || str.equals(",") || str.equals("."); 
+	}
+	
+	/**
 	 * Determines if the string is a form of the verb "to be"
 	 * @param str
 	 * @return

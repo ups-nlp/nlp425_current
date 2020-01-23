@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.Set;
 
 import edu.pugetsound.mathcs.nlp.lang.*;
 import edu.pugetsound.mathcs.nlp.util.Logger;
@@ -110,7 +111,10 @@ public class TextAnalyzer {
 		 * require/use the output of other analyzers
 		 */
 
-		// Strip ending punctuation
+		
+		/*----------------------------------------------------
+		 * STEP ONE: Strip the punctuation from the end
+		 *----------------------------------------------------*/
 		start = System.currentTimeMillis();
 		String stripped = input.replaceAll("\\p{Punct}*$", "");
 		stop = System.currentTimeMillis();
@@ -119,11 +123,13 @@ public class TextAnalyzer {
 		}
 
 
-		// Checks for a standardized form
+		/*----------------------------------------------------
+		 * STEP TWO: Replace any slang with a standardized form
+		 *----------------------------------------------------*/
 		start = System.currentTimeMillis();
-		if(standardizedForms.containsKey(stripped)){
-			input = standardizedForms.get(stripped);
-			stripped = input.replaceAll("\\p{Punct}*$", "");
+		for(String slang : standardizedForms.keySet()) {
+			stripped.replace(slang, standardizedForms.get(slang));
+			input.replace(slang, standardizedForms.get(slang));
 		}
 		stop = System.currentTimeMillis();
 		if(Logger.debug()) {
@@ -131,7 +137,9 @@ public class TextAnalyzer {
 		}
 		
 
-		// Create the utterance
+		/*--------------------------------------------------------
+		 * STEP THREE: Create the actual utterance data structure 
+		 *-------------------------------------------------------*/
 		start = System.currentTimeMillis();		
 		Utterance h = new Utterance(input);
 		storePunctuation(h, input);
@@ -141,7 +149,9 @@ public class TextAnalyzer {
 		}
 
 				
-		//Sets sentence to lowercase and removes contractions, for use with spf semantic analyzer
+		/*--------------------------------------------------------
+		 * STEP FOUR: Lowercase utterance and remove contractions 
+		 *-------------------------------------------------------*/
 		start = System.currentTimeMillis();		
 		String canonical = stripped.toLowerCase();
 		String[] words = canonical.split(" ");
@@ -156,10 +166,10 @@ public class TextAnalyzer {
 			System.out.println("\tContraction?Expansion?: " + (stop-start) + " milliseconds");
 		}
 
-		
-		// Run the NLP Analyzer
-		nlpAnalyzer.analyze(input, h);
-	
+				
+		/*--------------------------------------------------------------------
+		 * STEP FIVE: Check if the utterance is a standard greeting or closing 
+		 *--------------------------------------------------------------------*/		
 		start = System.currentTimeMillis();		
 		if(greetClose.containsKey(stripped)){
 			h.daTag = greetClose.get(stripped);
@@ -171,9 +181,16 @@ public class TextAnalyzer {
 		}
 
 		
-		// Certain dialogue acts do not need deep semantic and anaphora analysis
+		/*--------------------------------------------------------
+		 * STEP SIX: Run the NLP pipeline 
+		 *-------------------------------------------------------*/
+		nlpAnalyzer.analyze(input, h);
+	
+		
+		/*--------------------------------------------------------
+		 * STEP SEVEN: Run the dialogue tag classifier 
+		 *-------------------------------------------------------*/
 		start = System.currentTimeMillis();
-
 		h.daTag = dialogueClassifier.classify(h, conversation);
 		if(canShortCircuit(h)){
 			return h;
@@ -184,6 +201,9 @@ public class TextAnalyzer {
 		}
 
 		
+		/*--------------------------------------------------------
+		 * STEP EIGHT: Perform anaphora resolution 
+		 *-------------------------------------------------------*/
 		start = System.currentTimeMillis();
 		anaphoraAnalyzer.analyze(h, conversation);
 		stop = System.currentTimeMillis();
@@ -191,7 +211,9 @@ public class TextAnalyzer {
 			System.out.println("\tAnaphora Analyzer: " + (stop-start) + " milliseconds");
 		}
 
-		
+		/*---------------------------------------------------------------
+		 * STEP NINE: Perform semantic analysis. Convert to logical form 
+		 *--------------------------------------------------------------*/
 		start = System.currentTimeMillis();
 		try {
 			folSemAnalyzer.analyze(h, conversation);
@@ -210,6 +232,7 @@ public class TextAnalyzer {
 			System.out.println(h);
 		}
 
+		System.out.println("Final utterance: " + h);
 		return h;
 	}
 
@@ -222,14 +245,15 @@ public class TextAnalyzer {
 	 * and anaphoric) is not necessary
 	 */
 	private boolean canShortCircuit(Utterance h){
-		return h.daTag == DialogueActTag.BACKCHANNEL ||
-				h.daTag == DialogueActTag.SIGNAL_NON_UNDERSTANDING ||
-				h.daTag == DialogueActTag.AGREEMENTS ||
-				h.daTag == DialogueActTag.COMMENT ||
-				h.daTag == DialogueActTag.COLLABORATIVE_COMPLETION ||
-				h.daTag == DialogueActTag.THANKS ||
-				h.daTag == DialogueActTag.WELCOME ||
-				h.daTag == DialogueActTag.APOLOGY;
+//		return h.daTag == DialogueActTag.BACKCHANNEL ||
+//				h.daTag == DialogueActTag.SIGNAL_NON_UNDERSTANDING ||
+//				h.daTag == DialogueActTag.AGREEMENTS ||
+//				h.daTag == DialogueActTag.COMMENT ||
+//				h.daTag == DialogueActTag.COLLABORATIVE_COMPLETION ||
+//				h.daTag == DialogueActTag.THANKS ||
+//				h.daTag == DialogueActTag.WELCOME ||
+//				h.daTag == DialogueActTag.APOLOGY;
+		return false;
 	}
 
 
@@ -351,7 +375,8 @@ public class TextAnalyzer {
 	 */
 	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
-		TextAnalyzer analyzer = new TextAnalyzer(null);
+		KBController kb = new KBController(null);
+		TextAnalyzer analyzer = new TextAnalyzer(kb);
 		Conversation convo = new Conversation();
 		while(true){
 			System.out.print("Enter a line of text: ");

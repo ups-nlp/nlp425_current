@@ -31,7 +31,7 @@ public class StanfordSuite implements NLPSuite {
 	//	protected static final String ANNOTATORS = "tokenize, ssplit, pos, lemma, parse, natlog, ner, coref";
 	//	protected static final String ANNOTATORS = "tokenize, ssplit, pos, lemma, parse, ner";
 	//protected static final String ANNOTATORS = "tokenize, ssplit, pos, lemma, parse, ner";
-	protected static final String ANNOTATORS = "tokenize, ssplit, pos, lemma, parse";
+	protected static final String ANNOTATORS = "tokenize, ssplit, pos, lemma, parse, ner";
 	protected static StanfordCoreNLP pipeline;
 	protected long start = 0L, stop = 0L;
 
@@ -173,7 +173,7 @@ public class StanfordSuite implements NLPSuite {
 	public static void main(String[] args) {
 		// Initialize NLP Pipeline		
 		StanfordSuite analyzer = new StanfordSuite();
-		
+				
 		Scanner input = new Scanner(System.in);
 		System.out.println();
 		System.out.println("Type text:");
