@@ -88,7 +88,7 @@ public class QLearner implements DecisionMaker {
 		// We know that the conversation has length of at least 2, that is the conversation consists of at least:
 		// Agent's first utterance
 		// Human's first utterance
-		
+
 		if(Logger.debug()) {
 			System.out.println("lastState was: " + lastState);
 			System.out.println("last action was: " + lastAction);
@@ -126,13 +126,17 @@ public class QLearner implements DecisionMaker {
 		// and (2) the \alpha value in the Q learning update equation. Are these the same value? Can they be?
 
 
-		// Choose an action by either exploring or exploiting
+		// Choose a valid action by either exploring or exploiting
 		int choice = -1;
-		if (rng.nextInt(params.EXPLORE) < params.remaining_iters) {		
-			choice = explore(); // explore
-		} else {
-			choice = exploit(stateIndex); // exploit
-		}
+		do {
+			if (rng.nextInt(params.EXPLORE) < params.remaining_iters) {		
+				choice = explore(); // explore
+				
+			} else {
+				choice = exploit(stateIndex); // exploit
+			}			
+		}while(actions[choice] == Action.NULL);
+		
 		if(Logger.debug()){
 			System.out.println("Chosen action:");
 			System.out.println(choice);
@@ -140,6 +144,7 @@ public class QLearner implements DecisionMaker {
 		}
 		assert(choice >= 0 && choice < actions.length);
 
+		
 
 		// Present the action to the user and get the reward
 		lastReward = rateActionChoice(stateIndex, choice);
