@@ -82,6 +82,13 @@ public class NLPModel implements Model {
 			System.out.println("Time to generate response: " + (stop-start) + " milliseconds");
 		}
 
+		//TODO: We know the DialogueAct of the agent's utterance from above (the variable action)
+		// We need to pass this to the analyzer so we're not running the dialogue act classifier which
+		// potentially gives an incorrect DialogueAct prediction when we have the correct prediction
+		// Possible solutions include having only 1 enum type (in which case I think it should be moved to
+		// the lang folder). However, this increases the dimensionality of the q-table for Q-learning.
+		// We could also define an Interface of the possible actions. This would require some refactoring of the
+		// datag package code which I'm just not familiar with. This would be a broader system wide change.
 		start = System.currentTimeMillis();
 		Utterance agentUtt = analyzer.analyze(response, conversation);
 		stop = System.currentTimeMillis();
