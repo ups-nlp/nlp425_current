@@ -11,7 +11,7 @@ package edu.pugetsound.mathcs.nlp.architecture_nlp.brain;
  */
 public enum Action {   
 
-	APOLOGY("APOLOGY"),
+	APOLOGY("fa"),
 	BACKCHANNEL("b"),
 	CONVENTIONAL_CLOSING("fc"),
 	CONVENTIONAL_OPENING("fp"),
