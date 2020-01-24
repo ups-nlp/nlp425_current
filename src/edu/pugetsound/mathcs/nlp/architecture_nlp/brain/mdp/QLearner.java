@@ -79,6 +79,10 @@ public class QLearner implements DecisionMaker {
 			// The last utterance in the conversation was made by the agent...so this method shouldn't have been called
 			throw new IllegalStateException();
 		}
+		else if(conversation.getLastUtterance().daTag == DialogueActTag.CONVENTIONAL_CLOSING) {
+			// The user has said goodbye. It would be rude to continue trying to prolong the conversation. Just say goodbye back.
+			return Action.CONVENTIONAL_CLOSING;
+		}
 
 		// We know that the conversation has length of at least 2, that is the conversation consists of at least:
 		// Agent's first utterance
