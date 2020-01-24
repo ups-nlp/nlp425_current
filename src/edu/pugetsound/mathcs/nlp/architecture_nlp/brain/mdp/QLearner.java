@@ -44,20 +44,15 @@ public class QLearner implements DecisionMaker {
 	 * @param hyperVariables
 	 * 						The {@link HyperVariables} class is the class
 	 * 						which configures the variables for the QLearner.
-	 * @param readFromFile
-	 * 						True if QLearner should read from file, false otherwise
 	 *
 	 */
-	public QLearner(HyperVariables hyperVariables, boolean readFromFile) {
+	public QLearner(HyperVariables hyperVariables) {
 		params = hyperVariables;
 
 		//create states and actions
 		actions = Action.values(); // TODO: Do we need a deep copy here? Are we ever changing actions?
 		states = new BasicStateSpace();
-		q_table = new double[states.numStates()][actions.length];
-		if (readFromFile) {
-			readFromFile(null);
-		}
+		q_table = new double[states.numStates()][actions.length];		
 
 		lastState = states.getStateId(null);
 		lastAction = Action.NULL.ordinal();
@@ -284,7 +279,7 @@ public class QLearner implements DecisionMaker {
 	 *
 	 * @return - true if operation was successful, false otherwise
 	 */
-	public boolean saveToFile(String filename) {
+	public boolean saveToFile() {
 		File file = new File(INPUT_PATH);
 		FileWriter writer = null;
 
@@ -324,7 +319,7 @@ public class QLearner implements DecisionMaker {
 	 *
 	 * @return - true if operation was successful, false otherwise
 	 */
-	public boolean readFromFile(String filename) {
+	public boolean readFromFile() {
 		final String DELIMITER = ",";
 
 		try {
@@ -341,7 +336,7 @@ public class QLearner implements DecisionMaker {
 			for (int i = 0; i < q_table.length; i++) {
 				line = fileReader.readLine();
 				tokens = line.split(DELIMITER);
-				for (int j = 0; j < q_table[i].length; j++) {
+				for (int j = 0; j < q_table[i].length; j++) {					
 					q_table[i][j] = Double.parseDouble(tokens[j]);
 				}
 			}

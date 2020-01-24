@@ -31,7 +31,7 @@ public interface DecisionMaker {
 	 * 
 	 * @return True if save was successful, false otherwise
 	 */
-	public boolean saveToFile(String filename);
+	public boolean saveToFile();
 	
 
 	/**
@@ -40,6 +40,6 @@ public interface DecisionMaker {
 	 * 					The name of the file containing the stored state
 	 * @return True if read was successful, false otherwise
 	 */
-	public boolean readFromFile(String filename);
+	public boolean readFromFile();
 
 }

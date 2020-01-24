@@ -16,14 +16,17 @@ public class NLPModel implements Model {
 
 	protected static final String KNOWLEDGE_BASE_PATH = "knowledge/";
 	protected static final String INITIAL_GREETING = "Hello.";	
-	
+
 	protected static Conversation conversation;		
 	protected static TextAnalyzer analyzer;
 	protected static DecisionMaker brain;
 	protected static KBController kb;
 	protected static Generator decoder;
 	protected static boolean conversationOver;
-	
+
+	// Set to true if you want to start with a fresh brain
+	protected static boolean flushBrain = false; 
+
 	/**
 	 * Constructs a new architecture based on an NLP pipeline
 	 */
@@ -32,15 +35,15 @@ public class NLPModel implements Model {
 		conversation = new Conversation();	
 		analyzer = new TextAnalyzer(kb);
 		decoder = new DumbGenerator(); 
-				
+
 		// Using a Markov Decision Process for the brain
 		final double GAMMA = 0.1; // discounted value for the MDP	
 		final int EXPLORE = 1000; // explore/exploit parameter (larger value corresponds to longer explore phase)
-		brain = new QLearner(new HyperVariables(GAMMA, EXPLORE), false);
-		
+		brain = new QLearner(new HyperVariables(GAMMA, EXPLORE));
+
 		conversationOver = false;
 	}
-	
+
 	@Override
 	public boolean conversationIsOver() {
 		return conversationOver;
@@ -52,7 +55,7 @@ public class NLPModel implements Model {
 		if(Logger.debug()) {
 			System.out.println("\n\n==== STARTING ROUND ====");
 		}
-		
+
 		// Process the typed input
 		start = System.currentTimeMillis();
 		Utterance utt = analyzer.analyze(utterance, conversation);
@@ -61,8 +64,8 @@ public class NLPModel implements Model {
 		if(Logger.debug()) {
 			System.out.println("Time to run analyzer: " + (stop-start) + " milliseconds");
 		}
-		
-		
+
+
 		// Get an action from the decision maker
 		start = System.currentTimeMillis();
 		Action action = brain.getAction(conversation);
@@ -78,7 +81,7 @@ public class NLPModel implements Model {
 		if(Logger.debug()) {
 			System.out.println("Time to generate response: " + (stop-start) + " milliseconds");
 		}
-		
+
 		start = System.currentTimeMillis();
 		Utterance agentUtt = analyzer.analyze(response, conversation);
 		stop = System.currentTimeMillis();
@@ -95,13 +98,15 @@ public class NLPModel implements Model {
 	@Override
 	public void loadState() {
 		// Need to load the brain so we're not starting from scratch every time
-		
+		if(!flushBrain) {
+			brain.readFromFile();
+		}
 	}
 
 	@Override
 	public void saveState() {
 		// Need to save the brain so we can reload later
-		
+		brain.saveToFile();
 	}
 
 	@Override

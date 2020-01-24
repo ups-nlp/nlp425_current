@@ -41,7 +41,7 @@ public class QLearnerTest {
 
     public void setUp(){
         hyperVariables = new HyperVariables(GAMMA, EXPLORE);
-        mdp = new QLearner(hyperVariables,false);
+        mdp = new QLearner(hyperVariables);
     }
 
     public void test(){
